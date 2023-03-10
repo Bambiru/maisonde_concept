@@ -22,12 +22,15 @@ $(document).ready(function(){
             if(login.children().eq(-1).has(event.target).length == 1){
                 $('.search').stop().fadeIn();
                 login.hide();
+                $('header').css({'padding-top':'13px'});
             }else if($('.search').has(event.target).length == 0 && login.has(event.target).length == 0 ){
                 // .search 영역을 클릭시 길이가 1이 된다.
                 // 마찬가지로 .snb 영역을 클릭시 길이가 1이 된다.
                 // 따라서, 둘의 영역이 0일때만 코드가 작동 되도록 구현했다.
                 $('.search').hide();
-                login.stop().show();
+                login.stop().stop().fadeIn();
+                $('header').css({'padding-top':'0px'});
+
             }});
 
         

@@ -10,6 +10,7 @@
     background-color: #979797;
     color: #fff;
     opacity: 0.5;
+    display: none;
 }
 .top:hover {
     opacity: 1;

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* main */
+.contents {
+    padding-top: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+/* title  */
+.contents .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contents .title h2 {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1.08px;
+    line-height: 1.5;
+}
+.contents .title p {
+    margin: 5px 0 0 6px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+
+/* imgList */
+
+.imgList li {
+    width: 31.61290322580645%;
+    padding-bottom: 65px;
+    margin: 20px 32px 20px 0;
+    float: left;
+}
+
+.imgList li:nth-child(3),
+.imgList li:nth-child(6) {
+    margin-right: 0;
+}
+
+/* 셀로판지 */
+
+.imgList li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.imgList li a img {
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+.imgList>ul>li>a {
+    position: relative;
+}
+.imgList>ul>li>a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f6f5f1;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+}
+.imgList>ul>li>a:hover::before {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

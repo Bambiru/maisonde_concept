@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* 공통 CSS */
+#wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+.w1240 {
+    width: 1240px;
+    margin: 0 auto;
+}
+.w740 {
+    width: 740px;
+    margin: 0 auto;
+}
+
+/* Login-wrapper */
+section .title h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 89px;
+    padding-top: 30px;
+    font-family: "Roboto",Nanum gothic;
+    letter-spacing: 1px;
+}
+.login-wrapper input{
+    border: 1px solid #bbbbbb ;
+    width: 319px;
+    height: 43px;
+}
+.login-wrapper form
+{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.title {
+    /* 플롯 */
+    float: left;
+    width: 740px;
+}
+.login-wrapper {
+    float: left;
+    width: 319px;
+    margin-bottom: 130px;
+}
+.join_us {
+    /* 플롯 */
+    float: right;
+    width: 300px;
+}
+.login-wrapper #remember-check {
+    width: 13px;
+    height: 13px;
+}
+.login-wrapper label {
+    font-size: 11px;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+     /* 플렉스 */
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+     font-family: nanum gothic;
+     color: #333333;
+     line-height: 11px;
+}
+.login-wrapper label p {
+    line-height: 10px;
+}
+.login-wrapper label img {
+    vertical-align: middle;
+}
+.login-wrapper ul li:first-child {
+    text-align: center;
+    width: 319px;
+    margin-bottom: 18px;
+    font: 15px nanum gothic,Verdana,Dotum,AppleGothic,sans-serif;
+    color: #666666;
+}
+.login-wrapper ul li:nth-child(1) {
+    /* 플롯 */
+    float: left;
+}
+.login-wrapper ul li:nth-child(2) {
+    /* 플롯 */
+    float: right;
+}
+input[type="text"] {
+    margin-bottom: 7px;
+    padding-left: 5px;
+}
+input[type="password"] {
+    padding-left: 5px;
+    margin-bottom: 14px;
+}
+input[type="button"] {
+    margin-bottom: 32px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    width: 320px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Join_us */
+.join_us h2 {
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 14px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+.join_us p {
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #777777;
+    font-family: "montserrat",nanum gothic;
+    letter-spacing: -1px;
+
+}
+.join_us div {
+    width: 298px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #bbbbbb;
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: -1px;
+}

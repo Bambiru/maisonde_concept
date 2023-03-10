@@ -3,22 +3,29 @@
 
 @font-face {
     font-family: JS-Roboto;
-    src: url('./font/Roboto-Regular.ttf');
+    src: url('../font/Roboto/Roboto-Regular.ttf'),
+        url('../font/Roboto/Roboto-Bold.ttf'),
+        url('../font/Roboto/Roboto-Medium.ttf');
     unicode-range: U+0061-007A,
     U+0041-005A,
     U+0030-0039;
 }
 @font-face {
     font-family: JS-nanumGothic;
-    src: url('./font/NanumGothic-Regular.ttf');
-    font-weight: bold;
+    src: url('../font/Nanum_Gothic/NanumGothic-Regular.ttf'),
+         url('../font/Nanum_Gothic/NanumGothic-Bold.ttf');
     unicode-range: U+AC00-D7A3,
     U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 
 body {
-    width: 100%;
+    max-width: 1920px;
     font-family: 'JS-Roboto', 'JS-nanumGothic' ;
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
 }
 /* safe Area */
 .w1240 {
@@ -27,7 +34,11 @@ body {
 }
 
 header {
-    padding-bottom: 30px;
+    padding-bottom: 27px;
+    position:sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: #fff;
 }
 
 /* login */
@@ -45,12 +56,18 @@ header {
 .login ul li:last-child {
     cursor: pointer;
 }
+
+.search {
+    /* 위치기준값 */
+    position: relative;
+    top: 10px;
+}
 .login form {
-    font-size: 12px;
+    font-size: 11px;
+    margin-top: 15px;
+    /* 플렉스 */
     display: flex;
     justify-content: flex-end;
-    margin-top: 15px;
-
 }
 .login form input {
     width: 235px;
@@ -62,37 +79,46 @@ header {
 
 .logo img{
     cursor: pointer;
+    /* 포지션 */
+    position: relative;
+    top: -10px;
 }
 /* GNB */
 .gnb>ul{
-    margin-top: 12px;
+    margin-top: 20px;
+    color: #000;
     /* 플렉스 */
     display: flex;
     flex-flow: row nowrap;
-    color: #000;
 }
 .gnb>ul>li>a{
-    width: 100%;
     font-size: 15px;
     margin: 0 18px;
+
+    /* 포지션 위치기준값 */
     position: relative;
 }
-
 .gnb>ul>li:first-child{
     margin-left: -18px;
-    cursor: pointer;
 }
+
 .gnb>ul>li:first-child a span{
     color: #70C2B8;
+    font-size: 16px;
     font-weight: 700;
 }
 
 /* SUB MENU */
 .sub_menu {
     display: none;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
+    /* 포지션 */
     position: absolute;
     z-index: 99999;
+}
+.gnb>ul>li:nth-child(2) .sub_menu {
+    width: 98px;
+    transform: translateX(-7px);
 }
 .gnb>ul>li:nth-child(5) .sub_menu{
     width: 100px;
@@ -124,16 +150,19 @@ header {
 
 .sub_menu li{
     color: #000;
-    font-size: 12px;
+    padding: 8px 0;
     text-align: center;
-    padding: 5px 0;
+}
+.sub_menu li a {
+    font-size: 12px;
+    
 }
 .sub_menu li:hover {
     background-color: #FAFAFA;
     color: #99A5C2;
 }
 
-
+/* 준비중 이미지 */
 .alert { 
     position: fixed;
     left: 50%;

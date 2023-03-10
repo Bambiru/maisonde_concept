@@ -48,6 +48,21 @@ footer table tr:last-child td span {
 .footer_right{
     text-align: right;
 }
+.footer_right ul li{
+    display: inline-block;
+}
+.footer_right ul li i:last-child {
+    margin-left: 10px;
+}
+.footer_right li i {
+    width: 19px;
+    font-size: 19px;
+    color: #979797;
+}
+.footer_right li i:hover {
+    color: #000;
+}
+
 .footer_right h3 {
     padding-top: 25px;
     padding-bottom: 12px;
@@ -59,6 +74,7 @@ footer table tr:last-child td span {
     font-size: 11px;
     line-height: 1.2;
     letter-spacing: -1px;
+    padding-bottom: 5px;
 }
 .footer_bottom{
     width: 100%;
