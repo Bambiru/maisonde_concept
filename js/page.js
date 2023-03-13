@@ -27,11 +27,12 @@ $('.like').click(function(){
 
 
 
-var bigimg = document.querySelector('.bigimg_1');
+var bigimg = document.querySelector('.bigimg_1 img');
 var smallimg = document.querySelectorAll('.smallimg img');
 
 function chPic(){
     var newPic = this.src;
+    console.log(newPic);
     bigimg.setAttribute("src",newPic);
 
 }

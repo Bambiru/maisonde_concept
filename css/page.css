@@ -49,14 +49,10 @@
     height: 500px;
 }
 
-.sec1 .sec1_left .bigimg_1,
-.sec1 .sec1_left .bigimg_2,
-.sec1 .sec1_left .bigimg_3,
-.sec1 .sec1_left .bigimg_4 {
+.sec1 .sec1_left .bigimg_1{
     position: absolute;
     top: -70px;
     left: 50px;
-    display: none;
 }
 .sec1 .sec1_left .smallimg {
     position: absolute;

@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* 전체 폰트 나눠서 적용 */
+@font-face {
+    font-family: JS-Roboto;
+    src: url('../font/Roboto/Roboto-Regular.ttf'),
+        url('../font/Roboto/Roboto-Bold.ttf'),
+        url('../font/Roboto/Roboto-Medium.ttf');
+    unicode-range: U+0061-007A,
+    U+0041-005A,
+    U+0030-0039;
+}
+@font-face {
+    font-family: JS-nanumGothic;
+    src: url('../font/Nanum_Gothic/NanumGothic-Regular.ttf'),
+         url('../font/Nanum_Gothic/NanumGothic-Bold.tt+f');
+    unicode-range: U+AC00-D7A3,
+    U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+body {
+    font-family: JS-Roboto, JS-nanumGothic;
+}
+.w1240{
+    width: 1240px;
+    margin: 0 auto;
+}
+.w800{
+    width: 800px;
+    margin: 0 auto;
+}
+/* 체크된 input에 볼드주기 */
+input:checked+span{
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+}
+input{
+    margin-right: 3px;
+}
+div.line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+}
+.check1 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.check2 {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.check3 {
+    margin-top: 5px;
+    margin-right: 3px;
+}
+input {
+    width: auto;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+.basic_form {
+    padding: 0 20px;
+    font-size: 13px;
+    color: #555;
+}
+header {
+    text-align: center;
+    
+}
+header h1 {
+    margin: 60px 0;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: .03em;
+}
+.form_title {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.form_title p {
+    width: 150px;
+}
+.basic_title {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.basic_title h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.type1 {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    height: 34px;
+    line-height: 34px;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+.type1 p{
+    width: 150px;
+}
+.type1 input{
+    width: 141px;
+    height: 34px;
+}
+/* adress */
+.adress {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 20px;
+
+}
+.all_adress {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.adress p {
+    width: 150px;
+    margin-top: 50px;
+}
+.check3 {
+    margin-left: 5px;
+}
+
+.all_adress {
+    margin: 10px 0;
+}
+.all_adress input {
+    border: 1px solid #979797;
+}
+.all_adress .one {
+    width: 60px;
+    height: 30px;
+}
+.all_adress .two {
+    width: 65px;
+    height: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.all_adress .three {
+    width: 290px;
+    height: 30px;
+    margin-top: 5px;
+}
+.all_adress .four {
+    width: 290px;
+    height: 30px;
+    margin-top: 5px;
+}
+label[for="basic_address"]{
+    line-height: 35px;
+}
+label[for="specific_address"]{
+    line-height: 35px;
+}
+/* tel, cellphone */
+.tel, .cellPhone {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+.tel p, .cellPhone p {
+    width: 150px;
+    line-height: 25px;
+}
+select {
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+.tel select, .cellPhone select{
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    background: url(../images/icons/arrow_down.png) no-repeat 97% 50%/10px auto ;
+    
+}
+.tel select::-ms-expand,
+.cellPhone::-ms-expand {
+    display: none;
+}
+.tel input,.cellPhone input {
+    width: 60px;
+    height: 30px;
+}
+.tel span, .cellPhone span {
+    display: inline-block;
+    margin-top: 5px;
+}
+.add_title {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.add_title h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+/* gender */
+.gender{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+.gender p {
+    width: 150px;
+}
+.gender input[id='female']{
+    margin-left: 20px;
+}
+/* birth */
+.birth{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 15px 0;
+    padding-left: 20px;
+
+}
+.birth p {
+    width: 150px;
+    line-height: 34px;
+}
+.birth input[id='female']{
+    margin-left: 20px;
+}
+input[id="year"]{
+    width: 72px;
+    height: 34px;
+}
+input[id="month"]{
+    width: 42px;
+    height: 34px;
+    margin-left: 3px;
+}
+input[id="day"]{
+    width: 42px;
+    height: 34px;
+    margin-left: 3px;
+}
+label[for="year"],
+label[for="month"],
+label[for="day"]{
+    line-height: 34px;
+}
+.date {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+input[id="moon"]{
+    margin-left: 20px;
+}
+/* Terms */
+.all_terms {
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 50px;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+.all_terms input {
+    margin-left: 20px;
+}
+.all_terms input:checked +label {
+    color: #fff;
+}
+/* using_terms */
+.using_terms {
+}
+.using_terms .head_menu h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+.using_terms .head_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border: 1px solid #000;
+    line-height: 30px;
+    
+}
+.using_terms .head_menu input {
+    margin-left:503px;
+}
+.using_terms .head_menu input,
+.using_terms .head_menu label {
+    font-size: 11px;
+}
+.using_terms .term_1 {
+    width: 800px;
+    height: 130px;
+    overflow-y: scroll;
+    border: 1px solid #000;
+    border-top: none;
+    padding: 10px 10px;
+}
+.using_terms .head_menu input:checked +label {
+    font-weight: bold;
+}
+/* private_terms */
+.private_terms {
+}
+.private_terms .head_menu h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+.private_terms .head_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border: 1px solid #000;
+    border-top: none;
+    line-height: 30px;
+    
+}
+.private_terms .head_menu input {
+    margin-left:350px;
+}
+.private_terms .head_menu input,
+.private_terms .head_menu label {
+    font-size: 11px;
+}
+.private_terms .term_2 {
+    width: 800px;
+    height: 130px;
+    overflow-y: scroll;
+    border: 1px solid #000;
+    border-top: none;
+    padding: 10px 10px;
+}
+.private_terms .head_menu input:checked +label {
+    font-weight: bold;
+}
+/* private_terms_2 */
+.private_terms_2 {
+    border: 1px solid #000;
+    border-top: none;
+}
+.private_terms_2 h1{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 30px;
+}
+.private_terms_2 .private_allowing{
+    width: 750px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    padding-bottom: 30px;
+}
+
+.private_allowing {
+    font-size: 12px;
+    border: 1px solid #000;
+    
+}
+.private_allowing p {
+    position: relative;
+    left: -15px;
+}
+.private_allowing th {
+    font-weight: bold;
+    background-color: #f7da64;
+}
+table {
+    margin-top: 20px;
+}
+table, 
+th,
+td 
+{
+    text-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+table th,
+table td {
+    padding: 5px 5px;
+}
+.lh40 {
+    line-height: 40px;
+}
+.private_allowing2 {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+.private_terms_2 p {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.private_allowing2 label,
+.private_allowing2 input {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.private_allowing2 input:checked +label {
+    font-weight: bold;
+}
+.shopping_term {
+    padding: 15px 20px;
+    border: 1px solid #000;
+    border-top: none;
+}
+.shopping_term p {
+    /* 플롯 */
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+.shopping_term article {
+    /* 플롯 */
+    float: right;
+}
+.shopping_term article input:checked+label {
+    font-weight: bold;
+}
+/* shopping_term_2 */
+.shopping_term_2 {
+    font-size: 12px;
+    border: 1px solid #000;
+    border-top: none;
+    padding: 15px 10px;
+    line-height: 14px;
+}
+/* join */
+.join {
+    width: 255px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    position: relative;
+    left: 280px;
+    top: 60px;
+}
+button {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 125px;
+}

@@ -96,7 +96,7 @@ input[type="password"] {
     padding-left: 5px;
     margin-bottom: 14px;
 }
-input[type="button"] {
+input[type="submit"] {
     margin-bottom: 32px;
     font-size: 13px;
     letter-spacing: 3px;

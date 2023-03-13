@@ -20,7 +20,7 @@
 
 body {
     max-width: 1920px;
-    font-family: 'JS-Roboto', 'JS-nanumGothic' ;
+    font-family: "Roboto",Nanum gothic;
 }
 
 #wrap {
@@ -94,6 +94,7 @@ header {
 .gnb>ul>li>a{
     font-size: 15px;
     margin: 0 18px;
+    letter-spacing: 0.1px;
 
     /* 포지션 위치기준값 */
     position: relative;
@@ -101,7 +102,6 @@ header {
 .gnb>ul>li:first-child{
     margin-left: -18px;
 }
-
 .gnb>ul>li:first-child a span{
     color: #70C2B8;
     font-size: 16px;

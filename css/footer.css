@@ -27,7 +27,7 @@ footer table td{
     width: 830px;
     font-size: 13px;
     color: #555;
-    line-height: 2;
+    line-height: 2.5;
     font-weight: 400;
 }
 footer table span{
@@ -56,6 +56,7 @@ footer table tr:last-child td span {
 }
 .footer_right li i {
     width: 19px;
+    height: 19px;
     font-size: 19px;
     color: #979797;
 }
@@ -72,18 +73,18 @@ footer table tr:last-child td span {
 }
 .footer_right p {
     font-size: 11px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: -1px;
     padding-bottom: 5px;
+    color: #555555;
 }
 .footer_bottom{
     width: 100%;
-    margin-top: 52px;
+    margin-top: 45px;
     margin-bottom: 16px;    
     padding-top: 23px;
     border-top: 1px solid #E2E0DE;
     color: #979797;
-
 }
 .footer_bottom_left {
     /* 플롯 */
@@ -95,6 +96,9 @@ footer table tr:last-child td span {
 }
 .footer_bottom_left ul li a {
     font-size: 11px;
+}
+.footer_bottom_left ul li:first-child {
+    margin-left: 13px;
 }
 .footer_bottom_left ul li a:hover {
     color: #000;
@@ -112,4 +116,3 @@ footer table tr:last-child td span {
     /* 플롯 */
     float: right;
 }
-

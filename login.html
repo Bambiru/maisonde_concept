@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메종드컨셉 maison_de_concept</title>
+    <title>Maison de concept</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/favicon/fav32.png">
     <link rel="stylesheet" href="./css/reset.css">
     <!-- 페이지 CSS -->
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
     <!-- JS 플러그인 파일 -->
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-3.3.1.min.js"></script>
@@ -34,7 +34,7 @@
                 <h2>LOG-IN</h2>
             </div>
             <div class="login-wrapper">
-                <form method="post" action="서버의url" id="login-form">
+                <form method="get" action="./login.html" id="login-form">
                     <input type="text" name="userName" placeholder="아이디">
                     <input type="password" name="userPassword" placeholder="비밀번호">
                     <label for="remember-check">
@@ -48,7 +48,7 @@
                             </span>
                         </a>
                     </label>
-                    <input type="button" value="LOGIN" id="login">
+                    <input onkeyup="enterkey();" type="submit" value="LOGIN" id="login" >
                 </form>
                 <ul class="cf">
                     <li>간편하게 로그인/가입</li>
@@ -62,7 +62,7 @@
                     아직회원이아니세요? <br>
                     회원가입을 하시면 다양하고 특별한 혜택이 준비되어 있습니다.
                 </p>
-                <a href="#">
+                <a href="./join.html">
                     <div>회원가입</div>
                 </a>
             </div>

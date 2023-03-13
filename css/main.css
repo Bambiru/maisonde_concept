@@ -13,7 +13,7 @@
 }
 #tab input[type="radio"]+label {
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #e8e8e8;
     padding: 12px 20px 10px 20px;
     margin-left: 3px;
     position: relative;
@@ -44,7 +44,7 @@ h2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e8e8e8;
     padding: 12px 0;
 }
 .item_title h3 {
@@ -55,25 +55,26 @@ h2 {
 }
 
 .item_title~p {
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 900;
     padding-bottom: 12px;
 }
 .item_title+p {
-    padding-top: 12px;
+    padding-top: 13px;
 }
 .item_title~p+p {
+    color: #333;
     font-weight: 400;
     font-size: 11px;
 }
 .item_title+span {
     display: inline-block;
-    font-size: 12px;    
+    font-size: 11px;    
     margin: 11px 0 8px 0;
 }
 .item_title~p>span {
     font-size: 11px;
-    color: #555;
+    color: #333;
 }
 /* ///////////////////////////////////////////////////////////////////// */
 
@@ -136,7 +137,7 @@ h2 {
 
 .best_item {
     width: 392px;
-    padding: 40px 0 32px 32px;
+    padding: 40px 0 32px 0;
 }
 .best_item:nth-child(1),
 .best_item:nth-child(4) {
@@ -151,20 +152,28 @@ h2 {
 #mdpick {
     margin-top: 133px;
     padding-bottom: 170px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e8e8e8;
+}
+#mdpick .content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 #mdpick h2 {
-    padding-bottom: 43px;
-}
-.md_item .item_title {
-    width: 300px;
+    padding-bottom: 47px;
 }
 .md_item {
-    margin-right: 12px;
+    padding-top: 67px;    
 }
-#mdpick .item4,
-#mdpick .item8 {
-    margin-right: 0;
+.md_item:nth-child(1),
+.md_item:nth-child(2),
+.md_item:nth-child(3),
+.md_item:nth-child(4) {
+    padding-top: 0 !important;
+}
+
+.md_item .item_title {
+    width: 300px;
 }
 
 .md_item a>img {
@@ -174,6 +183,7 @@ h2 {
 /* //////////////////////////////////////////////////////// */
 /* 호버시 효과 */
 .md_item a{
+    /* 위치기준값 */
     position: relative;
 }
 .md_item a>.caption {
@@ -181,6 +191,7 @@ h2 {
     height: 300px;
     background-color: #E2E0DE;
     opacity: 0;
+    /* 포지션 */
     position: absolute;
     top: 0;
 }
@@ -201,11 +212,6 @@ h2 {
     opacity: 1;
 }
 /* //////////////////////////////////////////////////////// */
-
-#mdpick .content {
-    display: flex;
-    flex-flow: row wrap;
-}
 
 /* NEW PRODUCT */
 #new_product {
@@ -320,7 +326,7 @@ h2 {
 #review .imgs>div{
     width: 240px;
     height: 415px;
-    border: 1px solid #ccc;
+    border: 1px solid #e8e8e8;
     margin-bottom: 20px;
 }
 #review .re_title>img {
@@ -332,7 +338,7 @@ h2 {
 }
 .re_title {
     padding-bottom: 18px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e8e8e8;
 }
 .re_title img{
     width: 100px;
@@ -398,12 +404,19 @@ h2 {
 .number span {
     padding: 5px;
 }
+.number span.clickNum {
+    font-weight: 900;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
 .number span:hover {
     background-color: #555555;    
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 5px;
     font-weight: 700;
 }
+
 /* //////////////////////////////////////////////////////////////////////////////// */
     /* showroom & insta */
 #show_insta {
@@ -416,7 +429,7 @@ h2 {
     height: 433px;
     text-align: center;
     padding-right: 50px;
-    border-right: 1px solid #979797;
+    border-right: 1px solid #333;
 }
 #showroom .repair {
     font-size: 16px;
@@ -432,21 +445,21 @@ h2 {
 
 #insta{
     text-align: center;
-    transform: translateX(-10px);
 }
 #insta h2{
+    font-size: 24px;
     margin-bottom: 23px;
 }
 .insta_txt {
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 22px;
 }
 .insta_txt:hover {
-    color: #979797;
+    color: #555555;
 }
 .insta_imgs {
     width: 550px;
-    margin-left: 40px;
+    margin-left: 55px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -518,7 +531,7 @@ h2 {
     display: inline-block;
     width: 8px;
     height: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #e8e8e8;
     border-radius: 50%;
 }
 
