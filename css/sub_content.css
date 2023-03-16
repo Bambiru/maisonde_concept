@@ -8,14 +8,14 @@
     margin-bottom: 50px;
 }
 .interior_head h2 {
-    font: 26px "Roboto",'Nanum gothic';
+    font-size: 26px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 72px;
 }
 .interior_head .explanation {
     font: 11px "Roboto";
-    color: #555;
+    color: #333;
     /* 플롯 */
     float: left;
 }
@@ -48,6 +48,7 @@ select {
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: right 10% bottom 45%;
+    cursor: pointer;
 }
 
 /* 03. Interior Object */
@@ -70,26 +71,36 @@ select {
     padding-bottom: 60px;
 }
 .interior_object ul li {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 10px;
+}
+.interior_object ul li .middle_line {
+    font-size: 11px;
+    color: #333;
+    /* margin-bottom: 10px; */
+}
+.interior_object ul li p {
+    font-size: 11px;
+    color: #333;
+    /* margin-bottom: 10px; */
 }
 
 .interior_object ul li span {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 900;
 }
 .interior_object ul li span .sale {
-    font-size: 12px;
+    font-size: 11px;
     display: inline;
-    color: #605a55;
+    color: #333;
 }
- .interior_object ul li .best img,
- .interior_object ul li .event img{
+.interior_object ul li .best img,
+.interior_object ul li .event img{
     width: 37px;
     height: 22px;
- }
+}
 .interior_object ul li:nth-child(2) {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #e8e8e8;
     width: 392px;
     padding-bottom: 11px;
 }
@@ -110,49 +121,48 @@ select {
     position: relative;
 }
 /* a. 셀로판지 효과 */
-.interior_object ul li:first-child>a::before {
-    content: "";
-    display: block;
+.interior_object ul li:first-child div.before {
     width: 392px;
     height: 392px;
-    background-color: #ccc;
+    background-color: #E2E0DE;
     opacity: 0;
     /* 포지션 */
     position: absolute;
-    left: 0;
     top: 0;
-    z-index: 100;
-    transition: all 0.3s;
 }
+
 /* a-1. 셀로판지 호버시 효과 */
-.interior_object ul li:first-child a:hover::before {
-    opacity: 0.4;
+.interior_object ul li:first-child div.before:hover {
+    opacity: 0.7;
 }
 
 /* 정보 텍스트 CSS */
 
 /* b. 정보 텍스트 이동 효과 */
-.interior_object ul li .before a i{
+.interior_object ul li:first-child div.before i{
     /* 포지션 */
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 200;
-    opacity: 0;
-    font-size: 44px;
-    color: #fff;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-75%,-50%);
+    opacity: 0.5;
+    font-size: 24px;
+    padding-right: 20px;
+
 }
-.interior_object ul li .before a i:hover {
-    color: #000;    
+
+.interior_object ul li:first-child div.before i:hover {
+    opacity: 1;
 }
 
 /* b-1. 정보 텍스트 이동 효과 구현*/
 .interior_object ul li:first-child:hover .before>a>i{
-    opacity: 1;
-    transform: translate(210px,-210px);
+    
+    transform: translate(210px,-120px);
+    display: block;
 }
 .interior_object ul li:first-child:hover .before>a:nth-child(2)>i {
-    transform: translate(130px,-210px);
+    transform: translate(160px,-120px);
 }
 
 /* Dots */
@@ -167,6 +177,52 @@ select {
     border-radius: 50%;
     cursor: pointer;
 }
+
+
+
+/* 04. Page_number CSS */
+.page_number {
+    padding: 30px 0;
+    margin-top: 80px;
+}
+.page_number ul {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.page_number ul li{
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.page_number ul>li>a {
+    line-height: 32px;
+    font-size: 10px;
+    color: #979797;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+.page_number ul li:nth-child(3){
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+.page_number ul .array:hover
+{
+    background-color: #979797;
+    opacity: 0.5;
+    color: #fff;
+}
+.page_number ul li:hover{
+    background-color: #000;
+    border-radius: 5px;
+}
+.page_number ul li:hover a{
+    color: #fff;
+}
+
 .interior_object .moon_tray .dots:nth-child(1) {background-color: #c0c0c0;}
 .interior_object .moon_tray .dots:nth-child(2) {background-color: #363636;}
 .interior_object .ground_row .dots:nth-child(1) {background-color: #675852;}
@@ -198,45 +254,6 @@ select {
 .interior_object .coluna_vase_large .dots:nth-child(1) {background-color: #dddddd;}
 .interior_object .coluna_vase_large .dots:nth-child(2) {background-color: #444444;}
 
-/* 04. Page_number CSS */
-.page_number {
-    padding: 30px 0;
-    margin-top: 80px;
+.page_number{
+    margin-bottom: 40px;
 }
-.page_number ul {
-    /* 플렉스 */
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-.page_number ul li{
-    width: 32px;
-    height: 32px;
-    margin-right: 6px;
-    text-align: center;
-    cursor: pointer;
-}
-.page_number ul>li>a {
-    line-height: 32px;
-    font-size: 10px;
-    color: #7d7d7d;
-    font-weight: bold;
-    font-family: 'Roboto',sans-serif;
-}
-.page_number ul li:nth-child(3){
-    background-color: #f1f1f1;
-    border-radius: 5px;
-}
-.page_number ul .array:hover
-{
-    background-color: #ccc;
-    color: #fff;
-}
-.page_number ul li:hover{
-    background-color: #000;
-    border-radius: 5px;
-}
-.page_number ul li:hover a{
-    color: #fff;
-}
-

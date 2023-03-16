@@ -24,6 +24,7 @@
     <script src="./js/prefixfree.min.js"></script>
     <!-- include -->
     <script src="./js/include.js"></script>
+
 </head>
 <body>
     <div id="wrap" class="roboto">
@@ -35,19 +36,31 @@
                 <div class="sec1 ">
                     <div class="sec1_left">
                         <div class="bigimg">
-                            <ul>
+                            <ul class="big">
                                 <li class="bigimg_1"><img src="./images/Contents/item_1.jpg" alt="아이템1"></li>
+                                <!-- <div class="goods_arrow_notice">
+                                    <ul class="goods_arrow_noticeeeee">
+                                        <li>이전 상품</li>
+                                        <li>다음 상품</li>
+                                    </ul>
+                                </div> -->
+                                <div class="arrow_icon">
+                                    <ul class="arrow_iconnnn">
+                                        <li><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
                             </ul>
                             <div class="smallimg">
-                                <img src="./images/Contents/item_1.jpg" alt="아이템1" class="smallimg_1">
-                                <img src="./images/Contents/item_2.jpg" alt="아이템2" class="smallimg_2">
-                                <img src="./images/Contents/item_3.jpg" alt="아이템3" class="smallimg_3">
-                                <img src="./images/Contents/item_4.jpg" alt="아이템4" class="smallimg_4">
+                                <img src="./images/Contents/item_1.jpg" alt="item_1" class="smallimg_1">
+                                <img src="./images/Contents/item_2.jpg" alt="item_2" class="smallimg_2">
+                                <img src="./images/Contents/item_3.jpg" alt="item_3" class="smallimg_3">
+                                <img src="./images/Contents/item_4.jpg" alt="item_4" class="smallimg_4">
                             </div>
                         </div>
                     </div>
                     <div class="sec1_right">
-                        <h2><span>[LE FEU]</span>그라운드 로우 화이트</h2>
+                        <h2><span>[LE FEU]</span>그라운드 로우 화이트</h2>  
                         <h2>(바이오에탄올 난로)</h2>
                         <div class="line1"></div>
                         <div class="like">
@@ -55,7 +68,7 @@
                         </div>
                         <table class="table_one">
                             <tr>
-                                <th><strong>Brand</strong></th>
+                                <th><strong>Brand</strong></th> 
                                 <td><strong>Lefeu</strong></td>
                             </tr>
                             <tr>
@@ -101,8 +114,8 @@
                                     <select name="select_option2" id="select_option2" class="select_option2">
                                         <option value="옵션선택">- [필수] 옵션을 선택해 주세요 -</option>
                                         <optgroup label="-------------------"></optgroup>
-                                        <option value="서울경기">서울경기</option>
-                                        <option value="기타지역">기타지역 (전화문의)</option>
+                                        <option value="스모크오크">서울/경기</option>
+                                        <option value="솝트리티드">기타지역(전화문의)</option>
                                     </select>
                                 </td>
                             </tr>
@@ -166,14 +179,12 @@
                                     <a href="#">찜</a>
                                 </p>
                             </div>
-                            <div class="point">
-                                <p>
-                                    <span>[포인트 혜택]</span> <a href="#">카카오페이 결제 시 1% 기본 적립</a>
-                                </p>
-                                <p>
-                                    <a href="#"><img src="./images/arrow2.png" alt="꺽새2"></a>
-                                </p>
-                            </div>
+                            <!-- <ul class="point"> -->
+                                <marquee direction=up scrollamount="1">
+                                    <a href="https://pf.kakao.com/_xlkxhMK/96280739" title="카카오페이 결제 시 1% 기본 적립" class="checkout_link_notice" target="_blank" rel="noreferrer">
+                                        <a href="#"><span>[포인트 혜택]&nbsp;&nbsp;</span>카카오페이 결제 시 1% 기본 적립</a>
+                                    </a>
+                                </marquee>
                         </div>
                     </div>
                 </div>
@@ -259,7 +270,7 @@
                         <div class="line3"></div>
                         <li class="delivery_info">
                             <div class="top_delivery_info">
-                                <h2><img src="./images/icons/area.png" width="20" height="20" alt="배송정보이미지">배송정보</h2>
+                                <h2><i class="fa fa-globe" aria-hidden="true"></i>배송정보</h2>
                                 <p>
                                     배송 방법 : 택배 <br>
                                     배송 지역 : 전국지역 <br>
@@ -319,10 +330,6 @@
 
                     <!-- Tab Menu3_RELATED 시작 -->
                     <div class="list related">
-                        <div class="top_qna">
-                            <div class="left_qna_text">
-                            </div>
-                        </div>
                         <div class="line4"></div>
                         <div class="bottom_qna">
                             <p>게시물이 없습니다</p>
@@ -345,7 +352,7 @@
                             <div class="review_notice2">
                                 <div class="left_review_notice2">
                                     <p><span>상품평수</span> &nbsp; 0개</p>
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <input type="text"><i class="fa fa-search" aria-hidden="true"></i></input>
                                 </div>
                                 <div class="right_review_notice2">
                                     <select name="" id="" class="num">
