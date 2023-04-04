@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.simple .naver{
+    background-color: green;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.simple .naver img {
+    background-color: green;
+    padding-left: 16px;
+    width: 60px;
+}
+.simple .naver p {
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 700;
+}

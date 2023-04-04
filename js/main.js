@@ -4,7 +4,6 @@
         speed: 1000,
         pause: 1500,
         pager:true,
-        slideWidth:1920,
         stopAutoOnClick:true,
         auto:true,
         autoHover:true,

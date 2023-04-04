@@ -50,7 +50,7 @@
                     </div>
                     <!-- 02-1. Select -->
                     <div class="select">
-                        <select name="sorting_method" id="sorting_method">
+                        <select name="sorting_method" id="sorting_method" onchange="changeValue(this)">
                             <option value="" disabled selected>정렬방식</option>
                             <option value="new_product">신상품</option>
                             <option value="product_name">상품명</option>
@@ -67,7 +67,7 @@
             <!-- 03. Interior Object -->
             <section class="interior_object w1240">
                 <!-- 제품 01-->
-                <ul class="moon_tray">
+                <ul class="item1">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_1.jpg" alt="사블로 머그컵 그레이">
@@ -86,9 +86,9 @@
                 </ul>
                 <!-- /제품 01-->
                 <!-- 제품 02-->
-                <ul class="ground_row">
+                <ul class="item2">
                     <li>
-                        <a href="./detailpage.html">
+                        <a href="#">
                             <img src="./images/MAGAZINE2_image/item_2.jpg" alt="사블로 머그컵 세트 그레이">
                             <div class="before">
                                 <i class="fa fa-heart" aria-hidden="true"></i>
@@ -108,7 +108,7 @@
                 </ul>
                 <!-- /제품 02-->
                 <!-- 제품 03-->
-                <ul class="terrazzo_tray">
+                <ul class="item3">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_3.jpg" alt="스탠드미니 무드등">
@@ -137,7 +137,7 @@
                 </ul>
                 <!-- /제품 03-->
                 <!-- 제품 04-->
-                <ul class="glass_tealight_large">
+                <ul class="item4">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_4.jpg" alt="샴페인 테이블 램프">
@@ -160,7 +160,7 @@
                 </ul>
                 <!-- /제품 04-->
                 <!-- 제품 05-->
-                <ul class="karma_glass_medium">
+                <ul class="item5">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_5.jpg" alt="아울 1">
@@ -187,7 +187,7 @@
                 </ul>
                 <!-- /제품 05-->
                 <!-- 제품 06-->
-                <ul class="candle_set">
+                <ul class="item6">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_6.jpg" alt="벨링겐">
@@ -210,7 +210,7 @@
                 </ul>
                 <!-- /제품 06-->
                 <!-- 제품 07-->
-                <ul class="candle_xlarge">
+                <ul class="item7">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_7.jpg" alt="애니 무선 램프">
@@ -235,7 +235,7 @@
                 </ul>
                 <!-- /제품 07-->
                 <!-- 제품 08-->
-                <ul class="candle_large">
+                <ul class="item8">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_8.jpg" alt="애니 무선 램프">
@@ -262,7 +262,7 @@
                 </ul>
                 <!-- /제품 08-->
                 <!-- 제품 09-->
-                <ul class="candle_small">
+                <ul class="item9">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_9.jpg" alt="네시노 테이블 램프">
@@ -285,7 +285,7 @@
                 </ul>
                 <!-- /제품 09-->
                 <!-- 제품 10-->
-                <ul class="lito_lantern_medium">
+                <ul class="item10">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_10.jpg" alt="퓸 화이트 와인 글라스">
@@ -312,7 +312,7 @@
                 </ul>
                 <!-- /제품 10-->
                 <!-- 제품 11-->
-                <ul class="lito_lantern_small">
+                <ul class="item11">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_11.jpg" alt="와인 거치대 벽걸이형">
@@ -334,7 +334,7 @@
                 </ul>
                 <!-- /제품 11-->
                 <!-- 제품 12-->
-                <ul class="nydia_lantern_medium">
+                <ul class="item12">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_12.jpg" alt=" 피라레 와인렉">
@@ -364,7 +364,7 @@
                 </ul>
                 <!-- /제품 12-->
                 <!-- 제품 13-->
-                <ul class="nydia_lantern_small no_pb">
+                <ul class="item13 no_pb">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_13.jpg" alt=" 피라레 와인렉">
@@ -391,7 +391,7 @@
                 </ul>
                 <!-- /제품 13-->
                 <!-- 제품 14-->
-                <ul class="glass_tealight_small no_pb">
+                <ul class="item14 no_pb">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_14.jpg" alt="알린조 오일병 세트">
@@ -413,7 +413,7 @@
                 </ul>
                 <!-- /제품 14-->
                 <!-- 제품 15-->
-                <ul class="coluna_vase_large no_pb">
+                <ul class="item15 no_pb">
                     <li>
                         <a href="#">
                             <img src="./images/MAGAZINE2_image/item_15.jpg" alt="델라라 브레드 바스켓 라지">

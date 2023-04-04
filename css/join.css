@@ -185,7 +185,6 @@ select {
 .tel select, .cellPhone select{
     width: 60px;
     height: 30px;
-    appearance: none;
     background: url(../images/icons/arrow_down.png) no-repeat 97% 50%/10px auto ;
     
 }

@@ -1,41 +1,41 @@
 @charset "utf-8";
 
-.interior_object .terrazzo_tray .dots:nth-child(1) {background-color: #424242;}
-.interior_object .terrazzo_tray .dots:nth-child(2) {background-color: #8aa6a3;}
-.interior_object .terrazzo_tray .dots:nth-child(3) {background-color: #c20f0a;}
-.interior_object .terrazzo_tray .dots:nth-child(4) {background-color: #b39098;}
-.interior_object .terrazzo_tray .dots:nth-child(5) {background-color: #b9b4ac;}
-.interior_object .glass_tealight_large .dots:nth-child(1) {background-color: #000;}
-.interior_object .glass_tealight_large .dots:nth-child(2) {background-color: #fff;}
-.interior_object .karma_glass_medium .dots:nth-child(1) {background-color: #c2904d;}
-.interior_object .karma_glass_medium .dots:nth-child(2) {background-color: #eeeeee;}
-.interior_object .karma_glass_medium .dots:nth-child(3) {background-color: #e5926f;}
-.interior_object .candle_xlarge .dots:nth-child(1) {background-color: #ffffff;}
-.interior_object .candle_xlarge .dots:nth-child(2) {background-color: #9e9d9c;}
-.interior_object .candle_xlarge .dots:nth-child(3) {background-color: #4f575a;}
-.interior_object .candle_xlarge .dots:nth-child(4) {background-color: #baa196;}
-.interior_object .candle_large .dots:nth-child(1) {background-color: #9e9d9c;}
-.interior_object .candle_large .dots:nth-child(2) {background-color: #ffffff;}
-.interior_object .candle_large .dots:nth-child(3) {background-color: #4f575a;}
-.interior_object .candle_small .dots:nth-child(1) {background-color: #ff5a00;}
-.interior_object .candle_small .dots:nth-child(2) {background-color: #ffffff;}
-.interior_object .lito_lantern_medium .dots:nth-child(1) {background-color: #e8e8e8;}
-.interior_object .lito_lantern_medium .dots:nth-child(2) {background-color: #c8af98;}
-.interior_object .lito_lantern_medium .dots:nth-child(3) {background-color: #8d766e;}
-.interior_object .nydia_lantern_medium .dots:nth-child(1) {background-color: #c1c1c1;}
-.interior_object .nydia_lantern_medium .dots:nth-child(2) {background-color: #0b0b0b;}
-.interior_object .nydia_lantern_medium .dots:nth-child(3) {background-color: #f5f0f0;}
+.interior_object .item3 .dots:nth-child(1) {background-color: #424242;}
+.interior_object .item3 .dots:nth-child(2) {background-color: #8aa6a3;}
+.interior_object .item3 .dots:nth-child(3) {background-color: #c20f0a;}
+.interior_object .item3 .dots:nth-child(4) {background-color: #b39098;}
+.interior_object .item3 .dots:nth-child(5) {background-color: #b9b4ac;}
+.interior_object .item4 .dots:nth-child(1) {background-color: #000;}
+.interior_object .item4 .dots:nth-child(2) {background-color: #fff;}
+.interior_object .item5 .dots:nth-child(1) {background-color: #c2904d;}
+.interior_object .item5 .dots:nth-child(2) {background-color: #eeeeee;}
+.interior_object .item5 .dots:nth-child(3) {background-color: #e5926f;}
+.interior_object .item7 .dots:nth-child(1) {background-color: #ffffff;}
+.interior_object .item7 .dots:nth-child(2) {background-color: #9e9d9c;}
+.interior_object .item7 .dots:nth-child(3) {background-color: #4f575a;}
+.interior_object .item7 .dots:nth-child(4) {background-color: #baa196;}
+.interior_object .item8 .dots:nth-child(1) {background-color: #9e9d9c;}
+.interior_object .item8 .dots:nth-child(2) {background-color: #ffffff;}
+.interior_object .item8 .dots:nth-child(3) {background-color: #4f575a;}
+.interior_object .item9 .dots:nth-child(1) {background-color: #ff5a00;}
+.interior_object .item9 .dots:nth-child(2) {background-color: #ffffff;}
+.interior_object .item10 .dots:nth-child(1) {background-color: #e8e8e8;}
+.interior_object .item10 .dots:nth-child(2) {background-color: #c8af98;}
+.interior_object .item10 .dots:nth-child(3) {background-color: #8d766e;}
+.interior_object .item12 .dots:nth-child(1) {background-color: #c1c1c1;}
+.interior_object .item12 .dots:nth-child(2) {background-color: #0b0b0b;}
+.interior_object .item12 .dots:nth-child(3) {background-color: #f5f0f0;}
 
-.interior_object .nydia_lantern_small .dots:nth-child(1) {background-color: #c0c0c0;}
-.interior_object .nydia_lantern_small .dots:nth-child(2) {background-color: #000000;}
-.interior_object .nydia_lantern_small .dots:nth-child(3) {background-color: #edcece ;}
+.interior_object .item13 .dots:nth-child(1) {background-color: #c0c0c0;}
+.interior_object .item13 .dots:nth-child(2) {background-color: #000000;}
+.interior_object .item13 .dots:nth-child(3) {background-color: #edcece ;}
 
-.interior_object .coluna_vase_large .dots:nth-child(1) {background-color: #ccc9c7;}
-.interior_object .coluna_vase_large .dots:nth-child(2) {background-color: #e1dcd2;}
-.interior_object .coluna_vase_large .dots:nth-child(3) {background-color: #b16d70;}
-.interior_object .coluna_vase_large .dots:nth-child(4) {background-color: #d6b9a7;}
+.interior_object .item15 .dots:nth-child(1) {background-color: #ccc9c7;}
+.interior_object .item15 .dots:nth-child(2) {background-color: #e1dcd2;}
+.interior_object .item15 .dots:nth-child(3) {background-color: #b16d70;}
+.interior_object .item15 .dots:nth-child(4) {background-color: #d6b9a7;}
 
-.nydia_lantern_medium .hit img {
+.item12 .hit img {
     width: 37px;
     height: 22px;
 }
@@ -44,8 +44,4 @@
 }
 .interior_head {
     margin-top: 110px;
-}
-
-.page_number {
-    margin-bottom: 40px;
 }

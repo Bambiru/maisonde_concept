@@ -55,7 +55,7 @@
                     </div>
                     <!-- 02-1. Select -->
                     <div class="select">
-                        <select name="sorting_method" id="sorting_method">
+                        <select name="sorting_method" id="sorting_method" onchange="changeValue(this)">
                             <option value="" disabled selected>정렬방식</option>
                             <option value="new_product">신상품</option>
                             <option value="product_name">상품명</option>
@@ -72,7 +72,7 @@
             <!-- 03. Interior Object -->
             <section class="interior_object w1240">
                 <!-- 제품 01-->
-                <ul class="moon_tray">
+                <ul class="item1">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_1.jpg" alt="문 트레이 라지">
@@ -98,7 +98,7 @@
                 </ul>
                 <!-- /제품 01-->
                 <!-- 제품 02-->
-                <ul class="ground_row">
+                <ul class="item2">
                     <li>
                         <a href="./detailpage.html">
                             <img src="./images/Sub/Submenu.2page/item1_2.jpg" alt="그라운드 로우 화이트">
@@ -128,7 +128,7 @@
                 </ul>
                 <!-- /제품 02-->
                 <!-- 제품 03-->
-                <ul class="terrazzo_tray">
+                <ul class="item3">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_3.jpg" alt="테라조 트레이">
@@ -154,7 +154,7 @@
                 </ul>
                 <!-- /제품 03-->
                 <!-- 제품 04-->
-                <ul class="glass_tealight_large">
+                <ul class="item4">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item4_1.png" alt=" 글라스 티라이트 홀더 라지">
@@ -182,7 +182,7 @@
                 </ul>
                 <!-- /제품 04-->
                 <!-- 제품 05-->
-                <ul class="karma_glass_medium">
+                <ul class="item5">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_5.jpg" alt="까르마 글라스 티라이트 홀더 미디움">
@@ -211,7 +211,7 @@
                 </ul>
                 <!-- /제품 05-->
                 <!-- 제품 06-->
-                <ul class="candle_set">
+                <ul class="item6">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_6.jpg" alt="캔들 세트">
@@ -239,7 +239,7 @@
                 </ul>
                 <!-- /제품 06-->
                 <!-- 제품 07-->
-                <ul class="candle_xlarge">
+                <ul class="item7">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_7.jpg" alt="캔들 엑스라지">
@@ -261,7 +261,7 @@
                 </ul>
                 <!-- /제품 07-->
                 <!-- 제품 08-->
-                <ul class="candle_large">
+                <ul class="item8">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_8.jpg" alt="캔들 라지">
@@ -286,7 +286,7 @@
                 </ul>
                 <!-- /제품 08-->
                 <!-- 제품 09-->
-                <ul class="candle_small">
+                <ul class="item9">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_9.jpg" alt="캔들 스몰">
@@ -308,7 +308,7 @@
                 </ul>
                 <!-- /제품 09-->
                 <!-- 제품 10-->
-                <ul class="lito_lantern_medium">
+                <ul class="item10">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_10.jpg" alt="리토 랜턴 미듐">
@@ -334,7 +334,7 @@
                 </ul>
                 <!-- /제품 10-->
                 <!-- 제품 11-->
-                <ul class="lito_lantern_small">
+                <ul class="item11">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_11.jpg" alt="리토 랜턴 스몰">
@@ -361,7 +361,7 @@
                 </ul>
                 <!-- /제품 11-->
                 <!-- 제품 12-->
-                <ul class="nydia_lantern_medium">
+                <ul class="item12">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_12.jpg" alt="니디아 랜턴 미듐">
@@ -388,7 +388,7 @@
                 </ul>
                 <!-- /제품 12-->
                 <!-- 제품 13-->
-                <ul class="nydia_lantern_small no_pb">
+                <ul class="item13 no_pb">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_13.jpg" alt="니디아 랜턴 스몰">
@@ -415,7 +415,7 @@
                 </ul>
                 <!-- /제품 13-->
                 <!-- 제품 14-->
-                <ul class="glass_tealight_small no_pb">
+                <ul class="item14 no_pb">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_14.png" alt="글라스 티라이트 홀더">
@@ -443,7 +443,7 @@
                 </ul>
                 <!-- /제품 14-->
                 <!-- 제품 15-->
-                <ul class="coluna_vase_large no_pb">
+                <ul class="item15 no_pb">
                     <li>
                         <a href="#">
                             <img src="./images/Sub/Submenu.2page/item1_15.jpg" alt="콜루나 꽃병 라지">

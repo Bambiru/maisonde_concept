@@ -2,7 +2,7 @@
 
 
 .slide_gallery img {
-    width: 100%;
+    width: 1920px;
     height: 100%;
 }
 
@@ -53,8 +53,13 @@ section h2 {
     font-weight: 700;
     cursor: pointer;
 }
+.item_title h3 .gap {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 18px 0;
+}
 .item_title~p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 900;
     padding-bottom: 12px;
 }
@@ -150,6 +155,7 @@ section h2 {
 #banner {
     cursor: pointer;
 }
+
 /* MD PICK */
 #mdpick {
     margin-top: 133px;
@@ -274,6 +280,7 @@ section h2 {
 /* /////////////////////////////////////////////////////////// */
 /* BRAND */
 #brand {
+    margin: 0 auto;
     height: 684px;
     background: #E2E0DE;
 }
