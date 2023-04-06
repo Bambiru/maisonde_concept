@@ -35,7 +35,7 @@
     <!-- 로그인단 메인 -->
     <main role="main">
         <div class="title">
-            <a class="arrow" href="#"><img src="./images/login/btn_back.gif" alt="arrow"></a>
+            <a class="arrow" href="#"><i class="fas fa-angle-left"></i></a>
             <h2>로그인</h2>
         </div>
         <div class="keybord">
@@ -48,16 +48,16 @@
                 <img src="./images/login/ico_toggle_arrow_down.png" alt="down">
             </div>
         </div>
-        <form action="post">
+        <form action="http://localhost:8089/Chap02ServletDataForm/input" method="get">
             <fieldset>
                 <legend class="blind">로그인</legend>
                 <div class="login_info">
                     <input type="email" id="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*" placeholder="아이디" title="이메일 양식">
-                    <input type="password" id="pw" placeholder="패스워드">
+                    <input type="password" id="pw" name="pw" placeholder="패스워드">
                 </div>
                 <div class="save">
                     <div class="loginCH">
-                        <input type="checkbox" name="login_check" id="login_check">
+                        <input type="checkbox" name="logincheck" id="login_check">
                         <label for="login_check">로그인 상태 유지</label>
                     </div>
                     <div class="saveCH">
@@ -72,7 +72,7 @@
                 <input type="submit" value="로그인">
             </fieldset>
             <div class="simple">
-                <h3>간편하게 로그인 가입</h3>
+                <h3>- 간편하게 로그인/가입 -</h3>
                 <a href="#" class="naver">
                     <img src="./images/login/ico_btn_naver.png" alt="naver_icon">          
                     <p>네이버로 시작하기</p>
