@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!-- 해당 CSS -->
     <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/login.css">
     <!-- 제이쿼리 코어파일 -->
     <script src="./js/jquery-1.12.4.min.js"></script>
@@ -29,9 +30,35 @@
     <script src="./js/jquery.scrollTo.min.js"></script>
 </head>
 <body>
+    <!-- header -->
     <header>
-
+        <aside>
+            <!-- 상단GNB -->
+            <nav>
+                <ul class="login">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">CART(0)</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">MYPAGE</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div id="header">
+            <h1><a href="#"><img src="./images/logo.png" alt="logo"></a></h1>
+            <div class="icons">  
+                <div id="search">
+                    <i class="fas fa-search"></i>
+                    <div class="hide_search">
+                        <input type="search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
+    <!-- /header -->
     <!-- 로그인단 메인 -->
     <main role="main">
         <div class="title">
@@ -82,18 +109,20 @@
                     <p>카카오로 시작하기</p>
                 </a>
             </div>
-            <a href="#">
-                <i class="far fa-address-card"></i>
-                <p>아이디찾기</p>
-            </a>
-            <a href="#">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <p>비밀번호찾기</p>
-            </a>
-            <a href="#">
-                <i class="fa fa-user-plus" aria-hidden="true"></i>
-                <p>회원가입</p>
-            </a>
+            <div class="id_pw_search">
+                <a href="#">
+                    <i class="far fa-address-card"></i>
+                    <p>아이디찾기</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p>비밀번호찾기</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <p>회원가입</p>
+                </a>
+            </div>
         </form>
     </main>
     <footer>

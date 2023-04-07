@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: JS-Roboto;
+    src: url('../font/Roboto/Roboto-Regular.ttf'),
+        url('../font/Roboto/Roboto-Bold.ttf'),
+        url('../font/Roboto/Roboto-Medium.ttf');
+    unicode-range: U+0061-007A,
+    U+0041-005A,
+    U+0030-0039;
+}
+@font-face {
+    font-family: JS-nanumGothic;
+    src: url('../font/Nanum_Gothic/NanumGothic-Regular.ttf'),
+        url('../font/Nanum_Gothic/NanumGothic-Bold.ttf');
+    unicode-range: U+AC00-D7A3,
+    U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+body {
+    margin: 0 16px;
+    font-family: "Roboto",Nanum gothic;
+}
+
+header {
+    margin-bottom: 12px;
+}
+
+.login {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    padding:10px;
+    background-color: #f8f8f8;
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+
+#search{
+    /* 위치기준값 */
+    position: relative;
+    margin: 5px 0;
+}
+#search .hide_search {
+    width: 100%;
+    /* 포지션 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    
+
+}
+#search .hide_search input[type="search"]{
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    height: 2px;
+}
+
+
+/* #header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#header .icons {
+    font-size: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+#header .icons i:last-child{
+    padding-left: 16px;
+} */

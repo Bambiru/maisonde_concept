@@ -86,7 +86,7 @@ select {
 }
 
 .interior_object ul li span {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 900;
 }
 .interior_object ul li span .sale {
@@ -253,3 +253,12 @@ select {
     color: #fff;
 }
 
+
+
+
+
+
+/* 위계질서 */
+.lineheight{
+    margin: 20px 0;
+}

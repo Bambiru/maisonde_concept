@@ -53,7 +53,7 @@ header {
 .login ul li{
     margin-right: 18px;
     margin-top: 18px;
-    font-size: 11px;
+    font-size: 13px;
 }
 .login ul li:last-child {
     cursor: pointer;
@@ -64,6 +64,8 @@ header {
     position: relative;
     top: 10px;
 }
+
+
 .login form {
     font-size: 11px;
     margin-top: 15px;
@@ -78,6 +80,8 @@ header {
 .login form button i {
     cursor: pointer;
 }
+
+
 
 .logo img{
     cursor: pointer;
