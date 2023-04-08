@@ -16,10 +16,12 @@
     unicode-range: U+AC00-D7A3,
     U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
-
 body {
-    margin: 0 16px;
     font-family: "Roboto",Nanum gothic;
+}
+
+#wrap {
+    padding: 0 16px;
 }
 
 header {
@@ -36,41 +38,128 @@ header {
     margin-bottom: 12px;
 }
 
-
-#search{
-    /* 위치기준값 */
-    position: relative;
-    margin: 5px 0;
+/* header_title */
+#header_title {
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
 }
-#search .hide_search {
-    width: 100%;
+#header_title .icons{
+    /* 플렉스 */
+    display: flex;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#header_title .icons #ham {
+    padding-left: 8px;
+    cursor: pointer;
+}
+#header_title .icons #search_icon {
+    margin-right: 4px; 
+    cursor: pointer;
+}
+
+
+
+/* search icon 클릭 시, 나타나는 검색창*/
+.hide_search {
+    /* 플렉스 */
+    display: flex;
+    padding: 8px 0;
+}
+.hide_search input[type="search"]{
+    height: 28px;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+.hide_search i {
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+
+/* 햄버거메뉴 클릭시 */
+.hide_menu {
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    padding: 32px 32px 0 30px;
     /* 포지션 */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 999999;
+    transform: translateX(-300px);
+    transition: all 0.5s;
+}
+
+.hide_menu h2 {
+    margin-bottom: 48px;
+}
+.hide_menu h2 img {
+    width: 200px;
+}
+
+.hide_lnb ul {
+    /* 플렉스 */
     display: flex;
     flex-flow: row nowrap;
-    
-
+    margin-bottom: 24px;
 }
-#search .hide_search input[type="search"]{
-    background-color: #f8f8f8;
-    border-radius: 4px;
-    height: 2px;
+.hide_lnb ul li {
+    padding-right: 8px;
+    font-size: 12px;
+}
+.hide_lnb ul li::after {
+    content: "/";
+    display: inline-block;
+    padding-left: 8px;
+    color: #ccc;
+}
+.hide_lnb ul li:last-child::after {
+    content: "";
 }
 
-
-/* #header{
+/* hide_gnb */
+.hide_gnb{
+    margin: 60px 0 65px;
+}
+.hide_gnb>ul>li {
+    font-size: 16px;
+    line-height: 2;
+}
+.hide_gnb>ul>li .sub_li{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-#header .icons {
-    font-size: 20px;
-    align-self: center;
-    cursor: pointer;
+.hide_gnb>ul>li .sub_li i {
+    margin-top: 6px;
+    color: #ccc;
 }
-#header .icons i:last-child{
-    padding-left: 16px;
-} */
+.hide_snb {
+    font-size: 12px;
+    padding: 20px 0;
+    display: none;
+}
+#hide_copy {
+    font-size: 12px;
+    color: #444;
+}
+
+
+
+/* 셀로판지효과주기 */
+#wrap{
+    position: relative;
+}
+#wrap.hide::before{
+    content: "";
+    display:block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+}
+/* /셀로판지효과주기 */

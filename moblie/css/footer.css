@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+footer {
+    font-size: 12px;
+    margin-top: 40px;
+    text-shadow: 0px 2px 1px #ccc;
+}
+
+#footer_top{
+    padding: 24px 0;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+#footer_top h3 {
+    font-weight: 700;
+}
+#footer_top .sns {
+    font-size: 16px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+#footer_top .sns a{
+    padding-right: 12px;
+}
+#footer_top .sns a:hover {
+    color: #ccc;
+    text-shadow: none;
+}
+
+.footer_contents {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+/* .footer_contents_left */
+.footer_contents_left {
+    width: 50%;
+    /* 플롯 */
+    float: left;
+}
+.footer_contents_left p {
+    line-height: 1.5;
+}
+.footer_contents_left p:nth-child(2){
+    margin: 12px 0;
+    font-weight: 600;
+}
+.footer_contents_left .off {
+    color: red;
+}
+
+/* footer_contents_right */
+.footer_contents_right {
+    width: 50%;
+    /* 플롯 */
+    float: left;
+}
+.footer_contents_right p:nth-child(2) {
+    margin: 12px 0;
+    font-weight: 600;
+}
+.footer_contents_right p span {
+    color: #93867f;
+}
+
+/* customer_service */
+#customer_service{
+    width: 100%;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+#customer_service #connection,
+#customer_service #inquire {
+    width: 48%;
+    padding: 16px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d9d9d9;
+}
+#customer_service #connection p,
+#customer_service #inquire p {
+    font-weight: 800;
+}
+
+/* footer fnb */
+#fnb ul{
+    /* 플렉스 */
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+#fnb ul li {
+    padding-right: 16px;
+    color: #9A9DA5;
+}
+#fnb ul li:hover {
+    color: #000;
+}
+
+/* footer_bottom */
+#footer_bottom {
+    font-size: 12px;
+    padding:16px 0 24px 0;
+    text-align: center;
+    line-height: 1.8;
+    color: #9A9DA5;
+    letter-spacing: 1.2px;
+}
+#footer_bottom #copyright{
+    margin-top: 9px;
+    font-weight: 600;
+}

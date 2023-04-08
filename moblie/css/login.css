@@ -24,16 +24,12 @@
     justify-content: end;
     margin: 16px 0 20px;
 }
-.keybord .kr,
-.keybord .special {
+.keybord .kr {
     display: flex;
     font-size: 12px;
+    cursor: pointer;
 }
-.keybord .special{
-    margin-left: 24px;
-}
-.keybord .kr img,
-.keybord .special img {
+.keybord .kr img{
     margin-left: 8px;
     width: 12px;
     height: 12px;

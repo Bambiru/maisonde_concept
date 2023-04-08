@@ -10,8 +10,7 @@
     <title>메종드컨셉 maison_de_concept</title>
 
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/9036dd3e37.js" crossorigin="anonymous"></script>
     <!-- favorite Icon 설정하기-->
     <link rel="shortcut icon" href="./images/favicon/fav32.png">
     <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png">
@@ -21,6 +20,7 @@
     <link rel="stylesheet" href="./css/display_none_scrollbar.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- 제이쿼리 코어파일 -->
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-3.3.1.min.js"></script>
@@ -28,105 +28,88 @@
     <script src="./js/prefixfree.min.js"></script>
     <!-- 스크롤바JS -->
     <script src="./js/jquery.scrollTo.min.js"></script>
+    <script src="./js/include.js"></script>
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <aside>
-            <!-- 상단GNB -->
-            <nav>
-                <ul class="login">
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">JOIN</a></li>
-                    <li><a href="#">CART(0)</a></li>
-                    <li><a href="#">ORDER</a></li>
-                    <li><a href="#">MYPAGE</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <div id="header">
-            <h1><a href="#"><img src="./images/logo.png" alt="logo"></a></h1>
-            <div class="icons">  
-                <div id="search">
-                    <i class="fas fa-search"></i>
-                    <div class="hide_search">
-                        <input type="search">
-                        <i class="fas fa-search"></i>
-                    </div>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+        
+        </header>
+        <!-- /header -->
+    
+        <!-- 로그인단 메인 -->
+        <main role="main">
+            <div class="title">
+                <a class="arrow" href="#"><i class="fas fa-angle-left"></i></a>
+                <h2>로그인</h2>
+            </div>
+            <div class="keybord">
+                <div class="kr">
+                    <p>가상키보드</p>
+                    <img src="./images/login/ico_toggle_arrow_down.png" alt="down">
                 </div>
-                <i class="fas fa-bars"></i>
             </div>
-        </div>
-    </header>
-    <!-- /header -->
-    <!-- 로그인단 메인 -->
-    <main role="main">
-        <div class="title">
-            <a class="arrow" href="#"><i class="fas fa-angle-left"></i></a>
-            <h2>로그인</h2>
-        </div>
-        <div class="keybord">
-            <div class="kr">
-                <p>한글자판</p>
-                <img src="./images/login/ico_toggle_arrow_down.png" alt="down">
-            </div>
-            <div class="special">
-                <p>특수문자</p>
-                <img src="./images/login/ico_toggle_arrow_down.png" alt="down">
-            </div>
-        </div>
-        <form action="http://localhost:8089/Chap02ServletDataForm/input" method="get">
-            <fieldset>
-                <legend class="blind">로그인</legend>
-                <div class="login_info">
-                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*" placeholder="아이디" title="이메일 양식">
-                    <input type="password" id="pw" name="pw" placeholder="패스워드">
-                </div>
-                <div class="save">
-                    <div class="loginCH">
-                        <input type="checkbox" name="logincheck" id="login_check">
-                        <label for="login_check">로그인 상태 유지</label>
+            <form action="http://localhost:8089/Chap02ServletDataForm/input" method="get">
+                <fieldset>
+                    <legend class="blind">로그인</legend>
+                    <div class="login_info">
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*" placeholder="아이디" title="이메일 양식">
+                        <input type="password" id="pw" name="pw" placeholder="패스워드">
                     </div>
-                    <div class="saveCH">
-                        <input type="checkbox" name="id_save" id="id_save">
-                        <label for="id_save">아이디 저장</label>
+                    <div class="save">
+                        <div class="loginCH">
+                            <input type="checkbox" name="logincheck" id="login_check">
+                            <label for="login_check">로그인 상태 유지</label>
+                        </div>
+                        <div class="saveCH">
+                            <input type="checkbox" name="id_save" id="id_save">
+                            <label for="id_save">아이디 저장</label>
+                        </div>
+                        <div class="security">
+                            <i class="fas fa-toggle-on"></i>
+                            <p>보안접속</p>
+                        </div>  
                     </div>
-                    <div class="security">
-                        <i class="fas fa-toggle-on"></i>
-                        <p>보안접속</p>
-                    </div>  
+                    <input type="submit" value="로그인">
+                </fieldset>
+                <div class="simple">
+                    <h3>- 간편하게 로그인/가입 -</h3>
+                    <a href="#" class="naver">
+                        <img src="./images/login/ico_btn_naver.png" alt="naver_icon">          
+                        <p>네이버로 시작하기</p>
+                    </a>
+                    <a href="#" class="kakao">
+                        <img src="./images/login/ico_btn_kakao.png" alt="kakao_icon">
+                        <p>카카오로 시작하기</p>
+                    </a>
                 </div>
-                <input type="submit" value="로그인">
-            </fieldset>
-            <div class="simple">
-                <h3>- 간편하게 로그인/가입 -</h3>
-                <a href="#" class="naver">
-                    <img src="./images/login/ico_btn_naver.png" alt="naver_icon">          
-                    <p>네이버로 시작하기</p>
-                </a>
-                <a href="#" class="kakao">
-                    <img src="./images/login/ico_btn_kakao.png" alt="kakao_icon">
-                    <p>카카오로 시작하기</p>
-                </a>
-            </div>
-            <div class="id_pw_search">
-                <a href="#">
-                    <i class="far fa-address-card"></i>
-                    <p>아이디찾기</p>
-                </a>
-                <a href="#">
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                    <p>비밀번호찾기</p>
-                </a>
-                <a href="#">
-                    <i class="fa fa-user-plus" aria-hidden="true"></i>
-                    <p>회원가입</p>
-                </a>
-            </div>
-        </form>
-    </main>
-    <footer>
+                <div class="id_pw_search">
+                    <a href="#">
+                        <i class="far fa-address-card"></i>
+                        <p>아이디찾기</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <p>비밀번호찾기</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        <p>회원가입</p>
+                    </a>
+                </div>
+            </form>
+        </main>
+        <!-- footer -->
+        <footer>
 
-    </footer>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- 햄버거 메뉴 클릭시 -->
+    <aside>
+
+    </aside>
+    <!-- /햄버거 메뉴 클릭시 -->
 </body>
 </html>
