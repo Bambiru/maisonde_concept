@@ -20,19 +20,20 @@ body {
     font-family: "Roboto",Nanum gothic;
 }
 
-#wrap {
-    padding: 0 16px;
-}
+/* #wrap { */
+    /* padding: 0 16px; */
+/* } */
 
 header {
     margin-bottom: 12px;
+
 }
 
 .login {
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-between;
-    padding:10px;
+    padding: 10px 16px;
     background-color: #f8f8f8;
     font-size: 10px;
     margin-bottom: 12px;
@@ -43,6 +44,7 @@ header {
     /* 플렉스 */
     display: flex;
     justify-content: space-between;
+    padding: 0 16px;
 }
 #header_title .icons{
     /* 플렉스 */

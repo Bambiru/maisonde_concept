@@ -39,25 +39,154 @@
         <!-- /header -->
         <!-- 회원가입단 -->
         <main role="main">
-            <h2>회원가입</h2>
+            <div class="title">
+                <a class="arrow" href="#"><i class="fas fa-angle-left"></i></a>
+                <h2>회원가입</h2>
+            </div>
             <form action="" method="post">
                 <fieldset>
                     <legend class="blind">회원가입</legend>
                     <section class="member">
                         <h3>회원인증</h3>
-                        <input type="radio" name="individual" id="individual" checked>
-                        <label for="individual">개인회원</label>
+                        <div class="form_contents">
+                            <input type="radio" name="individual" id="individual" checked>
+                            <label for="individual">개인회원</label>
+                        </div>
                     </section>
                     <section class="basic_info">
-                        <div>
-                            <h3>기본정보</h3>
+                        <h3>기본정보
                             <p><img src="./images/star.png" alt="essential">필수</p>
+                        </h3>
+                        <div class="form_contents">
+                            <!-- 아이디 -->
+                            <div class="join_info">
+                                <p>아이디<img src="./images/star.png" alt="essential"></p>
+                                <input type="text" name="user_id" id="user_id" minlength="5" required autocomplete="off">
+                                <input type="button" value="중복확인">
+                            </div>
+                            <!-- 비밀번호 -->
+                            <div class="join_info">
+                                <p>비밀번호<img src="./images/star.png" alt="essential"></p>
+                                <input type="password" name="user_pw" id="user_pw" minlength="5" required>
+                            </div>
+                            <!-- 비밀번호확인 -->
+                            <div class="join_info">
+                                <p>비밀번호 확인<img src="./images/star.png" alt="essential"></p>
+                                <input type="password" name="user_pw" id="user_pw" minlength="5" required>
+                            </div>
+                            <!-- 이름 -->
+                            <div class="join_info">
+                                <p>이름<img src="./images/star.png" alt="essential"></p>
+                                <input type="text" name="user_name" id="user_name" required>
+                            </div>
+                            <!-- 주소 -->
+                            <div class="join_info">
+                                <p>주소<img src="./images/star.png" alt="essential"></p>
+                                <div class="house_number">
+                                    <input type="text" name="houseNum">
+                                    <input type="button" value="우편번호">
+                                </div>
+                                <input type="text" name="simple_address" id="simple_address" required>
+                                <input type="text" name="detail_address" id="detail_address" required>
+                            </div>
+                            <!--     전화번호 -->
+                            <div class="join_info">
+                                <p>일반전화</p>
+                                <select>
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                    <option value="033">033</option>
+                                    <option value="041">041</option>
+                                    <option value="042">042</option>
+                                    <option value="043">043</option>
+                                    <option value="044">044</option>
+                                    <option value="051">051</option>
+                                    <option value="052">052</option>
+                                    <option value="053">053</option>
+                                    <option value="054">054</option>
+                                    <option value="055">055</option>
+                                    <option value="061">061</option>
+                                    <option value="062">062</option>
+                                    <option value="063">063</option>
+                                    <option value="064">064</option>
+                                    <option value="0502">0502</option>
+                                    <option value="0503">0503</option>
+                                    <option value="0504">0504</option>
+                                    <option value="0505">0505</option>
+                                    <option value="0506">0506</option>
+                                    <option value="0507">0507</option>
+                                    <option value="070">070</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                    <option value="0508">0508</option>
+                                </select>
+                                -
+                                <input type="number" name="tel1" id="tel1" minlength="3" maxlength="4" required>
+                                -
+                                <input type="number" name="tel2" id="tel2" minlength="3" maxlength="4" required>
+                            </div>
+                            <!-- 휴대전화 -->
+                            <div class="join_info">
+                                <p>휴대전화<img src="./images/star.png" alt="essential"></p>
+                                <select>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                -
+                                <input type="number" name="tel1" id="tel1" minlength="3" maxlength="4" required>
+                                -
+                                <input type="number" name="tel2" id="tel2" minlength="3" maxlength="4" required>
+                            </div>
+                            <!-- 이메일 -->
+                            <div class="join_info">
+                                <p>아이디<img src="./images/star.png" alt="essential"></p>
+                                <input type="email" name="user_email" id="user_email">
+                                <input type="button" value="중복확인">
+                            </div>
                         </div>
-                        <label for="user_id">아이디<img src="./images/star.png" alt="essential"></label>
-                        <input type="text" name="user_id" id="user_id" minlength="5">
-                        <button>중복확인</button>
-
                     </section>
+                    <section>
+                        <h3>추가정보</h3>
+                        <div class="form_contents">
+                            <!-- 성별 -->
+                            <div class="join_info">
+                                <p>성별</p>
+                                <label for="gender1">
+                                    <input type="radio" name="gender" id="gender1" value="male">
+                                    남자
+                                </label>
+                                <label for="gender2">
+                                    <input type="radio" name="gender" id="gender2" value="female">
+                                    여자
+                                </label>
+                            </div>
+                            <!-- 생년월일 -->
+                            <div class="join_info">
+                                <p>생년월일</p>
+                                <label for="solar">
+                                    <input type="radio" name="birth" id="solar" value="male" checked>
+                                    양력
+                                </label>
+                                <label for="lunar">
+                                    <input type="radio" name="birth" id="lunar" value="female">
+                                    음력
+                                </label>
+                                <input type="number" maxlength="4">년 
+                                <input type="number" maxlength="2" min="1" max="12">월 
+                                <input type="number" maxlength="2" min="1" max="31">일 
+                            </div>
+                        </div>
+                    </section>
+                    <input type="submit" value="가입하기">
                 </fieldset>
             </form>
         </main>

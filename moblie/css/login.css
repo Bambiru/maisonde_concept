@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+main {
+    padding: 0 16px;
+}
 .title{
     padding: 12px 0;
     border-top: 1px solid #ccc;
@@ -18,15 +21,12 @@
     margin: 0 auto;
 }
 
-.keybord {
+.keybord .kr{
     display: flex;
     flex-flow: row nowrap;
     justify-content: end;
-    margin: 16px 0 20px;
-}
-.keybord .kr {
-    display: flex;
     font-size: 12px;
+    margin: 16px 0 20px;
     cursor: pointer;
 }
 .keybord .kr img{
@@ -144,4 +144,52 @@ input[type="submit"]{
 }
 .id_pw_search>a:last-child>p::after{
     content: "";
+}
+
+
+
+/* =======================가상키보드==================== */
+
+#keyboardzone {
+    /* width: 240px; */
+    width: 50%;
+    height: 200px;
+    position: relative;
+    background: #bfbfbf;
+    /* 추가 */
+    margin: 12px 0;
+    top: 0;
+    left: 100%;
+    border-radius: 4px;
+    transform: translateX(-100%);
+    display: none;
+}
+#keyboardzone * {
+    transition: all 0ms;
+}
+#keyboardzone table th {
+    border: 1px solid #2f2f2f3d;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #eeeeeec4;
+    transition: background-color 500ms;
+    box-shadow: 0 0 7px 0px #00000033;
+    border-radius: 5px;
+}
+#keyboardzone table th:active {
+    background-color: #ffffff;
+    transition: background-color 0ms;
+}
+
+
+  /* 준비중 이미지 */
+.alert { 
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    z-index: 10%;
+    z-index: 999999;
+    /* 로딩시 안보이도록 코딩 */
+    display: none;
 }
