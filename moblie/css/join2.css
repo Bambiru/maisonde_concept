@@ -38,8 +38,8 @@ form h3 img {
     padding-right: 4px;
 }
 .form_contents {
-    padding: 20px 12px 20px;
-    display: flex;
+    width: 100%;
+    padding: 10px 12px 10px;
     font-size: 12px;
     border: 1px solid #f1f1f1;
     margin-bottom: 8px;
@@ -49,21 +49,56 @@ form h3 img {
     width: 12px;
     margin-right: 4px;
 }
+.join_info {
+    width: 100%;
+    border-bottom: 1px solid #f8f8f8;
+    padding: 10px 0;
+}
 .join_info p {
-    width: 150px;
+    width: 58px;
+    margin-right: 50px;
 }
 .join_info p img {
     vertical-align: middle;
+    padding-left: 4px;
+}
+.join_info input{
+    width: 100%;
+    height: 40px;
+    background: #f8f8f8;
+}
+.join_info input[type="button"]{
+    width: 74px;
+    height: 40px;
+    padding: 0 14px;
+    margin-left: 8px;
+    line-height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#gender td {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#gender td label {
+    display: flex;
+}
+#gender td label p {
+    padding-top: 14px;
+}
+.join_info label{
+    display: inline-block;
 }
 
 
-
-
-
-
-
-
-
+#user_id {
+    width: 150px;
+}
+#address_info .house_number{
+    display: flex;
+    flex-flow: row nowrap;
+}
 
 
 

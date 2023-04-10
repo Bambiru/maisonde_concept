@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+:root {
+    --border-color : #f1f1f1;
+}
+
+
+.title{
+    padding: 12px 0;
+    border-bottom: 1px solid #d5d5d5;
+    display:flex;
+    flex-flow: row nowrap;
+}
+.title i {
+    font-size: 12px;
+    color: #000;
+    margin-left: 16px;
+    padding: 2px;
+    border: 1px solid #d5d5d5;
+}
+.title h2{
+    font-size: 12px;
+    font-weight: 600;
+    align-self: center;
+    margin: 0 auto;
+}
+
+#entire_border {
+    padding: 0 16px;
+    font-size: 12px;
+}
+
+.agree_part {
+    margin-top: 8px;
+    border: 1px solid var(--border-color);
+}
+.agree_part:nth-of-type(1){
+    margin-top: 14px;
+}
+.check_box {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 12px 6px 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+.check_box input[type="checkbox"]{
+    width: 16px;
+    margin-right: 4px;
+}
+
+/* SNS수신동의 밑에 라인 없애기 */
+.receive .check_box:nth-child(1) {
+    border-bottom: none;
+}
+
+.agree_content{
+    padding: 16px 30px 16px 8px; 
+    height: 118px;
+    overflow: auto;
+}
+.agree_content p {
+    line-height: 1.5;
+}
+
+/* 스크롤바 커스텀 */
+.agree_content::-webkit-scrollbar {
+    width: 10px;
+    background: var(--border-color);
+}
+.agree_content::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+}
+
+
+
+/* 개인정보수집동의 내용 안 테이블  */
+.agree_content table,
+.agree_content table td {
+    border: 1px solid var(--border-color);
+}
+.agree_content table tr th{
+    background: #F7DA64;
+    padding: 4px;
+}
+.agree_content table tr td {
+    padding: 4px;
+}
+
+/*  */
+.submit_part {
+    margin-top: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.submit_part input[type="submit"],
+.submit_part input[type="reset"]{
+    width: 48%;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    font-weight: 600;
+}
+.submit_part input[type="submit"]{
+    background: #000;
+    color: #fff;
+}
+.submit_part input[type="reset"]{
+    background: #fff;
+}
