@@ -20,9 +20,6 @@ body {
     font-family: "Roboto",Nanum gothic;
 }
 
-/* #wrap { */
-    /* padding: 0 16px; */
-/* } */
 
 header {
     margin-bottom: 12px;
@@ -51,11 +48,14 @@ header {
     justify-content: space-between;
     padding: 0 16px;
 }
+#header_title img {
+    width: 80%;
+}
 #header_title .icons{
     /* 플렉스 */
     display: flex;
     font-size: 20px;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 #header_title .icons #ham {
     padding-left: 8px;
@@ -169,4 +169,28 @@ header {
     background: #000;
     opacity: 0.5;
 }
-/* /셀로판지효과주기 */
+
+
+
+
+main {
+    padding-top: 90px;
+}
+.title{
+    padding: 12px 0;
+    padding-left: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    display:flex;
+    flex-flow: row nowrap;
+}
+.title i {
+    font-size: 20px;
+    color: #ccc;
+}
+.title h2{
+    font-size: 16px;
+    font-weight: 600;
+    align-self: center;
+    margin: 0 auto;
+    transform: translateX(-10px);
+}

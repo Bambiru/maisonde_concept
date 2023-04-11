@@ -1,26 +1,8 @@
 @charset "utf-8";
 
-main {
+.keybord {
     padding: 0 16px;
-    padding-top: 100px;
 }
-.title{
-    padding: 12px 0;
-    border-bottom: 1px solid #f1f1f1;
-    display:flex;
-    flex-flow: row nowrap;
-}
-.title i {
-    font-size: 20px;
-    color: #ccc;
-}
-.title h2{
-    font-size: 16px;
-    font-weight: 600;
-    align-self: center;
-    margin: 0 auto;
-}
-
 .keybord .kr{
     display: flex;
     flex-flow: row nowrap;
@@ -34,7 +16,9 @@ main {
     width: 12px;
     height: 12px;
 }
-
+form {
+    padding: 0 16px;
+}
 
 .login_info input {
     background-color: #d9d9d9;
@@ -156,7 +140,7 @@ input[type="submit"]{
 
 #keyboardzone {
     /* width: 240px; */
-    width: 50%;
+    width: 60%;
     height: 200px;
     position: relative;
     background: #bfbfbf;
@@ -166,7 +150,6 @@ input[type="submit"]{
     left: 100%;
     border-radius: 4px;
     transform: translateX(-100%);
-    display: none;
 }
 #keyboardzone * {
     transition: all 0ms;

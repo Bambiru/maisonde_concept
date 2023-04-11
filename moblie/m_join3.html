@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <meta name="author" content="26조">
+    <meta name="description" content="메종드컨셉 maison_de_concept">
+    
+    <title>메종드컨셉 maison_de_concept</title>
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/9036dd3e37.js" crossorigin="anonymous"></script>
+    <!-- favorite Icon 설정하기-->
+    <link rel="shortcut icon" href="./images/favicon/fav32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png">
+    <!-- CSS파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 해당 CSS -->
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/join3.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- 제이쿼리 코어파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 스크롤바JS -->
+    <script src="./js/jquery.scrollTo.min.js"></script>
+    <!-- 카카오 주소창 API 구현 -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./js/include.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+        
+        </header>
+        <!-- /header -->
+        <!-- 회원가입단 -->
+        <main role="main">
+            <div class="title">
+                <a class="arrow" href="./m_login.html"><i class="fas fa-angle-left"></i></a>
+                <h2>회원가입</h2>
+            </div>
+            <form action="" method="post">
+                <!-- 회원인증 -->
+                <section>
+                    <div class="sec_title">
+                        <h3>회원인증</h3>
+                    </div>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="member" value="individual" checked>
+                                <label for="member">개인회원</label>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <!-- 기본정보 -->
+                <section>
+                    <div class="sec_title">
+                        <h3>기본정보</h3>
+                        <div>
+                            <img src="./images/star.png" alt="star">
+                            <p>필수</p>
+                        </div>
+                    </div>      
+                </section>
+                <!-- 추가정보 -->
+                <section>
+                    <div class="sec_title">
+                        <h3>추가정보</h3>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>성별</th>
+                            <td>
+                                <input type="radio" name="gender" id="man" value="남자" checked>
+                                <label for="man">남자</label>
+                                <input type="radio" name="gender" id="women" value="여자">
+                                <label for="women">여자</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>
+                                <div>
+                                    <input type="radio" name="calendar" id="solar" value="양력" checked>
+                                    <label for="solar">양력</label>
+                                    <input type="radio" name="calendar" id="lunar" value="음력">
+                                    <label for="lunar">음력</label>
+                                </div>
+                                <div class="birth">
+                                    <input type="text" name="birth_year" id="birth_year" maxlength="4">년
+                                    <input type="text" name="birth_month" id="birth_month" maxlength="2">월
+                                    <input type="text" name="birth_day" id="birth_day" maxlength="2">일
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <input type="submit" value="가입하기">
+            </form>
+        </main>
+        <!-- 회원가입단 -->
+        <!-- footer -->
+        <footer>
+
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- 햄버거 메뉴 클릭시 -->
+    <aside>
+
+    </aside>
+    <!-- /햄버거 메뉴 클릭시 -->
+    <script src="./js/join2.js"></script>
+</body>
+</html>        

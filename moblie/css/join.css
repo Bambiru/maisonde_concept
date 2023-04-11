@@ -3,28 +3,6 @@
 :root {
     --border-color : #f1f1f1;
 }
-
-
-.title{
-    padding: 12px 0;
-    border-bottom: 1px solid #d5d5d5;
-    display:flex;
-    flex-flow: row nowrap;
-}
-.title i {
-    font-size: 12px;
-    color: #000;
-    margin-left: 16px;
-    padding: 2px;
-    border: 1px solid #d5d5d5;
-}
-.title h2{
-    font-size: 12px;
-    font-weight: 600;
-    align-self: center;
-    margin: 0 auto;
-}
-
 #entire_border {
     padding: 0 16px;
     font-size: 12px;
@@ -74,15 +52,15 @@
 
 
 /* 개인정보수집동의 내용 안 테이블  */
-.agree_content table,
-.agree_content table td {
-    border: 1px solid var(--border-color);
+.agree_content table{
+    border-collapse: collapse;
 }
 .agree_content table tr th{
     background: #F7DA64;
     padding: 4px;
 }
 .agree_content table tr td {
+    border: 1px solid var(--border-color);
     padding: 4px;
 }
 
@@ -99,6 +77,7 @@
     height: 50px;
     border: 1px solid var(--border-color);
     font-weight: 600;
+    cursor: pointer;
 }
 .submit_part input[type="submit"]{
     background: #000;

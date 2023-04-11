@@ -1,113 +1,93 @@
 @charset "utf-8";
 
-.title{
-    padding: 12px 0;
-    border-bottom: 1px solid #d5d5d5;
-    display:flex;
-    flex-flow: row nowrap;
-}
-.title i {
+form {
     font-size: 12px;
-    color: #000;
-    margin-left: 16px;
-    padding: 2px;
-    border: 1px solid #d5d5d5;
-}
-.title h2{
-    font-size: 12px;
-    font-weight: 600;
-    align-self: center;
-    margin: 0 auto;
+    padding: 0 16px;
 }
 
-/* form */
-form {
-    padding: 16px;
-    background: #f1f1f1;
-}
-form h3 {
-    font-size: 12px;
-    padding: 16px 12px 16px;
+section h3 {
     border: 1px solid #d5d5d5;
     background: #f1f1f1;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 14px;
     display: flex;
     justify-content: space-between;
 }
-form h3 img {
+section h3 .star img {
     vertical-align: middle;
-    padding-right: 4px;
+    width: 5px;
+    height: 5px;
 }
-.form_contents {
+section .form_contents {
     width: 100%;
-    padding: 10px 12px 10px;
-    font-size: 12px;
-    border: 1px solid #f1f1f1;
-    margin-bottom: 8px;
-    background: #fff;
+    border: 1px solid #d5d5d5;
+    border-top: none;
+    margin-bottom: 16px;
+    border-collapse: collapse;
+    padding: 10px;
 }
-.form_contents input[type="radio"] {
-    width: 12px;
-    margin-right: 4px;
-}
-.join_info {
-    width: 100%;
-    border-bottom: 1px solid #f8f8f8;
-    padding: 10px 0;
-}
-.join_info p {
-    width: 58px;
-    margin-right: 50px;
-}
-.join_info p img {
-    vertical-align: middle;
-    padding-left: 4px;
-}
-.join_info input{
-    width: 100%;
+
+section .form_contents .join_info {
     height: 40px;
-    background: #f8f8f8;
+    border-bottom: 1px solid #d5d5d5;
 }
-.join_info input[type="button"]{
-    width: 74px;
+section .form_contents .join_info:nth-last-of-type(2) {
+    border-bottom: none;
+}
+section .form_contents .join_info td {
+    padding-right: 8px;
+}
+
+
+
+/* input 설정 */
+input[type="text"],
+input[type="password"],
+input[type="button"],
+input[type="tel"],
+input[type="email"],
+section select {
     height: 40px;
-    padding: 0 14px;
-    margin-left: 8px;
-    line-height: 40px;
+    background-color: #f1f1f1;
+    border-radius: ;
+}
+.select{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width :100%;
+}
+section select {
+    width: 100px;
+    border: none;
+    appearance: none;
+}
+.select__arrow{
+    position: absolute;
+    top :16px;
+    right: 15px;
+    width :0;
+    height :0;
+    pointer-events: none;
+    border-style :solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #999 transparent transparent transparent;
+}
+
+
+
+
+input[type="button"] {
     font-size: 12px;
+    width: 72px;
+    border: 1px solid #d5d5d5;
     cursor: pointer;
 }
 
-#gender td {
-    display: flex;
-    flex-flow: row nowrap;
-}
-#gender td label {
-    display: flex;
-}
-#gender td label p {
-    padding-top: 14px;
-}
-.join_info label{
-    display: inline-block;
-}
-
-
-#user_id {
-    width: 150px;
-}
-#address_info .house_number{
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-
-
-
-input[type="submit"] {
-    width: 100%;
+input[type="submit"]{
     height: 50px;
-    color: #fff;
-    background: #000;
-    margin-top: 16px;
-    margin-bottom: 8px;
+    color: #fff;   
+    background: #222;
+    cursor: pointer;
 }

@@ -28,6 +28,8 @@
     <script src="./js/prefixfree.min.js"></script>
     <!-- 스크롤바JS -->
     <script src="./js/jquery.scrollTo.min.js"></script>
+    <!-- 카카오 주소창 API 구현 -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="./js/include.js"></script>
 </head>
 <body>
@@ -48,165 +50,191 @@
                     <legend class="blind">회원가입</legend>
                     <section class="member">
                         <h3>회원인증</h3>
-                        <div class="form_contents">
-                            <input type="radio" name="individual" id="individual" checked>
-                            <label for="individual">개인회원</label>
-                        </div>
+                        <table class="form_contents">
+                            <tr>
+                                <td><input type="radio" name="individual" id="individual" checked></td>
+                                <td><label for="individual">개인회원</label></td>
+                            </tr>
+                        </table>
                     </section>
                     <section class="basic_info">
                         <h3>기본정보
-                            <p><img src="./images/star.png" alt="essential">필수</p>
+                            <div class="star">
+                                <p>
+                                    <img src="./images/star.png" alt="essential">
+                                필수
+                            </p>
+                            </div>
                         </h3>
+                        
+                        <!-- 테이블 -->
                         <table class="form_contents">
                             <!-- 아이디 -->
-                            <tr class="join_info">
-                                <td><p>아이디<img src="./images/star.png" alt="essential"></p></td>
-                                <td>
-                                <input type="text" name="user_id" id="user_id" minlength="5" required autocomplete="off">
-
-                                <input type="button" value="중복확인"></td>
+                            <tr id="id_info" class="join_info">
+                                <th>
+                                    <p>아이디</p>
+                                    <img src="./images/star.png" alt="essential">
+                                </th>
+                                <td id="id_input">
+                                    <input type="text" name="user_id" id="user_id" minlength="5" size="100" required autocomplete="off">
+                                    <input type="button" value="중복확인">
+                                </td>
                             </tr>
                             <!-- 비밀번호 -->
                             <tr class="join_info">
-                                <td><p>비밀번호<img src="./images/star.png" alt="essential"></p></td>
+                                <th>
+                                    <p>비밀번호</p>
+                                    <img src="./images/star.png" alt="essential">
+                                </th>
                                 <td><input type="password" name="user_pw" id="user_pw" minlength="5" required></td>
                             </tr>
                             <!-- 비밀번호확인 -->
                             <tr class="join_info">
-                                <td><p>비밀번호 확인<img src="./images/star.png" alt="essential"></p></td>
+                                <th>
+                                    <p>비밀번호 확인</p>
+                                    <img src="./images/star.png" alt="essential">
+                                </th>
                                 <td><input type="password" name="user_pw" id="user_pw" minlength="5" required></td>
                             </tr>
                             <!-- 이름 -->
                             <tr class="join_info">
-                                <td><p>이름<img src="./images/star.png" alt="essential"></p></td>
+                                <th><p>이름<img src="./images/star.png" alt="essential"></p></th>
                                 <td><input type="text" name="user_name" id="user_name" required></td>
                             </tr>
                             <!-- 주소 -->
                             <tr id="address_info" class="join_info">
-                                <td><p>주소<img src="./images/star.png" alt="essential"></p></td>
+                                <th><p>주소<img src="./images/star.png" alt="essential"></p></th>
                                 <td class="house_number">
-                                    <input type="text" name="houseNum">
-                                    <input type="button" value="우편번호">
+                                    <input type="text" name="adress" id="adress" readonly required>
+                                    <input type="button" name="adress" id="adress" value="우편번호" readonly onclick="kakaopost()">
                                 </td>
-                                <td><input type="text" name="simple_address" id="simple_address" required></td>
-                                <td><input type="text" name="detail_address" id="detail_address" required></td>
+                                <td><input type="text" name="basic_address" id="basic_address" required></td>
+                                <td><input type="text" name="specific_address" id="specific_address" required></td>
                             </tr>
                             <!--     전화번호 -->
                             <tr class="join_info">
-                                <td><p>일반전화</p></td>
+                                <th><p>일반전화</p></th>
                                 <td>
-                                    <select>
-                                        <option value="02">02</option>
-                                        <option value="031">031</option>
-                                        <option value="032">032</option>
-                                        <option value="033">033</option>
-                                        <option value="041">041</option>
-                                        <option value="042">042</option>
-                                        <option value="043">043</option>
-                                        <option value="044">044</option>
-                                        <option value="051">051</option>
-                                        <option value="052">052</option>
-                                        <option value="053">053</option>
-                                        <option value="054">054</option>
-                                        <option value="055">055</option>
-                                        <option value="061">061</option>
-                                        <option value="062">062</option>
-                                        <option value="063">063</option>
-                                        <option value="064">064</option>
-                                        <option value="0502">0502</option>
-                                        <option value="0503">0503</option>
-                                        <option value="0504">0504</option>
-                                        <option value="0505">0505</option>
-                                        <option value="0506">0506</option>
-                                        <option value="0507">0507</option>
-                                        <option value="070">070</option>
-                                        <option value="010">010</option>
-                                        <option value="011">011</option>
-                                        <option value="016">016</option>
-                                        <option value="017">017</option>
-                                        <option value="018">018</option>
-                                        <option value="019">019</option>
-                                        <option value="0508">0508</option>
-                                    </select>
+                                    <div class="select">
+                                        <select>
+                                            <option value="02">02</option>
+                                            <option value="031">031</option>
+                                            <option value="032">032</option>
+                                            <option value="033">033</option>
+                                            <option value="041">041</option>
+                                            <option value="042">042</option>
+                                            <option value="043">043</option>
+                                            <option value="044">044</option>
+                                            <option value="051">051</option>
+                                            <option value="052">052</option>
+                                            <option value="053">053</option>
+                                            <option value="054">054</option>
+                                            <option value="055">055</option>
+                                            <option value="061">061</option>
+                                            <option value="062">062</option>
+                                            <option value="063">063</option>
+                                            <option value="064">064</option>
+                                            <option value="0502">0502</option>
+                                            <option value="0503">0503</option>
+                                            <option value="0504">0504</option>
+                                            <option value="0505">0505</option>
+                                            <option value="0506">0506</option>
+                                            <option value="0507">0507</option>
+                                            <option value="070">070</option>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                            <option value="0508">0508</option>
+                                        </select>
+                                        <div class="select__arrow"></div>
+                                    </div>
                                 -
                                 </td>
                                 <td>
-                                    <input type="tel" name="tel1" id="tel1" minlength="3" maxlength="4" min="0" max="9999" required>
+                                    <input type="tel" name="tel1" id="tel1" minlength="3" maxlength="4" min="0" max="9999" size="80" required>
                                     -
                                 </td>
                                 <td>
-                                    <input type="tel" name="tel2" id="tel2" minlength="3" maxlength="4" min="0" max="9999" required>
+                                    <input type="tel" name="tel2" id="tel2" minlength="3" maxlength="4" min="0" max="9999" size="80" required>
                                 </td>
                             </tr>
                             <!-- 휴대전화 -->
                             <tr class="join_info">
-                                <td><p>휴대전화<img src="./images/star.png" alt="essential"></p></td>
+                                <th><p>휴대전화<img src="./images/star.png" alt="essential"></p></th>
                                 <td>
-                                    <select>
-                                        <option value="010">010</option>
-                                        <option value="011">011</option>
-                                        <option value="016">016</option>
-                                        <option value="017">017</option>
-                                        <option value="018">018</option>
-                                        <option value="019">019</option>
-                                    </select>
+                                    <div class="select">
+                                        <select>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <div class="select__arrow"></div>
+                                    </div>
                                     -
                                 </td>
                                 <td>
-                                    <input type="number" name="tel1" id="tel1" minlength="3" maxlength="4" min="0" max="9999" required>
+                                    <input type="tel" name="tel1" id="tel1" minlength="3" maxlength="4" min="0" max="9999" size="80" required>
                                     -
                                 </td>
                                 <td>
-                                    <input type="number" name="tel2" id="tel2" minlength="3" maxlength="4" min="0" max="9999" required>
+                                    <input type="tel" name="tel2" id="tel2" minlength="3" maxlength="4" min="0" max="9999" size="80" required>
                                 </td>
                             </tr>
                             <!-- 이메일 -->
                             <tr class="join_info">
-                                <td><p>아이디<img src="./images/star.png" alt="essential"></p></td>
-                                <td><input type="email" name="user_email" id="user_email"></td>
-                                <td><input type="button" value="중복확인"></td>
+                                <th><p>이메일<img src="./images/star.png" alt="essential"></p></th>
+                                <td>
+                                    <input type="email" name="user_email" id="user_email" size="130">
+                                    <input type="button" value="중복확인">
+                                </td>
                             </tr>
                         </table>
                     </section>
                     <section>
                         <h3>추가정보</h3>
-                        <div class="form_contents">
-                            <!-- 성별 -->
-                            <table>
-                                <tr class="join_info" id="gender">
-                                    <td><p>성별</p></td>
-                                    <td>
-                                        <label for="gender1">
-                                            <input type="radio" name="gender" id="gender1" value="male">
-                                            <p>남자</p>
-                                        </label>
-                                        <label for="gender2">
-                                            <input type="radio" name="gender" id="gender2" value="female">
-                                            <p>여자</p>
-                                        </label>
-                                    </td>
-                                </tr>
-                                <!-- 생년월일 -->
-                                <tr class="join_info">
-                                    <td><p>생년월일</p></td>
-                                    <td>
-                                        <label for="solar">
-                                            <input type="radio" name="birth" id="solar" value="male" checked>
-                                            양력
-                                        </label>
-                                        <label for="lunar">
-                                            <input type="radio" name="birth" id="lunar" value="female">
-                                            음력
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <input type="number" maxlength="4">년 
-                                        <input type="number" maxlength="2" min="1" max="12">월 
-                                        <input type="number" maxlength="2" min="1" max="31">일 
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <!-- 성별 -->
+                        <table class="form_contents">
+                            <tr class="join_info" id="gender">
+                                <th><p>성별</p></th>
+                                <td>
+                                    <label for="gender1">
+                                        <input type="radio" name="gender" id="gender1" value="male">
+                                        남자
+                                    </label>
+                                    <label for="gender2">
+                                        <input type="radio" name="gender" id="gender2" value="female">
+                                        여자
+                                    </label>
+                                </td>
+                            </tr>
+                            <!-- 생년월일 -->
+                            <tr class="join_info">
+                                <th rowspan="2"><p>생년월일</p></th>
+                                <td>
+                                    <label for="solar">
+                                        <input type="radio" name="birth" id="solar" value="male" checked>
+                                        양력
+                                    </label>
+                                    <label for="lunar">
+                                        <input type="radio" name="birth" id="lunar" value="female">
+                                        음력
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr class="join_info">
+                                <td>
+                                    <input type="number" maxlength="4">년 
+                                    <input type="number" maxlength="2" min="1" max="12">월 
+                                    <input type="number" maxlength="2" min="1" max="31">일 
+                                </td>
+                            </tr>
+                        </table>
                     </section>
                     <input type="submit" value="가입하기">
                 </fieldset>
@@ -224,5 +252,6 @@
 
     </aside>
     <!-- /햄버거 메뉴 클릭시 -->
+    <script src="./js/join2.js"></script>
 </body>
 </html>
