@@ -23,66 +23,154 @@ section .form_contents {
     width: 100%;
     border: 1px solid #d5d5d5;
     border-top: none;
-    margin-bottom: 16px;
+    margin-bottom: 16px;    
     border-collapse: collapse;
     padding: 10px;
 }
 
+/* member */
+.member .form_contents tr,
+.member .form_contents td{
+    padding: 22px 0;
+}
+.member .form_contents td{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+}
+.member .form_contents td input {
+    width: 12px;
+    margin-right: 4px;
+    margin-left: 12px;
+}
+
+
+/* 테이블 */
 section .form_contents .join_info {
     height: 40px;
     border-bottom: 1px solid #d5d5d5;
 }
-section .form_contents .join_info:nth-last-of-type(2) {
-    border-bottom: none;
+section .form_contents .join_info th {
+    width: 80px;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 16px;
+    color: #757575;
+    vertical-align: middle;
+}
+section .form_contents .join_info th p {
+    display: inline;
+
+}
+section .form_contents .join_info th img {
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
 }
 section .form_contents .join_info td {
-    padding-right: 8px;
+    padding: 8px 16px;
+}
+
+/* 아이디 */
+#id_input {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#id_input input[type="text"]{
+    width: 100px;
+    margin-right: 8px;
+    border: 1px solid #d5d5d5;
 }
 
 
+
+
+/* address_part */
+#address_part {
+    display: flex;
+}
+#address_part [type="text"]{
+    width: 52px;
+    margin-right: 8px;
+}
+.house_number input {
+    margin-bottom: 8px;
+}
 
 /* input 설정 */
 input[type="text"],
 input[type="password"],
-input[type="button"],
 input[type="tel"],
 input[type="email"],
 section select {
     height: 40px;
-    background-color: #f1f1f1;
-    border-radius: ;
+    background-color: #f8f8f8;
+    border: 1px solid #d5d5d5;
 }
-.select{
-    position: relative;
-    display: inline-block;
-    margin-bottom: 15px;
-    width :100%;
-}
+
+/* 전화번호 */
 section select {
     width: 100px;
     border: none;
-    appearance: none;
 }
-.select__arrow{
-    position: absolute;
-    top :16px;
-    right: 15px;
-    width :0;
-    height :0;
-    pointer-events: none;
-    border-style :solid;
-    border-width: 8px 5px 0 5px;
-    border-color: #999 transparent transparent transparent;
+select~input[type="tel"] {
+    width: 80px;
+} 
+
+/* 이메일 */
+input[type="email"] {
+    width: 132px;
+    margin-right: 8px;
+} 
+
+/* gender_input */
+#gender_input {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 6px;
+}
+#gender_input input {
+    width: 12px;
+    margin-right: 4px;
+}
+#gender_input label:nth-of-type(1){
+    margin-right: 16px;
 }
 
-
+/* birth_input */
+#birth_radio {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+#birth_radio input {
+    width: 12px;
+    margin-right: 4px;
+}
+#birth_radio label:nth-of-type(1){
+    margin-right: 16px;
+}
+#birth_input input[type="tel"]:nth-of-type(1) {
+    width: 42px;
+}
+#birth_input input[type="tel"] {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
 
 
 input[type="button"] {
     font-size: 12px;
     width: 72px;
+    height: 40px;
     border: 1px solid #d5d5d5;
+    background-color: #f1f1f1;
     cursor: pointer;
+    border-radius: 2px;
 }
 
 input[type="submit"]{
