@@ -1,8 +1,8 @@
     /* 메인슬라이드 */
     $('main').find('.slide_gallery').bxSlider({
         mode: 'horizontal',
-        speed: 1000,
-        pause: 1500,
+        speed: 1500,
+        pause: 3000,
         pager:true,
         stopAutoOnClick:true,
         auto:true,

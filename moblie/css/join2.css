@@ -110,11 +110,11 @@ section select {
 
 /* 전화번호 */
 section select {
-    width: 100px;
+    width: 60px;
     border: none;
 }
 select~input[type="tel"] {
-    width: 80px;
+    width: 60px;
 } 
 
 /* 이메일 */
@@ -170,7 +170,6 @@ input[type="button"] {
     border: 1px solid #d5d5d5;
     background-color: #f1f1f1;
     cursor: pointer;
-    border-radius: 2px;
 }
 
 input[type="submit"]{

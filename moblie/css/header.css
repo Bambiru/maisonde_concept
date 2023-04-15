@@ -92,7 +92,7 @@ header {
     background: #fff;
     padding: 32px 32px 0 30px;
     /* 포지션 */
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 999999;
@@ -139,6 +139,7 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    cursor: pointer;
 }
 .hide_gnb>ul>li .sub_li i {
     margin-top: 6px;
@@ -193,4 +194,17 @@ main {
     align-self: center;
     margin: 0 auto;
     transform: translateX(-10px);
+}
+.sec_title {
+    margin-top: 40px;
+    text-align: center;
+}
+.sec_title h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+.sec_title p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }

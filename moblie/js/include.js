@@ -37,5 +37,5 @@ $(document).ready(function(){
     $('footer').load('./include/footer.html');
 
     // 어사이드 불러오기
-    $('aside').load('./include/aside.html');
+    $('#snb').load('./include/aside.html');
 });

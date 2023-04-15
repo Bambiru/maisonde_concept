@@ -2,9 +2,9 @@
 $(document).ready(function(){
     $('.slide_gallery').bxSlider({
         mode: 'horizontal',
-        speed: 500,
-        pause: 1500,
-        slideWidth: 1440,
+        speed: 1500,
+        pause: 3000,
+        slideWidth: 1240,
         auto: true,
         autoHover: true
     });

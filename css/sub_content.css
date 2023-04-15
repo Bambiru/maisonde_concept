@@ -5,6 +5,7 @@
 }
 /* 02. Interior head */
 .interior_head {
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 .interior_head h2 {
@@ -76,23 +77,18 @@ select {
 }
 .interior_object ul li .middle_line {
     font-size: 11px;
+    display: inline;
+    padding-left: 8px;
     color: #333;
-    /* margin-bottom: 10px; */
 }
 .interior_object ul li p {
     font-size: 11px;
     color: #333;
-    /* margin-bottom: 10px; */
 }
 
 .interior_object ul li span {
     font-size: 18px;
     font-weight: 900;
-}
-.interior_object ul li span .sale {
-    font-size: 11px;
-    display: inline;
-    color: #333;
 }
 .interior_object ul li .best img,
 .interior_object ul li .event img{
@@ -251,6 +247,34 @@ select {
 }
 .page_number ul li:hover a{
     color: #fff;
+}
+
+/* 박스 슬라이더 */
+.slider {
+    margin-top: 56px;
+
+}
+article {
+    max-width: 1920px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+article #gallery_wrap {
+    max-width: 1920px;
+    max-width: 1240px;
+    /* border: 1px solid #000; */
+}
+.slide_gallery ul {
+    width: 1920px;
+    width: 1240px;
+}
+article #gallery_wrap img {
+    width: 100%;
+}
+
+.bgc{
+    border: 1px solid #F6F5F1;
+    background-color: #F6F5F1;
 }
 
 

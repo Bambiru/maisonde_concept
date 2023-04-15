@@ -71,7 +71,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-.submit_part input[type="submit"],
+.submit_part a,
 .submit_part input[type="reset"]{
     width: 48%;
     height: 50px;
@@ -79,7 +79,8 @@
     font-weight: 600;
     cursor: pointer;
 }
-.submit_part input[type="submit"]{
+.submit_part a input[type="button"]{
+    height: 50px;
     background: #000;
     color: #fff;
 }
