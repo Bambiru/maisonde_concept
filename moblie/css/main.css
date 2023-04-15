@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* 메인슬라이더 */
+#main_banner #gallery_wrap {
+    width: 100%;
+}
+#main_banner .slide_gallery {
+    width: 100%;
+}
+#main_banner .slide_gallery img {
+    width: 100%;
+}
+#main_banner {
+    margin-bottom: 40px;
+}
+
+/* bestitem */
+#best h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.items ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.items ul li {
+    margin-right: 4px;
+    padding: 10px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #ccc;
+}
+.items ul li:last-child {
+    margin-right: 0;
+}
+.items ul li.active {
+    background: #293F3A;
+    color: #fff;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+/* product */
+.product_list {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+.product {
+    width: 49%;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.product .img {
+    /* 위치기준값 */
+    position: relative;
+}
+.product .img img:nth-child(1) {
+    width: 100%;
+}
+.product .img .wishlist{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* 컬러 */
+.color {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    background: transparent;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.color>span{
+    width: 15px;
+    height: 5px;
+    margin-right: 4px;
+}
+.color>span:last-child{
+    margin-right: 0;
+}
+.product_title {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.product_title p {
+    margin-bottom: 4px;
+}
+.product_title .bin {
+    padding-bottom: 12px;
+}
+.product .price {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.product .price s{
+    font-size: 8px;
+    margin-left: 4px;
+}
+/* ////////////////////////////////////////////////////// */
+#best section {
+    margin-bottom: 68px;
+}
+
+/* 안보이게 */
+#best_lighting,
+#best_kitchen,
+#best_lifestyle {
+    display: none;
+}
+
+/* mdpick */
+#mdpick {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ccc;
+}
+#new_product {
+    margin-bottom: 24px;
+}
+#mdpick h2,
+#new_product h2 {
+    margin: 40px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* 중간배너 */
+.middle_banner {
+    width: 100%;
+}
+.middle_banner img {
+    width: 100%;
+}
+
+/* BRAND 슬라이더 */
+
+
+/* 인스타그램 */
+#insta {
+    padding: 0 16px;
+}
+#insta>h3 {
+    text-align: center;
+    margin: 40px 0;
+}
+.insta_img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 296px;
+    overflow-y: auto;
+}
+#insta .insta_img li {
+    width: 33%;
+}
+#insta .insta_img a img {
+    width: 100%;
+    height: 146px;
+    margin-bottom: 4px;
+}
+/* ////////////////////////////////////////////////////////////////// */
+/* 색상표 */
+.c_414244 {background: #414244;}
+.c_bdb2ae {background: #BDB2AE;}
+.c_ffffff {background: #fff; border: 1px solid #d8d8d8;}
+.c_454545 {background: #454545;}
+.c_e2d9ca {background: #E2D9CA;}
+.c_c6c6c6 {background: #C6C6C6;}
+.c_968e8a {background: #968E8A;}
+.c_363636 {background: #363636;}
+.c_857c77 {background: #857c77;}
+.c_c0c0c0 {background: #c0c0c0;}
+.c_e2d9c8 {background: #E2D9C8;}
+.c_000000 {background: #000;}
+.c_c9c9c9 {background: #c9c9c9;}
+.c_ff5a00 { background: #ff5a00;}
+.c_9e9d9c { background: #9e9d9c;}
+.c_4f575a { background: #4f575a;}
+.c_baa196 { background: #baa196;}
+.c_7195ad { background: #7195ad;}
+.c_fec0cb { background: #fec0cb;}
+.c_ffaa00 { background: #ffaa00;}
+.c_0033ff { background: #0033ff;}
+.c_fff200 { background: #fff200;}
+.c_f51313 { background: #f51313;}
+.c_ccc9c7 { background: #ccc9c7;}
+.c_e2dacb { background: #e2dacb;}
+.c_b8ad9d { background: #b8ad9d;}
+.c_798aa3 { background: #798aa3;}
+.c_feffef { background: #feffef; border: 1px solid #d8d8d8;}
+.c_263622 { background: #263622;}
+.c_a9a9a9 { background: #a9a9a9;}
+.c_7d7d7d { background: #7d7d7d;}
+.c_545454 { background: #545454;}
+.c_beb9bd { background: #beb9bd;}
+.c_c8af98 { background: #c8af98;}
+.c_4f4f4f { background: #4f4f4f;}
+.c_d6b9a7 { background: #d6b9a7;}
+.c_af676a { background: #af676a;}
+.c_c2904d { background: #c2904d;}
+.c_743b25 { background: #743b25;}
+.c_e5926f { background: #e5926f;}
+.c_eeeeee { background: #eeeeee;}
+.c_c4c4c4 { background: #c4c4c4;}
+.c_424242 { background: #424242;}
+.c_501704 { background: #501704;}
+.c_e8e8e8 { background: #e8e8e8;}
+.c_adadad { background: #adadad;}
+.c_575757 { background: #575757;}
+.c_d1d1d1 { background: #d1d1d1;}
+

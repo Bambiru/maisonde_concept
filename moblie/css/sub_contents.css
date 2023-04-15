@@ -67,7 +67,7 @@
     background: url('../images/sub_contents/viewtype/align_3_on.png') no-repeat;
     background-size: 100%;
 }
-
+/* ////////////////////////////////////////////////////////////////////// */
 /* product */
 .product_list {
     /* 플렉스 */
@@ -80,32 +80,31 @@
     text-align: center;
 }
 .product .img {
-    width: 100%;
     /* 위치기준값 */
     position: relative;
 }
 .product .img img:nth-child(1) {
     width: 100%;
 }
-.product .img img:nth-child(2){
+.product .img .wishlist{
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 99;
 }
-
 /* 컬러 */
 .color {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
+    background: transparent;
     justify-content: center;
+    margin-top: 4px;
     margin-bottom: 4px;
 }
 .color>span{
     width: 15px;
     height: 5px;
-    background: #000;
     margin-right: 4px;
 }
 .color>span:last-child{
@@ -128,19 +127,47 @@
     margin-bottom: 8px;
 }
 
+.product .price s{
+    font-size: 8px;
+    margin-left: 4px;
+}
+.more_btn {
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    width: 150px;
+    margin-top: 60px;
+    padding: 16px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* #pl2~4 안보이게 */
+#pl2 {
+    display: none;
+}
+#pl3 {
+    display: none;
+}
+#pl4 {
+    display: none;   
+}
+
+/* wishlist */
 
 
 
-
-
-
-
-
-/*/////////////////////////////////////////////////////////////////////////////  */
 /* 색상 */
+/*/////////////////////////////////////////////////////////////////////////////  */
 .item1 span:nth-child(1){
     background: #DEDEDE;
 }
+.item1 span:nth-child(2){
+    background: #000;
+}
+
 .item2 span:nth-child(1){
     background: #584841;
 }
@@ -168,4 +195,177 @@
 }
 .item4 span:nth-child(4){
     background: #AC6163;
+}
+
+.item5 span:nth-child(1){
+    background: #E9E9E9;
+}
+.item5 span:nth-child(2){
+    background: #554D4D;
+}
+
+.item10 span:nth-child(1){
+    background: #E1D7C6;
+}
+.item10 span:nth-child(2){
+    background: #505050;
+}
+
+.item11 span:nth-child(1),
+.item12 span:nth-child(1){
+    background: #E1D7C6;
+}
+.item11 span:nth-child(2),
+.item12 span:nth-child(2){
+    background: #E9E9E9;
+}
+.item11 span:nth-child(3),
+.item12 span:nth-child(3){
+    background: #505050;
+}
+
+.item13 span:nth-child(1){
+    background: #E2D9C8;
+}
+.item13 span:nth-child(2){
+    background: #c0c0c0;
+}
+.item13 span:nth-child(3){
+    background: #545454;
+}
+
+.item14 span:nth-child(1){
+    background: #ebebeb;
+}
+.item14 span:nth-child(2){
+    background: #C8B098;
+}
+.item14 span:nth-child(3){
+    background: #8D766E;
+}
+.item14 span:nth-child(4){
+    background: #AF6769;
+}
+
+.item15 span:nth-child(1),
+.item16 span:nth-child(1),
+.item17 span:nth-child(1){
+    background: #ddd;
+}
+.item15 span:nth-child(2),
+.item16 span:nth-child(2),
+.item17 span:nth-child(2){
+    background: #444;
+}
+
+.item22 span:nth-child(1),
+.item23 span:nth-child(1){
+    background: #3D4133;
+}
+.item22 span:nth-child(2),
+.item23 span:nth-child(2){
+    background: #603417;
+}
+
+.item24 span:nth-child(1),
+.item25 span:nth-child(1){
+    background: #353631;
+}
+.item24 span:nth-child(2),
+.item25 span:nth-child(2){
+    background: #F6F4E5;
+}
+
+.item26 span:nth-child(1),
+.item27 span:nth-child(1){
+    background: #C0C0C0;
+}
+.item26 span:nth-child(2),
+.item27 span:nth-child(2){
+    background: #363636;
+}
+
+.item28 span:nth-child(1),
+.item29 span:nth-child(1),
+.item30 span:nth-child(1){
+    background: #675852;
+}
+.item28 span:nth-child(2),
+.item29 span:nth-child(2),
+.item30 span:nth-child(2){
+    background: #D0A783;
+}
+.item28 span:nth-child(3),
+.item29 span:nth-child(3),
+.item30 span:nth-child(3){
+    background: #2F1C15;
+}
+
+.item32 span:nth-child(1){
+    background: #141414;
+}
+.item32 span:nth-child(2){
+    background: #787878;
+}
+.item32 span:nth-child(3){
+    background: #D1D1D1;
+}
+
+.item34 span:nth-child(1),
+.item35 span:nth-child(1){
+    background: #a9a9a9;
+}
+.item34 span:nth-child(2),
+.item35 span:nth-child(2){
+    background: #B18575;
+}
+.item34 span:nth-child(3),
+.item35 span:nth-child(3){
+    background: #DFC290;
+}
+
+.item39 span:nth-child(1){
+    background: #c4c4c4;
+}
+.item39 span:nth-child(2){
+    background: #BAA196;
+}
+.item39 span:nth-child(3){
+    background: #424242;
+}
+
+.item40 span:nth-child(1),
+.item41 span:nth-child(1){
+    background: #C89470;
+}
+.item40 span:nth-child(2),
+.item41 span:nth-child(2){
+    background: #727B85;
+}
+.item40 span:nth-child(3),
+.item41 span:nth-child(3){
+    background: #58524A;
+}
+
+.item44 span:nth-child(1){
+    background: #283831;
+}
+.item44 span:nth-child(2){
+    background: #E3B8D2;
+}
+.item44 span:nth-child(3){
+    background: #C25757;
+}
+.item44 span:nth-child(4){
+    background: #DED1D1;
+}
+
+.item45 span:nth-child(1){
+    background: #E2D9C8;
+}
+.item45 span:nth-child(2){
+    background: #D6B9A7;
+}
+.item45 span:nth-child(3){
+    background: #AF676A;
 }
