@@ -120,3 +120,22 @@ footer {
     margin-top: 9px;
     font-weight: 600;
 }
+
+/* ///////////////////////////// */
+/* TOP*/
+#top {
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;    
+    text-align: center;
+    /* 포지션 */
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+
+    background: #ccc;
+    color: #fff;
+}

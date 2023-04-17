@@ -34,8 +34,30 @@ $(document).ready(function(){
     });
     
     //푸터 불러오기
-    $('footer').load('./include/footer.html');
+    $('footer').load('./include/footer.html',function(){
+
+        //스크롤바
+        $('#top').hide();
+
+        $(window).on('scroll',function(){
+            var st = $(this).scrollTop();
+
+            if(st>200){
+                $('#top').fadeIn();
+            } else {
+                $('#top').fadeOut();
+            }
+        });
+
+        $('#top').on('click',function(e){
+            e.preventDefault();
+            $('html,body').stop().animate({scrollTop:0},500,'linear');
+        });
+
+    });
 
     // 어사이드 불러오기
     $('#snb').load('./include/aside.html');
+    
+
 });
