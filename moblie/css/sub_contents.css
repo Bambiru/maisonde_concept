@@ -113,13 +113,11 @@
 .product_title {
     font-size: 12px;
     margin-top: 8px;
-    margin-bottom: 12px;
 }
 .product_title p {
     margin-bottom: 4px;
-}
-.product_title .bin {
-    padding-bottom: 12px;
+    line-height: 1.4;
+    height: 40px;
 }
 .product .price {
     font-size: 14px;
