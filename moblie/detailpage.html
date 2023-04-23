@@ -55,22 +55,130 @@
                         <td>32,300원(1.00%)</td>
                     </tr>
                 </table>
-                <label for="color">다리 색상</label>
-                <select name="color">
-                    <option value="기본값" label selected>- [필수] 옵션을 선택해 주세요 -</option>
-                    <option value="--------" disabled>-------------------------</option>
-                    <option value="스모크오크">스모크오크</option>
-                    <option value="솝트리티드">솝트리티드</option>
-                    <option value="블랙오크">블랙오크</option>
-                </select>
+                <div class="select_part">
+                    <label for="color">다리 색상</label>
+                    <select name="color">
+                        <option value="" label selected>- [필수] 옵션을 선택해 주세요 -</option>
+                        <option value="" disabled>-------------------------</option>
+                        <option value="스모크오크">스모크오크</option>
+                        <option value="솝트리티드">솝트리티드</option>
+                        <option value="블랙오크">블랙오크</option>
+                    </select>
+    
+                    <label for="color">배송</label>
+                    <select name="color">
+                        <option value="" label selected>- [필수] 옵션을 선택해 주세요 -</option>
+                        <option value="" disabled>-------------------------</option>
+                        <option value="서울/경기">서울/경기</option>
+                        <option value="기타지역">기타지역(전화문의)</option>
+                    </select>
+                    <div class="total">
+                        <p>총상품금액(수량)</p>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="btn_part">
+                    <a href="#">구매하기</a>
+                    <button>장바구니</button>
+                    <button>관심상품</button>
+                    <button>카카오톡 상담<span>@메종드컨셉</span></button>
+                </div>
+            </section>
+            <section class="na_ko">
+                <!-- 네이버페이 -->
+                <div class="naver">
+                    <div class="pay">
+                        <div class="naver_img">
+                            <img src="./images/detailpage/npay_naver_logo.png" alt="naver">
+                            <p>
+                                네이버 ID로 간편구매<br>
+                                네이버페이
+                            </p>
+                        </div>
+                        <button>구매</button>
+                        <button>찜</button>
+                    </div>
+                    <a href="#"><span>[CU더블혜택]</span> 최대 5%적립 + 최대 5%할인</a>
+                    <img src="./images/detailpage/icon/npay_sp_more.png" alt="">
+                </div>
+                <!-- 카카오 -->
+                <div class="kakao">
+                    
+                </div>
+            </section>
+            <section class="banner">
+                <img src="./images/detailpage/p/banner1.gif" alt="">
+                <img src="./images/detailpage/p/banner2.jpg" alt="">
+            </section>
+            <!-- 탭메뉴 -->
+            <section class="tab">
+                <input type="checkbox" name="detail">
+                <label for="detail">상세보기</label>
 
-                <label for="color">배송</label>
-                <select name="color">
-                    <option value="기본값" label selected>- [필수] 옵션을 선택해 주세요 -</option>
-                    <option value="--------" disabled>-------------------------</option>
-                    <option value="서울/경기">서울/경기</option>
-                    <option value="기타지역">기타지역(전화문의)</option>
-                </select>
+                <!-- 상세보기 -->
+                <div class="detail_part">
+                    <div class="click">
+                        <img src="./images/detailpage/icon/ico_zoomin.png" alt="">
+                        <p>상세페이지는 확대보기가 가능합니다.</p>
+                    </div>
+                    <img src="./images/detailpage/p/banner3.jpg" alt="">
+                    <img src="./images/detailpage/p/banner4.jpg" alt="">
+                    <img src="./images/detailpage/p/banner5.jpg" alt="">
+                    <img src="./images/detailpage/p/banner6.jpg" alt="">
+                    <img src="./images/detailpage/p/banner7.jpg" alt="">
+                    <img src="./images/detailpage/p/banner8.jpg" alt="">
+                    <img src="./images/detailpage/p/banner9.jpg" alt="">
+                    <img src="./images/detailpage/p/banner10.jpg" alt="">
+                    <img src="./images/detailpage/p/banner11.gif" alt="">
+                    <img src="./images/detailpage/p/banner12.jpg" alt="">
+                    <img src="./images/detailpage/p/banner13.gif" alt="">
+                    <img src="./images/detailpage/p/banner14.jpg" alt="">
+                </div>
+                <!-- 상품후기 -->
+                <div class="review">
+                    <div class="re1">
+                        <img src="./images/detailpage/icon/star5.png" alt="">
+                        <p>
+                            리뷰 작성시 <strong>최대 6,000</strong>을 드립니다.<br>
+                            첫번째 리뷰를 작성해보세요.
+                        </p>
+                        <button class="review_btn">
+                            리뷰작성하기
+                        </button>
+                    </div>
+                    <div>
+                        <p>상품평수 0 개</p>
+                        <input type="text">
+                        <!-- 서치아이콘 -->
+                        <select>
+                            <option value="추첨순">추첨순</option>
+                            <option value="별점순">별점순</option>
+                            <option value="최신순" selected>최신순</option>
+                        </select>
+                    </div>
+                    <div class="re1">
+                        <img src="./images/detailpage/icon/star5.png" alt="">
+                        <p>
+                            리뷰 작성시 <strong>최대 6,000</strong>을 드립니다.<br>
+                            첫번째 리뷰를 작성해보세요.
+                        </p>
+                        <button class="review_btn">
+                            리뷰작성하기
+                        </button>
+                    </div>
+                </div>
+                <!-- Q&A -->
+                <div class="q_a">
+                    <div class="q_a_btn">
+                        <button>상품문의하기</button>
+                        <button>모두보기</button>
+                    </div>
+                    <!-- 느낌표폰트어썸 -->
+                    <p>게시물이 없습니다</p>
+
+                    <!-- Q&A 슬라이드토글 -->
+                    
+                </div>
             </section>
         </main>
         <!-- /main -->
