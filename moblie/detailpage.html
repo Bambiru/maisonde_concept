@@ -12,6 +12,7 @@
         <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png">
         <!-- 기본 CSS -->
         <link rel="stylesheet" href="./css/reset.css">
+        <!-- <link rel="stylesheet" href="./css/display_none_scrollbar.css"> -->
         <!-- 페이지 CSS -->
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/detailpage.css">
@@ -25,19 +26,30 @@
 <body>
     <div id="wrap">
         <header class="w1240">
-
         </header>
         <!-- main -->
         <main role="main">
-            <h2>
-                [LE FEU] 그라운드 로우 화이트<br>
-                (바이오에탄올 난로)
-            </h2>
-            <section>
+            <div class="title">
+                <i class="fas fa-chevron-left"></i>
+                <h2>
+                    [LE FEU] 그라운드 로우 화이트<br>
+                    (바이오에탄올 난로)
+                </h2>
+            </div>
+            <section id="detail_product">
                 <div class="img_part">
-                    <!-- 수동슬라이드 or 스와이퍼 -->
-                    <img src="./images/detailpage/p/item1-1.jpg" alt="item1_1">
-                    <i class="far fa-thumbs-up"></i>
+                    <img src="./images/detailpage/p/item1-4.jpg" alt="item1_1">
+                    <!-- <img src="./images/detailpage/p/item1-2.jpg" alt="item1_2"> -->
+                    <!-- <img src="./images/detailpage/p/item1-3.jpg" alt="item1_3"> -->
+                    <!-- <img src="./images/detailpage/p/item1-4.jpg" alt="item1_4"> -->
+                    <div class="dot">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <i class="far fa-thumbs-up"></i>
                 </div>
                 <div class="item_title">
                     <p>Lefeu</p>
@@ -78,16 +90,18 @@
                     </div>
                 </div>
                 <div class="btn_part">
-                    <a href="#">구매하기</a>
-                    <button>장바구니</button>
-                    <button>관심상품</button>
-                    <button>카카오톡 상담<span>@메종드컨셉</span></button>
+                    <button class="buy"><a href="#">구매하기</a></button>
+                    <div class="basket">
+                        <button>장바구니</button>
+                        <button>관심상품</button>
+                    </div>
+                    <button class="kakaotalk">카카오톡 상담<span>@메종드컨셉</span></button>
                 </div>
             </section>
             <section class="na_ko">
                 <!-- 네이버페이 -->
                 <div class="naver">
-                    <div class="pay">
+                    <div class="naver_part">
                         <div class="naver_img">
                             <img src="./images/detailpage/npay_naver_logo.png" alt="naver">
                             <p>
@@ -95,15 +109,30 @@
                                 네이버페이
                             </p>
                         </div>
-                        <button>구매</button>
+                        <button class="naverpay"><img src="./images/detailpage/naverpay.png" alt="네이버페이"></button>
                         <button>찜</button>
                     </div>
-                    <a href="#"><span>[CU더블혜택]</span> 최대 5%적립 + 최대 5%할인</a>
-                    <img src="./images/detailpage/icon/npay_sp_more.png" alt="">
+                    <div class="event">
+                        <a href="#"><span>[CU더블혜택]</span> 최대 5%적립 + 최대 5%할인</a>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
                 </div>
                 <!-- 카카오 -->
                 <div class="kakao">
-                    
+                    <div class="kakao_part">
+                        <div class="kakao_img">
+                            <p>
+                                구매와 관리를<br>
+                                톡으로 간편하게
+                            </p>
+                        </div>
+                        <button class="kakaopay"><img src="./images/detailpage/kakaopay.png" alt="카카오페이"></button>
+                        <button>찜</button>
+                    </div>
+                    <div class="event">
+                        <a href="#"><span>[CU더블혜택]</span> 최대 5%적립 + 최대 5%할인</a>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
                 </div>
             </section>
             <section class="banner">
@@ -112,9 +141,12 @@
             </section>
             <!-- 탭메뉴 -->
             <section class="tab">
-                <input type="checkbox" name="detail">
+                <input type="radio" name="tab" id="detail" checked>
                 <label for="detail">상세보기</label>
-
+                <input type="radio" name="tab" id="review">
+                <label for="review">상품후기</label>
+                <input type="radio" name="tab" id="qna">
+                <label for="qna">Q&A</label>
                 <!-- 상세보기 -->
                 <div class="detail_part">
                     <div class="click">
@@ -136,7 +168,7 @@
                 </div>
                 <!-- 상품후기 -->
                 <div class="review">
-                    <div class="re1">
+                    <div class="review_text">
                         <img src="./images/detailpage/icon/star5.png" alt="">
                         <p>
                             리뷰 작성시 <strong>최대 6,000</strong>을 드립니다.<br>
@@ -146,17 +178,19 @@
                             리뷰작성하기
                         </button>
                     </div>
-                    <div>
-                        <p>상품평수 0 개</p>
+                    <div class="search">
+                        <p><span>상품평수</span> 0 개</p>
                         <input type="text">
-                        <!-- 서치아이콘 -->
-                        <select>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="sort">
+                        <select class="select">
                             <option value="추첨순">추첨순</option>
                             <option value="별점순">별점순</option>
                             <option value="최신순" selected>최신순</option>
                         </select>
                     </div>
-                    <div class="re1">
+                    <div class="review_text">
                         <img src="./images/detailpage/icon/star5.png" alt="">
                         <p>
                             리뷰 작성시 <strong>최대 6,000</strong>을 드립니다.<br>
@@ -166,18 +200,117 @@
                             리뷰작성하기
                         </button>
                     </div>
+                    <div class="arrow">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="policy">
+                        <a href="#">운영 정책</a>
+                        <button><a href="#">리뷰 작성하기</a></button>
+                    </div>
                 </div>
                 <!-- Q&A -->
-                <div class="q_a">
-                    <div class="q_a_btn">
+                <div class="qna">
+                    <div class="qna_btn">
                         <button>상품문의하기</button>
                         <button>모두보기</button>
                     </div>
-                    <!-- 느낌표폰트어썸 -->
-                    <p>게시물이 없습니다</p>
+                    <div class="qna_text">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>게시물이 없습니다</p>
+                    </div>
 
                     <!-- Q&A 슬라이드토글 -->
-                    
+                    <ul class="toggle">
+                        <li>
+                            <h3 class="question">
+                                결제 안내
+                                <i class="fas fa-angle-down"></i>
+                            </h3>
+                            <p class="answer">
+                                고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문등 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다.<br>
+                                <br>
+                                무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br>
+                                주문시 입력한 입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금되지 않은 주문은 자동취소 됩니다.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="question">
+                                배송 안내
+                                <i class="fas fa-angle-down"></i>
+                            </h3>
+                            <ul class="answer">
+                                <li>
+                                    배송 방법 : 택배
+                                </li>
+                                <li>
+                                    배송 지역 : 전국지역
+                                </li>
+                                <li>
+                                    배송 비용 : 무료
+                                </li>
+                                <li>
+                                    배송 기간 : 2일 ~ 7일
+                                </li>
+                                <li>
+                                    배송 안내 :
+                                </li>
+                                <li>
+                                    - 배송비 : 기본배송료는 편도 10,000원 부터 입니다.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    (제주도, 도서,산간 등 일부지역은 배송비가 추가될 수 있습니다)<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    50,000원 이상 구매시 무료배송입니다.<br>
+                                    - 배송은 입금 확인 후 2~7일 이내(주말, 공휴일제외) 배송되며, 송장번호는 해당 쇼핑몰에서 확인 가능합니다.<br>
+                                    - 주문 물량이 폭주할 경우 다소 배송기간이 지연될 수 있습니다.<br>
+                                    - 단순변심으로 인한 교환/반품은 왕복 배송비 (20,000원) 부과됩니다.<br>
+                                    - 포장훼손, 설치 및 사용된 상품은 교환/반품이 어렵습니다.<br>
+                                    <br>
+                                    <br>
+                                    ** 네이버페이 결제시**<br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    네이버 페이로 주문하며 배송지가 제주 / 도서산간 지역에 해당 하시는 경우 배송비 별도로 추가 입금해주셔야 합니다.<br>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="question">
+                                교환/반품 안내
+                                <i class="fas fa-angle-down"></i>
+                            </h3>
+                            <p class="answer">
+                                교환 및 반품이 가능한 경우<br>
+                                - 상품을 공급 받으신 날로부터 7일이내 단, 가전제품의<br>
+                                경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br>
+                                - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과<br>
+                                다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내<br>
+                                <br>
+                                교환 및 반품이 불가능한 경우<br>
+                                - 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우.<br>
+                                - 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br>
+                                (예 : 가전제품, 식품, 음반 등, 단 액정화면이 부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에<br>
+                                따른 반품/교환은 제조사 기준에 따릅니다.)<br>
+                                - 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우<br>
+                                - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우<br>
+                                - 복제가 가능한 상품등의 포장을 훼손한 경우<br>
+                                (자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)<br>
+                                <br>
+                                ※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 왕복 배송비가 부과되며, 배송비는 고객님께서 부담하셔야 합니다.<br>
+                                (색상 교환, 사이즈 교환 등 포함)<br>
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="question">
+                                환불 안내
+                                <i class="fas fa-angle-down"></i>
+                            </h3>
+                            <p class="answer">
+                                환불시 반품 확인여부를 확인한 후 3영업일 이내에 결제 금액을 환불해 드립니다.<br>
+                                신용카드로 결제하신 경우는 신용카드 승인을 취소하여 결제 대금이 청구되지 않게 합니다.<br>
+                                (단, 신용카드 결제일자에 맞추어 대금이 청구 될수 있으면 이경우 익월 신용카드 대금청구시 카드사에서 환급처리<br>
+                                됩니다.)<br>
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
@@ -193,6 +326,11 @@
 
         </footer>
         
-    </div><!-- wrap -->
+    </div>
+    <!-- wrap -->
+    <aside id="snb">
+
+    </aside>
+    <script src="./js/detailpage.js"></script>
 </body>
 </html>

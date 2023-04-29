@@ -1,9 +1,399 @@
 @charset "utf-8";
 
-.icon {
+body, html {
+    font-size: 12px;
+}
+.title i {
+    font-size: 12px;
+    line-height: 30px;
+}
+.title h2 {
+    font-size: 0.875em;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* img_part */
+.item_title .icon {
     width: 25px;
     height: 25px;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 50%;
+}
+.img_part{
+    /* 위치기준값 */
+    position: relative;
+}
+.img_part>img {
+    width: 100%;
+}
+.dot {
+    text-align: center;
+    
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.dot span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+}
+.dot span.active {
+    background: #000;
+}
+/* select_part */
+.select_part {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.select_part label {
+    width: 15%;
+    margin-bottom: 8px;
+}
+.select_part select {
+    width: 85%;
+    height: 40px;
+    margin-bottom: 8px;
+    border-style: #f1f1f1;
+    font-size: 12px;
+}
+
+/* total */
+.total { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border: 1px solid #f1f1f1;
+    border-right: none;
+    border-left: none;
+}
+
+/* btn_part */
+.btn_part .buy{
+    width: 100%;
+    height: 50px;
+    background: #d9d9d9;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.basket {
+    display: flex;
+    justify-content: space-between;
+}
+.basket button{
+    width: 49.5%;
+    background: #d9d9d9;
+    height: 50px;
+}
+.kakaotalk {
+    width: 100%;
+    height: 50px;
+    margin-top: 4px;
+    background: #FFDF2C;
+}
+
+/* 네이버, 카카오 */
+.na_ko .naver,
+.na_ko .kakao {
+    margin: 32px auto 0;
+    width: 290px;
+    border-top: 3px solid #000;
+    padding-top: 8px;
+}
+.na_ko .naver .naver_img img{
+    width: 53px;
+    height: 11px;
+    vertical-align: middle;
+}
+.naver_img p,
+.kakao_img p {
+    font-size: 11px;
+    padding-right: 4px;
+    line-height: 1.3;
+}
+/* 네이버페이 */
+.naverpay img,
+.kakaopay img{
+    width: 140px;
+    height: 42px;
+}
+.naverpay+button {
+    margin-left: 4px;
+    width: 42px;
+    height: 42px;
+    color: #00C73C;
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+}
+.kakaopay+button {
+    margin-left: 4px;
+    width: 42px;
+    height: 42px;
+    color: #00C73C;
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+}
+.naver_part,
+.kakao_part {
+    display: flex;
+}
+
+.event {
+    margin: 10px 0;
+    padding-top: 4px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.event i {
+    color: #ccc;
+}
+.event span {
+    font-weight: bold;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+.banner img:last-child{
+    margin-top: 16px;
+    margin-bottom: 47px;
+}
+.tab {
+    width: 100%;
+    font-size: 0;
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+.tab input[type="radio"]+label {
+    font-size: 12px;
+    width: 33.33%;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #000;
+    background: #f5f5f8;
+    text-align: center;
+    padding: 16px 0;
+    cursor: pointer;
+}
+.tab input[type="radio"]:checked+label{
+    background: #fff;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+.detail_part, .review, .qna {
+    display: none;
+}
+input[id="detail"]:checked ~ .detail_part,
+input[id="review"]:checked ~ .review,
+input[id="qna"]:checked ~ .qna{
+    display: block;
+}
+
+
+/* detail_part */
+.detail_part {
+    padding-top: 20px;
+}
+.detail_part .click {
+    width: 90%;
+    padding: 30px 0;
+    margin: 0 auto 70px;
+    text-align: center;
+    background: #f8f9fc;
+    cursor: pointer;
+}
+.detail_part .click img {
+    width: 30px;
+    height: 30px;
+}
+.detail_part .click p {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+}
+.detail_part>img {
+    width: 100%;
+}
+
+
+/* review */
+.review {
+    /* text-align: center; */
+    padding: 20px 0 96px;
+}
+.review_text {
+    text-align: center;
+}
+.review_text strong {
+    font-weight: bold;
+}
+.review_text>img {
+    margin-top: 16px;
+    width: 113px;
+    padding-bottom: 10px;
+}
+.review_text>p {
+    font-size: 12px;
+    line-height: 1.5;
+    padding-bottom: 22px;
+}
+.review_btn {
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+    padding: 16px 40px;
+    cursor: pointer;
+}
+
+
+.review .search {
+    font-size: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 63px;
+    line-height: 30px;
+    position: relative;
+}
+.review .search span {
+    font-weight: bold;
+}
+.search input[type="text"]{
+    width: 180px;
+    background: #f6f7f8; 
+    height: 30px;
+}
+
+.search i {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+.sort {
+    margin-top: 10px;
+    border: 1px solid #f1f1f1;
+    border-left: none;
+    border-right: none;
+
+}
+.sort .select {
+    margin: 14px 8px;
+}
+
+
+
+.arrow {
+    margin-top: 88px;
+    margin-bottom: 32px;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+.arrow i:first-child {
+    margin-right: 18px;
+}
+
+.policy {
+    font-size: 12px;
+    text-align: right;
+    color: #ccc;
+
+}
+.policy>a {
+    font-weight: 800;
+    margin-right: 14px;
+}
+.policy>button {
+    padding: 12px 16px;
+    border: 1px solid #FFB161;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 800;
+}
+
+/* Q&A */
+.qna {
+    margin-top: 8px;
+}
+.qna_btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.qna_btn button{
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    width: 49.8%;
+    height: 40px;
+    cursor: pointer;
+}
+.qna_btn button:first-child {
+    background: #000;
+    color: #fff;
+}
+.qna_btn button:last-child {
+    background: #fff;
+    color: #000;
+}
+.qna_text {
+    font-size: 12px;
+    margin: 20px 0 74px;
+    text-align: center;
+}
+.qna_text i {
+    color: #ddd;
+    font-size: 46px;
+    padding-bottom: 16px;
+}
+
+.question {
+    width: 100%;
+    background: #F5F6F7;
+    border: 1px solid #ddd;
+    padding: 16px 20px 16px 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.question {
+    font-size: 14px;
+}
+.question>i {
+    font-size: 10px;
+}
+.answer {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom: none;
+    display: none;
+}
+.toggle {
+    cursor: pointer;
+}
+.toggle li:last-child .answer {
+    border-bottom: 1px solid #ddd;
 }
