@@ -1,1501 +1,1502 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale1.0">
-    <meta name="author" content="26조">
-    <meta name="description" content="메종드컨셉 maison_de_concept">
-    
-    <title>메종드컨셉 maison_de_concept</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale1.0" />
+        <meta name="author" content="26조" />
+        <meta name="description" content="메종드컨셉 maison_de_concept" />
 
-    <!-- 폰트어썸 -->
-    <script src="https://kit.fontawesome.com/9036dd3e37.js" crossorigin="anonymous"></script>
-    <!-- favorite Icon 설정하기-->
-    <link rel="shortcut icon" href="./images/favicon/fav32.png">
-    <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png">
-    <!-- CSS파일 -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <!-- 박스슬라이더 CSS -->
-    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
-    <link rel="stylesheet" href="./css/jquery.bxslider.css">
-    <!-- 해당 CSS -->
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <!-- 제이쿼리 코어파일 -->
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/prefixfree.min.js"></script>
-    <!-- 스크롤바JS -->
-    <script src="./js/jquery.scrollTo.min.js"></script>
-    <script src="./js/jquery.bxslider.js"></script>
-    <script src="./js/include.js"></script>
-</head>
-<body>
-    <div id="wrap">
-        <!-- header -->
-        <header>
+        <title>메종드컨셉 maison_de_concept</title>
 
-        </header>
-        <!-- /header-->
-        <!-- main -->
-        <main role="main">
-            <!-- Slide -->
-            <article id="main_banner">
-                <div id="gallery_wrap">
-                    <ul class="slide_gallery">
-                        <li><img src="./images/main/slide/main_slide1-1.jpeg" alt="slide01"></li>
-                        <li><img src="./images/main/slide/main_slide1-2.jpeg" alt="slide02"></li>
-                        <li><img src="./images/main/slide/main_slide1-3.jpeg" alt="slide03"></li>
-                        <li><img src="./images/main/slide/main_slide1-4.jpeg" alt="slide04"></li>
-                        <li><img src="./images/main/slide/main_slide1-5.jpeg" alt="slide05"></li>
-                        <li><img src="./images/main/slide/main_slide1-6.jpeg" alt="slide06"></li>
-                    </ul>
+        <!-- 폰트어썸 -->
+        <script src="https://kit.fontawesome.com/9036dd3e37.js" crossorigin="anonymous"></script>
+        <!-- favorite Icon 설정하기-->
+        <link rel="shortcut icon" href="./images/favicon/fav32.png" />
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png" />
+        <!-- CSS파일 -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- 박스슬라이더 CSS -->
+        <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
+        <link rel="stylesheet" href="./css/jquery.bxslider.css" />
+        <!-- 해당 CSS -->
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <!-- 제이쿼리 코어파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <!-- 스크롤바JS -->
+        <script src="./js/jquery.scrollTo.min.js"></script>
+        <script src="./js/jquery.bxslider.js"></script>
+        <script src="./js/include.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- header -->
+            <header></header>
+            <!-- /header-->
+            <!-- main -->
+            <main role="main">
+                <!-- Slide -->
+                <article id="main_banner">
+                    <div id="gallery_wrap">
+                        <ul class="slide_gallery">
+                            <li><img src="./images/main/slide/main_slide1-1.jpeg" alt="slide01" /></li>
+                            <li><img src="./images/main/slide/main_slide1-2.jpeg" alt="slide02" /></li>
+                            <li><img src="./images/main/slide/main_slide1-3.jpeg" alt="slide03" /></li>
+                            <li><img src="./images/main/slide/main_slide1-4.jpeg" alt="slide04" /></li>
+                            <li><img src="./images/main/slide/main_slide1-5.jpeg" alt="slide05" /></li>
+                            <li><img src="./images/main/slide/main_slide1-6.jpeg" alt="slide06" /></li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- /Slide -->
+                <!-- BEST_ITEM -->
+                <article id="best">
+                    <h2>2023 BEST ITEM</h2>
+                    <div class="items">
+                        <input type="radio" name="best" id="bath" checked />
+                        <label for="bath">#BATH</label>
+                        <input type="radio" name="best" id="lighting" />
+                        <label for="lighting">#LIGHTING</label>
+                        <input type="radio" name="best" id="kitchen" />
+                        <label for="kitchen">#KITCHEN</label>
+                        <input type="radio" name="best" id="life_style" />
+                        <label for="life_style">#LIFE STYLE</label>
+                        <!-- best_bath -->
+                        <section id="best_bath" class="product_list">
+                            <!-- item1 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem1-1.jpg" alt="item1" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item1 color">
+                                    <span class="c_414244"></span>
+                                    <span class="c_bdb2ae"></span>
+                                    <span class="c_ffffff"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 아라 솝디스펜서</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">76,000원</p>
+                            </div>
+                            <!-- item2 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem1-2.jpg" alt="item2" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item2 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 메노토 수건 스탠드</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">460,000원</p>
+                            </div>
+                            <!-- item3 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem1-3.jpg" alt="item3" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item3 color">
+                                    <span class="c_454545"></span>
+                                    <span class="c_e2d9ca"></span>
+                                    <span class="c_c6c6c6"></span>
+                                    <span class="c_968e8a"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 파라 페달 휴지통</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">79,000원</p>
+                            </div>
+                            <!-- item4 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem1-4.jpg" alt="item4" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item4 color">
+                                    <span class="c_363636"></span>
+                                    <span class="c_857c77"></span>
+                                    <span class="c_c0c0c0"></span>
+                                    <span class="c_e2d9c8"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 소노 욕실용품 세트</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">112,000원<s>140,000원</s></p>
+                                <p>
+                                    <img src="./images/icon/eventIcon.gif" alt="event" />
+                                    <img src="./images/icon/bestIcon.gif" alt="best" />
+                                </p>
+                            </div>
+                            <!-- item5 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem1-5.png" alt="item5" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item5 color">
+                                    <span class="c_000000"></span>
+                                    <span class="c_c9c9c9"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 모도 솝 디스펜서</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">119,000원</p>
+                            </div>
+                            <!-- item6 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem1-6.jpg" alt="item6" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item6 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 넥시오 수건 홀더 (무광)</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">190,000원</p>
+                            </div>
+                        </section>
+                        <!-- best_lighting -->
+                        <section id="best_lighting" class="product_list">
+                            <!-- item1 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem2-1.jpg" alt="item2-1" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item1 color">
+                                    <span class="c_ff5a00"></span>
+                                    <span class="c_ffffff"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[ARTEMIDE] 네시노 테이블 램프</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">261,000원<s>290,000원</s></p>
+                            </div>
+                            <!-- item2 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem2-2.jpg" alt="item2-2" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item2 color">
+                                    <span class="c_ffffff"></span>
+                                    <span class="c_9e9d9c"></span>
+                                    <span class="c_4f575a"></span>
+                                    <span class="c_baa196"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 애니 무선 램프</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">220,000원</p>
+                            </div>
+                            <!-- item3 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem2-3.jpg" alt="item2-3" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item3 color">
+                                    <span class="c_ffffff"></span>
+                                    <span class="c_7195ad"></span>
+                                    <span class="c_fec0cb"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[메종드컨셉] 루미엘 테이블 램프</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">78,000원</p>
+                            </div>
+                            <!-- item4 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem2-4.jpg" alt="item2-4" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item4 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[NEOZ] 아울 1 화이트</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">432,000원<s>540,000원</s></p>
+                                <p><img src="./images/icon/eventIcon.gif" alt="event" /></p>
+                            </div>
+                            <!-- item5 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem2-5.jpg" alt="item2-5" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item5 color">
+                                    <span class="c_ffaa00"></span>
+                                    <span class="c_ffffff"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[ARTEMIDE] 에클리세</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">270,000원<s>300,000원</s></p>
+                            </div>
+                            <!-- item6 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem2-6.jpg" alt="item2-6" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item6 color">
+                                    <span class="c_0033ff"></span>
+                                    <span class="c_fff200"></span>
+                                    <span class="c_f51313"></span>
+                                    <span class="c_ffffff"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[ARTEMIDE] 톨로메오 마이크로 컬러</p>
+                                    <p>테이플 램프</p>
+                                </a>
+                                <p class="price">369,000원<s>410,000원</s></p>
+                            </div>
+                        </section>
+                        <!-- best_kitchen -->
+                        <section id="best_kitchen" class="product_list">
+                            <!-- item1 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem3-1.jpg" alt="item3-1" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item1 color">
+                                    <span class="c_ccc9c7"></span>
+                                    <span class="c_e2dacb"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 델라라 브레드 바스켓 스몰</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">60,000원</p>
+                            </div>
+                            <!-- item2 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem3-2.png" alt="item3-2" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item2 color">
+                                    <span class="c_b8ad9d"></span>
+                                    <span class="c_798aa3"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 올비고 오일병 세트</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">86,000원</p>
+                                <p><img src="./images/icon/bestIcon.gif" alt="best" /></p>
+                            </div>
+                            <!-- item3 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem3-3.jpg" alt="item3-3" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item3 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 치즈 그레이터</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">98,000원</p>
+                            </div>
+                            <!-- item4 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem3-4.jpg" alt="item3-4" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item4 color">
+                                    <span class="c_feffef"></span>
+                                    <span class="c_263622"></span>
+                                    <span class="c_a9a9a9"></span>
+                                    <span class="c_7d7d7d"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 미오 멀티보울 미듐</p>
+                                    <p>( 원형찬기 )</p>
+                                </a>
+                                <p class="price">23,000원</p>
+                            </div>
+                            <!-- item5 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem3-5.jpg" alt="item3-5" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item5 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 스텐 바구니 미디움</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">105,000원</p>
+                                <p><img src="./images/icon/bestIcon.gif" alt="best" /></p>
+                            </div>
+                            <!-- item6 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem3-6.jpg" alt="item3-6" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item6 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 시토 테이블 매트</p>
+                                    <p>( 1개입 )</p>
+                                </a>
+                                <p class="price">10,000원</p>
+                            </div>
+                        </section>
+                        <!-- best_lifestyle -->
+                        <section id="best_lifestyle" class="product_list">
+                            <!-- item1 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem4-1.jpg" alt="item4-1" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item1 color">
+                                    <span class="c_e2d9c8"></span>
+                                    <span class="c_c0c0c0"></span>
+                                    <span class="c_545454"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 니디아 랜턴 스몰</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">390,000원</p>
+                            </div>
+                            <!-- item2 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem4-2.jpg" alt="item4-2" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item2 color">
+                                    <span class="c_e2d9c8"></span>
+                                    <span class="c_c0c0c0"></span>
+                                    <span class="c_545454"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 리토 랜턴 스몰</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">79,000원</p>
+                            </div>
+                            <!-- item3 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem4-3.png" alt="item4-3" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item3 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[LYUNI] LED 필라 캔들_아이보리</p>
+                                    <p>_10.1X15 CM</p>
+                                </a>
+                                <p class="price">55,000원</p>
+                            </div>
+                            <!-- item4 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem4-4.jpg" alt="item4-4" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item4 color">
+                                    <span class="c_beb9bd"></span>
+                                    <span class="c_c8af98"></span>
+                                    <span class="c_4f4f4f"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] [기획전]</p>
+                                    <p>컬 코트 행거</p>
+                                </a>
+                                <p class="price">39,000원</p>
+                            </div>
+                            <!-- item5 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem4-5.jpg" alt="item4-5" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item5 color">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 캔들 세트</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">102,400원<s>128,000원</s></p>
+                                <p><img src="./images/icon/eventIcon.gif" alt="event" /></p>
+                            </div>
+                            <!-- item6 -->
+                            <div class="product">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="./images/main/p/bestItem4-6.jpg" alt="item4-6" />
+                                    </a>
+                                    <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                                </div>
+                                <div class="item6 color">
+                                    <span class="c_e2d9c8"></span>
+                                    <span class="c_d6b9a7"></span>
+                                    <span class="c_af676a"></span>
+                                </div>
+                                <a href="#" class="product_title">
+                                    <p>[BLOMUS] 콜로라 꽃병 라지</p>
+                                    <p class="bin"></p>
+                                </a>
+                                <p class="price">79,000원</p>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+                <!-- /BEST_ITEM -->
+                <!-- 중간배너 -->
+                <div class="middle_banner">
+                    <img src="./images/main/p/coupon.jpeg" alt="banner" />
                 </div>
-            </article>
-            <!-- /Slide -->
-            <!-- BEST_ITEM -->
-            <article id="best">
-                <h2>2023 BEST ITEM</h2>
-                <div class="items">
-                    <input type="radio" name="best" id="bath" checked>
-                    <label for="bath">#BATH</label>   
-                    <input type="radio" name="best" id="lighting">
-                    <label for="lighting">#LIGHTING</label>   
-                    <input type="radio" name="best" id="kitchen">
-                    <label for="kitchen">#KITCHEN</label>   
-                    <input type="radio" name="best" id="life_style">
-                    <label for="life_style">#LIFE STYLE</label>   
-                    <!-- best_bath -->
-                    <section id="best_bath" class="product_list">
+                <!-- /중간배너 -->
+                <!-- MD'S PICK -->
+                <div id="mdpick">
+                    <h2>MD's PICK</h2>
+                    <section class="product_list">
                         <!-- item1 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem1-1.jpg" alt="item1">
+                                    <img src="./images/main/p/mdItem1-1.jpg" alt="item1" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item1 color">
-                                <span class="c_414244"></span>
-                                <span class="c_bdb2ae"></span>
-                                <span class="c_ffffff"></span>
+                                <span class="c_c2904d"></span>
+                                <span class="c_743b25"></span>
+                                <span class="c_e5926f"></span>
+                                <span class="c_eeeeee"></span>
+                                <span class="c_000000"></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 아라 솝디스펜서</p>
+                                <p>[NEOZ] 쿠이 2</p>
                                 <p class="bin"></p>
                             </a>
-                            <p class="price">76,000원</p>
+                            <p class="price">460,000원</p>
+                            <p>
+                                <img src="./images/icon/hitIcon.gif" alt="hit" />
+                            </p>
                         </div>
                         <!-- item2 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem1-2.jpg" alt="item2">
+                                    <img src="./images/main/p/mdItem1-2.jpg" alt="item2" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item2 color">
-                                <span></span>
-                                <span></span>
+                                <span class="c_c4c4c4"></span>
+                                <span class="c_baa196"></span>
+                                <span class="c_424242"></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 메노토 수건 스탠드</p>
+                                <p>[BLOMUS] 노나 허브 팟</p>
                                 <p class="bin"></p>
                             </a>
-                            <p class="price">460,000원</p>
+                            <p class="price">55,000원</p>
+                            <p>
+                                <img src="./images/icon/hitIcon.gif" alt="hit" />
+                                <img src="./images/icon/bestIcon.gif" alt="best" />
+                            </p>
                         </div>
                         <!-- item3 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem1-3.jpg" alt="item3">
+                                    <img src="./images/main/p/mdItem1-3.jpg" alt="item3" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item3 color">
-                                <span class="c_454545"></span>
-                                <span class="c_e2d9ca"></span>
-                                <span class="c_c6c6c6"></span>
-                                <span class="c_968e8a"></span>
+                                <span class="c_000000"></span>
+                                <span class="c_501704"></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 파라 페달 휴지통</p>
+                                <p>[BLOMUS] 페사 마블 북엔드</p>
                                 <p class="bin"></p>
                             </a>
-                            <p class="price">79,000원</p>
+                            <p class="price">165,000원</p>
+                            <p>
+                                <img src="./images/icon/hitIcon.gif" alt="hit" />
+                                <img src="./images/icon/bestIcon.gif" alt="best" />
+                            </p>
                         </div>
                         <!-- item4 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem1-4.jpg" alt="item4">
+                                    <img src="./images/main/p/mdItem1-4.jpg" alt="item4" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item4 color">
-                                <span class="c_363636"></span>
-                                <span class="c_857c77"></span>
-                                <span class="c_c0c0c0"></span>
-                                <span class="c_e2d9c8"></span>
+                                <span></span>
+                                <span></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 소노 욕실용품 세트</p>
+                                <p>[BLOMUS] 사블로 머그컵 세트 그레이</p>
                                 <p class="bin"></p>
                             </a>
-                            <p class="price">112,000원<s>140,000원</s></p>
+                            <p class="price">68,000원</p>
                             <p>
-                                <img src="./images/icon/eventIcon.gif" alt="event">
-                                <img src="./images/icon/bestIcon.gif" alt="best">
+                                <img src="./images/icon/hitIcon.gif" alt="hit" />
+                                <img src="./images/icon/bestIcon.gif" alt="best" />
                             </p>
                         </div>
                         <!-- item5 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem1-5.png" alt="item5">
+                                    <img src="./images/main/p/mdItem1-5.png" alt="item5" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item5 color">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <a href="#" class="product_title">
+                                <p>[LUCKYBOYSUNDAY] 눌레 쿠션</p>
+                                <p class="bin"></p>
+                            </a>
+                            <p class="price">180,000원</p>
+                            <p>
+                                <img src="./images/icon/hitIcon.gif" alt="hit" />
+                            </p>
+                        </div>
+                        <!-- item6 -->
+                        <div class="product">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/main/p/mdItem1-6.jpg" alt="item6" />
+                                </a>
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                            </div>
+                            <div class="item6 color">
+                                <span class="c_c0c0c0"></span>
+                                <span class="c_363636"></span>
+                            </div>
+                            <a href="#" class="product_title">
+                                <p>[BLOMUS] 문 트레이 미듐</p>
+                                <p class="bin"></p>
+                            </a>
+                            <p class="price">45,000원</p>
+                            <p>
+                                <img src="./images/icon/hitIcon.gif" alt="hit" />
+                                <img src="./images/icon/bestIcon.gif" alt="best" />
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <!-- /MD'S PICK -->
+                <!-- NEW PRODUCT -->
+                <div id="new_product">
+                    <h2>NEW PRODUCT</h2>
+                    <section class="product_list">
+                        <!-- item1 -->
+                        <div class="product">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/main/p/newItem1-1.png" alt="item1" />
+                                </a>
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                            </div>
+                            <div class="item1 color">
+                                <span class="c_e8e8e8"></span>
+                                <span class="c_adadad"></span>
+                                <span class="c_575757"></span>
+                            </div>
+                            <a href="#" class="product_title">
+                                <p>[BLOMUS] 스테이 데이 베드 L (라지)</p>
+                                <p class="bin"></p>
+                            </a>
+                            <p class="price">1,332,000원<s>1,480,000원</s></p>
+                            <p>
+                                <img src="./images/icon/newIcon.gif" alt="new" />
+                            </p>
+                        </div>
+                        <!-- item2 -->
+                        <div class="product">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/main/p/newItem1-2.png" alt="item2" />
+                                </a>
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                            </div>
+                            <div class="item2 color">
+                                <span class="c_e8e8e8"></span>
+                                <span class="c_adadad"></span>
+                                <span class="c_575757"></span>
+                            </div>
+                            <a href="#" class="product_title">
+                                <p>[BLOMUS] 스테이 라운저 L (라지)</p>
+                                <p class="bin"></p>
+                            </a>
+                            <p class="price">801,000원<s>890,000원</s></p>
+                            <p>
+                                <img src="./images/icon/newIcon.gif" alt="new" />
+                            </p>
+                        </div>
+                        <!-- item3 -->
+                        <div class="product">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/main/p/newItem1-3.png" alt="item3" />
+                                </a>
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                            </div>
+                            <div class="item3 color">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <a href="#" class="product_title">
+                                <p>[BLOMUS] 엘리 벤치</p>
+                                <p class="bin"></p>
+                            </a>
+                            <p class="price">1,000,000원</p>
+                            <p>
+                                <img src="./images/icon/newIcon.gif" alt="new" />
+                            </p>
+                        </div>
+                        <!-- item4 -->
+                        <div class="product">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/main/p/newItem1-4.png" alt="item4" />
+                                </a>
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
+                            </div>
+                            <div class="item4 color">
                                 <span class="c_000000"></span>
-                                <span class="c_c9c9c9"></span>
+                                <span class="c_d1d1d1"></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 모도 솝 디스펜서</p>
+                                <p>[BLOMUS] 모도 토일렛 브러쉬</p>
                                 <p class="bin"></p>
                             </a>
-                            <p class="price">119,000원</p>
-                        </div>
-                        <!-- item6 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem1-6.jpg" alt="item6">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item6 color">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 넥시오 수건 홀더 (무광)</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">190,000원</p>
-                        </div>                                                                                             
-                    </section>
-                    <!-- best_lighting -->
-                    <section id="best_lighting" class="product_list">
-                        <!-- item1 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem2-1.jpg" alt="item2-1">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item1 color">
-                                <span class="c_ff5a00"></span>
-                                <span class="c_ffffff"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[ARTEMIDE] 네시노 테이블 램프</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">261,000원<s>290,000원</s></p>
-                        </div>          
-                        <!-- item2 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem2-2.jpg" alt="item2-2">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item2 color">
-                                <span class="c_ffffff"></span>
-                                <span class="c_9e9d9c"></span>
-                                <span class="c_4f575a"></span>
-                                <span class="c_baa196"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 애니 무선 램프</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">220,000원</p>
-                        </div>                           
-                        <!-- item3 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem2-3.jpg" alt="item2-3">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item3 color">
-                                <span class="c_ffffff"></span>
-                                <span class="c_7195ad"></span>
-                                <span class="c_fec0cb"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[메종드컨셉] 루미엘 테이블 램프</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">78,000원</p>
-                        </div>     
-                        <!-- item4 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem2-4.jpg" alt="item2-4">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item4 color">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[NEOZ] 아울 1 화이트</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">432,000원<s>540,000원</s></p>
-                            <p><img src="./images/icon/eventIcon.gif" alt="event"></p>
+                            <p class="price">179,000원</p>
+                            <p>
+                                <img src="./images/icon/newIcon.gif" alt="new" />
+                            </p>
                         </div>
                         <!-- item5 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem2-5.jpg" alt="item2-5">
+                                    <img src="./images/main/p/newItem1-5.png" alt="item5" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item5 color">
-                                <span class="c_ffaa00"></span>
-                                <span class="c_ffffff"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[ARTEMIDE] 에클리세</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">270,000원<s>300,000원</s></p>
-                        </div>
-                        <!-- item6 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem2-6.jpg" alt="item2-6">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item6 color">
-                                <span class="c_0033ff"></span>
-                                <span class="c_fff200"></span>
-                                <span class="c_f51313"></span>
-                                <span class="c_ffffff"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[ARTEMIDE] 톨로메오 마이크로 컬러</p>
-                                <p>테이플 램프</p>
-                            </a>
-                            <p class="price">369,000원<s>410,000원</s></p>
-                        </div>                                                                                     
-                    </section>
-                    <!-- best_kitchen -->
-                    <section id="best_kitchen" class="product_list">
-                        <!-- item1 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem3-1.jpg" alt="item3-1">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item1 color">
-                                <span class="c_ccc9c7"></span>
-                                <span class="c_e2dacb"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 델라라 브레드 바스켓 스몰</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">60,000원</p>
-                        </div> 
-                        <!-- item2 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem3-2.png" alt="item3-2">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item2 color">
-                                <span class="c_b8ad9d"></span>
-                                <span class="c_798aa3"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 올비고 오일병 세트</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">86,000원</p>
-                            <p><img src="./images/icon/bestIcon.gif" alt="best"></p>
-                        </div>    
-                        <!-- item3 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem3-3.jpg" alt="item3-3">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item3 color">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 치즈 그레이터</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">98,000원</p>
-                        </div>           
-                        <!-- item4 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem3-4.jpg" alt="item3-4">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item4 color">
-                                <span class="c_feffef"></span>
-                                <span class="c_263622"></span>
-                                <span class="c_a9a9a9"></span>
-                                <span class="c_7d7d7d"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 미오 멀티보울 미듐</p>
-                                <p>( 원형찬기 )</p>
-                            </a>
-                            <p class="price">23,000원</p>
-                        </div> 
-                        <!-- item5 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem3-5.jpg" alt="item3-5">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item5 color">
                                 <span></span>
                                 <span></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 스텐 바구니 미디움</p>
+                                <p>[BLOMUS] 엘리 바 스툴</p>
                                 <p class="bin"></p>
                             </a>
-                            <p class="price">105,000원</p>
-                            <p><img src="./images/icon/bestIcon.gif" alt="best"></p>
-                        </div>    
+                            <p class="price">531,000원<s>590,000원</s></p>
+                            <p>
+                                <img src="./images/icon/newIcon.gif" alt="new" />
+                            </p>
+                        </div>
                         <!-- item6 -->
                         <div class="product">
                             <div class="img">
                                 <a href="#">
-                                    <img src="./images/main/p/bestItem3-6.jpg" alt="item3-6">
+                                    <img src="./images/main/p/newItem1-6.png" alt="item6" />
                                 </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
+                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish" />
                             </div>
                             <div class="item6 color">
                                 <span></span>
                                 <span></span>
                             </div>
                             <a href="#" class="product_title">
-                                <p>[BLOMUS] 시토 테이블 매트</p>
-                                <p>( 1개입 )</p>
+                                <p>[UYUNI] 필라 캔들_아이보리</p>
+                                <p>10.1X10 cm</p>
                             </a>
-                            <p class="price">10,000원</p>
-                        </div>                                                             
-                    </section>
-                    <!-- best_lifestyle -->
-                    <section id="best_lifestyle" class="product_list">
-                        <!-- item1 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem4-1.jpg" alt="item4-1">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item1 color">
-                                <span class="c_e2d9c8"></span>
-                                <span class="c_c0c0c0"></span>
-                                <span class="c_545454"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 니디아 랜턴 스몰</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">390,000원</p>
-                        </div> 
-                        <!-- item2 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem4-2.jpg" alt="item4-2">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item2 color">
-                                <span class="c_e2d9c8"></span>
-                                <span class="c_c0c0c0"></span>
-                                <span class="c_545454"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 리토 랜턴 스몰</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">79,000원</p>
-                        </div> 
-                        <!-- item3 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem4-3.png" alt="item4-3">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item3 color">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[LYUNI] LED 필라 캔들_아이보리</p>
-                                <p>_10.1X15 CM</p>
-                            </a>
-                            <p class="price">55,000원</p>
-                        </div>      
-                        <!-- item4 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem4-4.jpg" alt="item4-4">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item4 color">
-                                <span class="c_beb9bd"></span>
-                                <span class="c_c8af98"></span>
-                                <span class="c_4f4f4f"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] [기획전]</p>
-                                <p>컬 코트 행거</p>
-                            </a>
-                            <p class="price">39,000원</p>
-                        </div>       
-                        <!-- item5 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem4-5.jpg" alt="item4-5">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item5 color">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 캔들 세트</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">102,400원<s>128,000원</s></p>
-                            <p><img src="./images/icon/eventIcon.gif" alt="event"></p>
-                        </div>                                                  
-                        <!-- item6 -->
-                        <div class="product">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./images/main/p/bestItem4-6.jpg" alt="item4-6">
-                                </a>
-                                <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                            </div>
-                            <div class="item6 color">
-                                <span class="c_e2d9c8"></span>
-                                <span class="c_d6b9a7"></span>
-                                <span class="c_af676a"></span>
-                            </div>
-                            <a href="#" class="product_title">
-                                <p>[BLOMUS] 콜로라 꽃병 라지</p>
-                                <p class="bin"></p>
-                            </a>
-                            <p class="price">79,000원</p>
-                        </div>                             
+                            <p class="price">48,000원</p>
+                            <p>
+                                <img src="./images/icon/newIcon.gif" alt="new" />
+                            </p>
+                        </div>
                     </section>
                 </div>
-            </article>
-            <!-- /BEST_ITEM -->
-            <!-- 중간배너 -->
-            <div class="middle_banner">
-                <img src="./images/main/p/coupon.jpeg" alt="banner">
-            </div>
-            <!-- /중간배너 -->
-            <!-- MD'S PICK -->
-            <div id="mdpick">
-                <h2>MD's PICK</h2>
-                <section class="product_list">
-                    <!-- item1 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/mdItem1-1.jpg" alt="item1">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item1 color">
-                            <span class="c_c2904d"></span>
-                            <span class="c_743b25"></span>
-                            <span class="c_e5926f"></span>
-                            <span class="c_eeeeee"></span>
-                            <span class="c_000000"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[NEOZ] 쿠이 2</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">460,000원</p>
-                        <p>
-                            <img src="./images/icon/hitIcon.gif" alt="hit">
-                        </p>
-                    </div>       
-                    <!-- item2 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/mdItem1-2.jpg" alt="item2">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item2 color">
-                            <span class="c_c4c4c4"></span>
-                            <span class="c_baa196"></span>
-                            <span class="c_424242"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 노나 허브 팟</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">55,000원</p>
-                        <p>
-                            <img src="./images/icon/hitIcon.gif" alt="hit">
-                            <img src="./images/icon/bestIcon.gif" alt="best">
-                        </p>
+                <!-- /NEW PRODUCT -->
+                <!-- BRAND 슬라이더-->
+                <div id="brand">
+                    <div id="gallery_wrap">
+                        <h2>BRAND</h2>
+                        <ul class="slide_gallery">
+                            <!-- 브랜드1,2 -->
+                            <li>
+                                <!-- 브랜드1 -->
+                                <div class="brand1">
+                                    <img src="./images/main/slide/main_slide2-1.jpg" alt="brand01" />
+                                    <div class="brand_text">
+                                        <h3>루씨에어</h3>
+                                        <p>No.1 프리미엄 실링팬 브랜드 루씨에어</p>
+                                    </div>
+                                </div>
+                                <!-- 브랜드2 -->
+                                <div class="brand2">
+                                    <img src="./images/main/slide/main_slide2-2.jpg" alt="brand02" />
+                                    <div class="brand_text">
+                                        <h3>블로무스</h3>
+                                        <p>
+                                            미니멀리즘을 강조한 디자인<br />
+                                            독일 라이프 스타일 브랜드
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 브랜드3,4 -->
+                            <li>
+                                <!-- 브랜드3 -->
+                                <div class="brand3">
+                                    <img src="./images/main/slide/main_slide2-3.jpg" alt="brand03" />
+                                    <div class="brand_text">
+                                        <h3>바오밥 컬렉션</h3>
+                                        <p>벨기에 럭셔리 홀 프래그랜스 브랜드</p>
+                                    </div>
+                                </div>
+                                <!-- 브랜드4 -->
+                                <div class="brand4">
+                                    <img src="./images/main/slide/main_slide2-4.jpg" alt="brand04" />
+                                    <div class="brand_text">
+                                        <h3>럭키보이선데이</h3>
+                                        <p>덴마크 코펜하겐에서 설립된 국민인형</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 브랜드5,6 -->
+                            <li>
+                                <!-- 브랜드5 -->
+                                <div class="brand5">
+                                    <img src="./images/main/slide/main_slide2-5.jpg" alt="brand05" />
+                                    <div class="brand_text">
+                                        <h3>르푸</h3>
+                                        <p>덴마크 친환경 바이오에탄올 난로</p>
+                                    </div>
+                                </div>
+                                <!-- 브랜드6 -->
+                                <div class="brand6">
+                                    <img src="./images/main/slide/main_slide2-6.jpg" alt="brand06" />
+                                    <div class="brand_text">
+                                        <h3>네오즈</h3>
+                                        <p>
+                                            최고의 공간을 밝히는 우아함,<br />
+                                            무선 테이블 조명의 선구자
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 브랜드7,8 -->
+                            <li>
+                                <!-- 브랜드7 -->
+                                <div class="brand7">
+                                    <img src="./images/main/slide/main_slide2-7.jpg" alt="brand07" />
+                                    <div class="brand_text">
+                                        <h3>아르테미데</h3>
+                                        <p>시간이 지나도 인정받는 디자인 조명</p>
+                                    </div>
+                                </div>
+                                <!-- 브랜드8 -->
+                                <div class="brand8">
+                                    <img src="./images/main/slide/main_slide2-8.jpg" alt="brand08" />
+                                    <div class="brand_text">
+                                        <h3>네오즈</h3>
+                                        <p>
+                                            안정성과 편리성을 제공하는<br />
+                                            덴마크 LED 브랜드
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- item3 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/mdItem1-3.jpg" alt="item3">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item3 color">
-                            <span class="c_000000"></span>
-                            <span class="c_501704"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 페사 마블 북엔드</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">165,000원</p>
-                        <p>
-                            <img src="./images/icon/hitIcon.gif" alt="hit">
-                            <img src="./images/icon/bestIcon.gif" alt="best">
-                        </p>
-                    </div>     
-                    <!-- item4 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/mdItem1-4.jpg" alt="item4">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item4 color">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 사블로 머그컵 세트 그레이</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">68,000원</p>
-                        <p>
-                            <img src="./images/icon/hitIcon.gif" alt="hit">
-                            <img src="./images/icon/bestIcon.gif" alt="best">
-                        </p>
-                    </div>      
-                    <!-- item5 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/mdItem1-5.png" alt="item5">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item5 color">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[LUCKYBOYSUNDAY] 눌레 쿠션</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">180,000원</p>
-                        <p>
-                            <img src="./images/icon/hitIcon.gif" alt="hit">
-                        </p>
-                    </div>   
-                    <!-- item6 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/mdItem1-6.jpg" alt="item6">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item6 color">
-                            <span class="c_c0c0c0"></span>
-                            <span class="c_363636"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 문 트레이 미듐</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">45,000원</p>
-                        <p>
-                            <img src="./images/icon/hitIcon.gif" alt="hit">
-                            <img src="./images/icon/bestIcon.gif" alt="best">
-                        </p>
-                    </div>                                                  
-                </section>
-            </div>
-            <!-- /MD'S PICK -->
-            <!-- NEW PRODUCT -->
-            <div id="new_product">
-                <h2>NEW PRODUCT</h2>
-                <section class="product_list">
-                    <!-- item1 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/newItem1-1.png" alt="item1">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item1 color">
-                            <span class="c_e8e8e8"></span>
-                            <span class="c_adadad"></span>
-                            <span class="c_575757"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 스테이 데이 베드 L (라지)</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">1,332,000원<s>1,480,000원</s></p>
-                        <p>
-                            <img src="./images/icon/newIcon.gif" alt="new">
-                        </p>
-                    </div>               
-                    <!-- item2 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/newItem1-2.png" alt="item2">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item2 color">
-                            <span class="c_e8e8e8"></span>
-                            <span class="c_adadad"></span>
-                            <span class="c_575757"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 스테이 라운저 L (라지)</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">801,000원<s>890,000원</s></p>
-                        <p>
-                            <img src="./images/icon/newIcon.gif" alt="new">
-                        </p>
-                    </div>           
-                    <!-- item3 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/newItem1-3.png" alt="item3">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item3 color">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 엘리 벤치</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">1,000,000원</p>
-                        <p>
-                            <img src="./images/icon/newIcon.gif" alt="new">
-                        </p>
-                    </div>     
-                    <!-- item4 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/newItem1-4.png" alt="item4">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item4 color">
-                            <span class="c_000000"></span>
-                            <span class="c_d1d1d1"></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 모도 토일렛 브러쉬</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">179,000원</p>
-                        <p>
-                            <img src="./images/icon/newIcon.gif" alt="new">
-                        </p>
-                    </div>     
-                    <!-- item5 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/newItem1-5.png" alt="item5">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item5 color">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[BLOMUS] 엘리 바 스툴</p>
-                            <p class="bin"></p>
-                        </a>
-                        <p class="price">531,000원<s>590,000원</s></p>
-                        <p>
-                            <img src="./images/icon/newIcon.gif" alt="new">
-                        </p>
-                    </div>                 
-                    <!-- item6 -->
-                    <div class="product">
-                        <div class="img">
-                            <a href="#">
-                                <img src="./images/main/p/newItem1-6.png" alt="item6">
-                            </a>
-                            <img class="wishlist" src="./images/icon/btn_wish_before.png" alt="wish">
-                        </div>
-                        <div class="item6 color">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <a href="#" class="product_title">
-                            <p>[UYUNI] 필라 캔들_아이보리</p>
-                            <p>10.1X10 cm</p>
-                        </a>
-                        <p class="price">48,000원</p>
-                        <p>
-                            <img src="./images/icon/newIcon.gif" alt="new">
-                        </p>
-                    </div>                                                                                       
-                </section>
-            </div>
-            <!-- /NEW PRODUCT -->
-            <!-- BRAND 슬라이더-->
-            <div id="brand">
-                <div id="gallery_wrap">
-                    <h2>BRAND</h2>
-                    <ul class="slide_gallery">
-                        <!-- 브랜드1,2 -->
-                        <li>
-                            <!-- 브랜드1 -->
-                            <div class="brand1">
-                                <img src="./images/main/slide/main_slide2-1.jpg" alt="brand01">
-                                <div class="brand_text">
-                                    <h3>루씨에어</h3>
-                                    <p>No.1 프리미엄 실링팬 브랜드 루씨에어</p>
-                                </div>
-                            </div>
-                            <!-- 브랜드2 -->
-                            <div class="brand2">
-                                <img src="./images/main/slide/main_slide2-2.jpg" alt="brand02">
-                                <div class="brand_text">
-                                    <h3>블로무스</h3>
-                                    <p>
-                                        미니멀리즘을 강조한 디자인<br>
-                                        독일 라이프 스타일 브랜드
-                                    </p>
-                                </div>
-                            </div>
-                        </li>                        
-                        <!-- 브랜드3,4 -->
-                        <li>
-                            <!-- 브랜드3 -->
-                            <div class="brand3">
-                                <img src="./images/main/slide/main_slide2-3.jpg" alt="brand03">
-                                <div class="brand_text">
-                                    <h3>바오밥 컬렉션</h3>
-                                    <p>
-                                        벨기에 럭셔리 홀 프래그랜스 브랜드
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- 브랜드4 -->
-                            <div class="brand4">
-                                <img src="./images/main/slide/main_slide2-4.jpg" alt="brand04">
-                                <div class="brand_text">
-                                    <h3>럭키보이선데이</h3>
-                                    <p>
-                                        덴마크 코펜하겐에서 설립된 국민인형
-                                    </p>
-                                </div>
-                            </div>
-                        </li>   
-                        <!-- 브랜드5,6 -->
-                        <li>
-                            <!-- 브랜드5 -->
-                            <div class="brand5">
-                                <img src="./images/main/slide/main_slide2-5.jpg" alt="brand05">
-                                <div class="brand_text">
-                                    <h3>르푸</h3>
-                                    <p>
-                                        덴마크 친환경 바이오에탄올 난로
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- 브랜드6 -->
-                            <div class="brand6">
-                                <img src="./images/main/slide/main_slide2-6.jpg" alt="brand06">
-                                <div class="brand_text">
-                                    <h3>네오즈</h3>
-                                    <p>
-                                        최고의 공간을 밝히는 우아함,<br>
-                                        무선 테이블 조명의 선구자
-                                    </p>
-                                </div>
-                            </div>
-                        </li> 
-                        <!-- 브랜드7,8 -->
-                        <li>
-                            <!-- 브랜드7 -->
-                            <div class="brand7">
-                                <img src="./images/main/slide/main_slide2-7.jpg" alt="brand07">
-                                <div class="brand_text">
-                                    <h3>아르테미데</h3>
-                                    <p>
-                                        시간이 지나도 인정받는 디자인 조명
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- 브랜드8 -->
-                            <div class="brand8">
-                                <img src="./images/main/slide/main_slide2-8.jpg" alt="brand08">
-                                <div class="brand_text">
-                                    <h3>네오즈</h3>
-                                    <p>
-                                        안정성과 편리성을 제공하는<br>
-                                        덴마크 LED 브랜드
-                                    </p>
-                                </div>
-                            </div>
-                        </li>                         
-                    </ul>
                 </div>
-            </div>
-            <!-- /BRAND -->
-            <!-- REVIEW -->
-            <div id="review_part">
-                <h2>REVIEW</h2>
-                <section id="review_sec">
-                    <section id="sec_1">
-                        <!-- 리뷰1 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-1.jpeg" alt="review1-1">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_1.jpg" alt="review1">
-                                        <div class="review_text">
-                                            <h3>[NEOZ] 쿠이 2C</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 5.0 리뷰 4개</p>
+                <!-- /BRAND -->
+                <!-- REVIEW -->
+                <div id="review_part">
+                    <h2>REVIEW</h2>
+                    <section id="review_sec">
+                        <section id="sec_1">
+                            <!-- 리뷰1 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review1-1.jpeg" alt="review1-1" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_1.jpg" alt="review1" />
+                                            <div class="review_text">
+                                                <h3>[NEOZ] 쿠이 2C</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 5.0 리뷰 4개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>
-                                        탁월한 선택입니다 아주 마음에 들어요 (2023-02-11
-                                        17:05:54 에 등록된 네이버 페이 구매평)<br>
-                                        NAME 네이...&nbsp;&nbsp;02.12
-                                    </p>
-                                </div>
-                            </a>    
-                        </div>
-                        <!-- 리뷰2 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-2.jpeg" alt="review1-2">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_2.jpg" alt="review2">
-                                        <div class="review_text">
-                                            <h3>[NEOZ] 쿠이 2C</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 5.0 리뷰 4개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
+                                        <p>
+                                            탁월한 선택입니다 아주 마음에 들어요 (2023-02-11 17:05:54 에 등록된 네이버 페이 구매평)<br />
+                                            NAME 네이...&nbsp;&nbsp;02.12
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>실버</p>
-                                    </div>
-                                    <p>
-                                        아주 만족합니다 파인다이닝들이 왜 선택하는지 알겠
-                                        습니다 고급스러우면서 너무 튀지 않아 세련미...<br>
-                                        NAME 김**&nbsp;&nbsp;02.11
-                                    </p>
-                                </div>
-                            </a>
-                        </div>       
-                        <!-- 리뷰3 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-3.jpeg" alt="review1-3">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_3.jpg" alt="review3">
-                                        <div class="review_text">
-                                            <h3>[BLOMUS] 컬 벽행거 미디움</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 4.7 리뷰 3개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰2 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review1-2.jpeg" alt="review1-2" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_2.jpg" alt="review2" />
+                                            <div class="review_text">
+                                                <h3>[NEOZ] 쿠이 2C</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 5.0 리뷰 4개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>노메드</p>
-                                    </div>
-                                    <p>
-                                        의류매장 입니다. 저희가게 인테리어에찰떡이네요.
-                                        두번째 구매구요. 선반도 만족했는데이번에도...<br>
-                                        NAME 곽**&nbsp;&nbsp;02.07
-                                    </p>
-                                </div>
-                            </a>
-                        </div>    
-                        <!-- 리뷰4 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-4.jpeg" alt="review1-4">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_4.jpg" alt="review4">
-                                        <div class="review_text">
-                                            <h3>[Lucci Air] 실링팬 조명</h3>
-                                            <h3>(전구포함)</h3>
-                                            <p>평점 4.8 리뷰 15개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>실버</p>
                                         </div>
+                                        <p>
+                                            아주 만족합니다 파인다이닝들이 왜 선택하는지 알겠 습니다 고급스러우면서 너무 튀지 않아 세련미...<br />
+                                            NAME 김**&nbsp;&nbsp;02.11
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>
-                                        밝고 실링펜에 딱맞다 주방이 밝아진느낌이 좋다
-                                        (2023-01-31 11:33:06 에 등록된 네이버...<br>
-                                        NAME 네이...&nbsp;&nbsp;02.01
-                                    </p>
-                                </div>
-                            </a>
-                        </div>   
-                        <!-- 리뷰5 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-5.jpg" alt="review1-5">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_5.jpg" alt="review5">
-                                        <div class="review_text">
-                                            <h3>[BLOMUS] 소노 토일렛 </h3>
-                                            <h3 class="re_bin">브러쉬</h3>
-                                            <p>평점 4.9 리뷰 20개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰3 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review1-3.jpeg" alt="review1-3" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_3.jpg" alt="review3" />
+                                            <div class="review_text">
+                                                <h3>[BLOMUS] 컬 벽행거 미디움</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 4.7 리뷰 3개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>화이트</p>
-                                    </div>
-                                    <p>
-                                        화이트 색도 다른 도기들과 잘 어울리고 분위기 
-                                        살려 줍니다.<br>
-                                        NAME 김**&nbsp;&nbsp;01.20
-                                    </p>
-                                </div>
-                            </a>
-                        </div>    
-                        <!-- 리뷰6 -->
-                        <div class="review item6">
-                            <a href="#">
-                                <img src="./images/main/review/review1-6.jpg" alt="review1-6">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_6.jpg" alt="review6">
-                                        <div class="review_text">
-                                            <h3>[Lucci Air] 실링팬 조명</h3>
-                                            <h3>(전구포함)</h3>
-                                            <p>평점 4.8 리뷰 15개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>노메드</p>
                                         </div>
+                                        <p>
+                                            의류매장 입니다. 저희가게 인테리어에찰떡이네요. 두번째 구매구요. 선반도 만족했는데이번에도...<br />
+                                            NAME 곽**&nbsp;&nbsp;02.07
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>클리퍼 화이트</p>
-                                    </div>
-                                    <p>
-                                        조명을 넣엇더니 넘 분위기도 좋고 온화해 보여요
-                                        <br>
-                                        NAME 한...&nbsp;&nbsp;01.14
-                                    </p>
-                                </div>
-                            </a>
-                        </div>     
-                    </section>           
-                    <section id="sec_2">
-                        <!-- 리뷰1 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-7.jpg" alt="review1-7">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_7.jpg" alt="review7">
-                                        <div class="review_text">
-                                            <h3>[NEOZ] 쿠이 2C</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 5.0 리뷰 4개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰4 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review1-4.jpeg" alt="review1-4" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_4.jpg" alt="review4" />
+                                            <div class="review_text">
+                                                <h3>[Lucci Air] 실링팬 조명</h3>
+                                                <h3>(전구포함)</h3>
+                                                <p>평점 4.8 리뷰 15개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>
-                                        탁월한 선택입니다 아주 마음에 들어요 (2023-02-11
-                                        17:05:54 에 등록된 네이버 페이 구매평)<br>
-                                        NAME 네이...&nbsp;&nbsp;02.12
-                                    </p>
-                                </div>
-                            </a>    
-                        </div>
-                        <!-- 리뷰2 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-2.jpeg" alt="review1-2">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_2.jpg" alt="review2">
-                                        <div class="review_text">
-                                            <h3>[NEOZ] 쿠이 2C</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 5.0 리뷰 4개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
+                                        <p>
+                                            밝고 실링펜에 딱맞다 주방이 밝아진느낌이 좋다 (2023-01-31 11:33:06 에 등록된 네이버...<br />
+                                            NAME 네이...&nbsp;&nbsp;02.01
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>실버</p>
-                                    </div>
-                                    <p>
-                                        아주 만족합니다 파인다이닝들이 왜 선택하는지 알겠
-                                        습니다 고급스러우면서 너무 튀지 않아 세련미...<br>
-                                        NAME 김**&nbsp;&nbsp;02.11
-                                    </p>
-                                </div>
-                            </a>
-                        </div>       
-                        <!-- 리뷰3 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-3.jpeg" alt="review1-3">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_3.jpg" alt="review3">
-                                        <div class="review_text">
-                                            <h3>[BLOMUS] 컬 벽행거 미디움</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 4.7 리뷰 3개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰5 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review1-5.jpg" alt="review1-5" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_5.jpg" alt="review5" />
+                                            <div class="review_text">
+                                                <h3>[BLOMUS] 소노 토일렛</h3>
+                                                <h3 class="re_bin">브러쉬</h3>
+                                                <p>평점 4.9 리뷰 20개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>노메드</p>
-                                    </div>
-                                    <p>
-                                        의류매장 입니다. 저희가게 인테리어에찰떡이네요.
-                                        두번째 구매구요. 선반도 만족했는데이번에도...<br>
-                                        NAME 곽**&nbsp;&nbsp;02.07
-                                    </p>
-                                </div>
-                            </a>
-                        </div>    
-                        <!-- 리뷰4 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-4.jpeg" alt="review1-4">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_4.jpg" alt="review4">
-                                        <div class="review_text">
-                                            <h3>[Lucci Air] 실링팬 조명</h3>
-                                            <h3>(전구포함)</h3>
-                                            <p>평점 4.8 리뷰 15개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>화이트</p>
                                         </div>
+                                        <p>
+                                            화이트 색도 다른 도기들과 잘 어울리고 분위기 살려 줍니다.<br />
+                                            NAME 김**&nbsp;&nbsp;01.20
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>
-                                        밝고 실링펜에 딱맞다 주방이 밝아진느낌이 좋다
-                                        (2023-01-31 11:33:06 에 등록된 네이버...<br>
-                                        NAME 네이...&nbsp;&nbsp;02.01
-                                    </p>
-                                </div>
-                            </a>
-                        </div>   
-                        <!-- 리뷰5 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-5.jpg" alt="review1-5">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_5.jpg" alt="review5">
-                                        <div class="review_text">
-                                            <h3>[BLOMUS] 소노 토일렛 </h3>
-                                            <h3 class="re_bin">브러쉬</h3>
-                                            <p>평점 4.9 리뷰 20개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰6 -->
+                            <div class="review item6">
+                                <a href="#">
+                                    <img src="./images/main/review/review1-6.jpg" alt="review1-6" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_6.jpg" alt="review6" />
+                                            <div class="review_text">
+                                                <h3>[Lucci Air] 실링팬 조명</h3>
+                                                <h3>(전구포함)</h3>
+                                                <p>평점 4.8 리뷰 15개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>화이트</p>
-                                    </div>
-                                    <p>
-                                        화이트 색도 다른 도기들과 잘 어울리고 분위기 
-                                        살려 줍니다.<br>
-                                        NAME 김**&nbsp;&nbsp;01.20
-                                    </p>
-                                </div>
-                            </a>
-                        </div>    
-                        <!-- 리뷰6 -->
-                        <div class="review item6">
-                            <a href="#">
-                                <img src="./images/main/review/review1-6.jpg" alt="review1-6">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_6.jpg" alt="review6">
-                                        <div class="review_text">
-                                            <h3>[Lucci Air] 실링팬 조명</h3>
-                                            <h3>(전구포함)</h3>
-                                            <p>평점 4.8 리뷰 15개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>클리퍼 화이트</p>
                                         </div>
+                                        <p>
+                                            조명을 넣엇더니 넘 분위기도 좋고 온화해 보여요
+                                            <br />
+                                            NAME 한...&nbsp;&nbsp;01.14
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>클리퍼 화이트</p>
-                                    </div>
-                                    <p>
-                                        조명을 넣엇더니 넘 분위기도 좋고 온화해 보여요
-                                        <br>
-                                        NAME 한...&nbsp;&nbsp;01.14
-                                    </p>
-                                </div>
-                            </a>
-                        </div>     
-                    </section>    
-                    <section id="sec_3">
-                        <!-- 리뷰1 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-15.jpeg" alt="review1-1">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_1.jpg" alt="review1">
-                                        <div class="review_text">
-                                            <h3>[NEOZ] 쿠이 2C</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 5.0 리뷰 4개</p>
+                                </a>
+                            </div>
+                        </section>
+                        <section id="sec_2">
+                            <!-- 리뷰1 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review2-1.jpg" alt="review2-1" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_7.jpg" alt="review7" />
+                                            <div class="review_text">
+                                                <h3>[NEOZ] 쿠이 2C</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 5.0 리뷰 4개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>
-                                        탁월한 선택입니다 아주 마음에 들어요 (2023-02-11
-                                        17:05:54 에 등록된 네이버 페이 구매평)<br>
-                                        NAME 네이...&nbsp;&nbsp;02.12
-                                    </p>
-                                </div>
-                            </a>    
-                        </div>
-                        <!-- 리뷰2 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-2.jpeg" alt="review1-2">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_2.jpg" alt="review2">
-                                        <div class="review_text">
-                                            <h3>[NEOZ] 쿠이 2C</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 5.0 리뷰 4개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
+                                        <p>
+                                            탁월한 선택입니다 아주 마음에 들어요 (2023-02-11 17:05:54 에 등록된 네이버 페이 구매평)<br />
+                                            NAME 네이...&nbsp;&nbsp;02.12
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>실버</p>
-                                    </div>
-                                    <p>
-                                        아주 만족합니다 파인다이닝들이 왜 선택하는지 알겠
-                                        습니다 고급스러우면서 너무 튀지 않아 세련미...<br>
-                                        NAME 김**&nbsp;&nbsp;02.11
-                                    </p>
-                                </div>
-                            </a>
-                        </div>       
-                        <!-- 리뷰3 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-3.jpeg" alt="review1-3">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_3.jpg" alt="review3">
-                                        <div class="review_text">
-                                            <h3>[BLOMUS] 컬 벽행거 미디움</h3>
-                                            <h3 class="re_bin"></h3>
-                                            <p>평점 4.7 리뷰 3개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰2 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review2-2.jpg" alt="review2-2" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_8.jpg" alt="review8" />
+                                            <div class="review_text">
+                                                <h3>[NEOZ] 쿠이 2C</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 5.0 리뷰 4개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>노메드</p>
-                                    </div>
-                                    <p>
-                                        의류매장 입니다. 저희가게 인테리어에찰떡이네요.
-                                        두번째 구매구요. 선반도 만족했는데이번에도...<br>
-                                        NAME 곽**&nbsp;&nbsp;02.07
-                                    </p>
-                                </div>
-                            </a>
-                        </div>    
-                        <!-- 리뷰4 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-4.jpeg" alt="review1-4">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_4.jpg" alt="review4">
-                                        <div class="review_text">
-                                            <h3>[Lucci Air] 실링팬 조명</h3>
-                                            <h3>(전구포함)</h3>
-                                            <p>평점 4.8 리뷰 15개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>실버</p>
                                         </div>
+                                        <p>
+                                            아주 만족합니다 파인다이닝들이 왜 선택하는지 알겠 습니다 고급스러우면서 너무 튀지 않아 세련미...<br />
+                                            NAME 김**&nbsp;&nbsp;02.11
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>
-                                        밝고 실링펜에 딱맞다 주방이 밝아진느낌이 좋다
-                                        (2023-01-31 11:33:06 에 등록된 네이버...<br>
-                                        NAME 네이...&nbsp;&nbsp;02.01
-                                    </p>
-                                </div>
-                            </a>
-                        </div>   
-                        <!-- 리뷰5 -->
-                        <div class="review">
-                            <a href="#">
-                                <img src="./images/main/review/review1-5.jpg" alt="review1-5">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_5.jpg" alt="review5">
-                                        <div class="review_text">
-                                            <h3>[BLOMUS] 소노 토일렛 </h3>
-                                            <h3 class="re_bin">브러쉬</h3>
-                                            <p>평점 4.9 리뷰 20개</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰3 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review2-3.jpg" alt="review2-3" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_9.jpg" alt="review9" />
+                                            <div class="review_text">
+                                                <h3>[BLOMUS] 컬 벽행거 미디움</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 4.7 리뷰 3개</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>화이트</p>
-                                    </div>
-                                    <p>
-                                        화이트 색도 다른 도기들과 잘 어울리고 분위기 
-                                        살려 줍니다.<br>
-                                        NAME 김**&nbsp;&nbsp;01.20
-                                    </p>
-                                </div>
-                            </a>
-                        </div>    
-                        <!-- 리뷰6 -->
-                        <div class="review item6">
-                            <a href="#">
-                                <img src="./images/main/review/review1-6.jpg" alt="review1-6">
-                                <div class="review_contents">
-                                    <div class="review_title">
-                                        <img src="./images/main/review40/review40_6.jpg" alt="review6">
-                                        <div class="review_text">
-                                            <h3>[Lucci Air] 실링팬 조명</h3>
-                                            <h3>(전구포함)</h3>
-                                            <p>평점 4.8 리뷰 15개</p>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>노메드</p>
                                         </div>
+                                        <p>
+                                            의류매장 입니다. 저희가게 인테리어에찰떡이네요. 두번째 구매구요. 선반도 만족했는데이번에도...<br />
+                                            NAME 곽**&nbsp;&nbsp;02.07
+                                        </p>
                                     </div>
-                                    <div class="review_star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <p>클리퍼 화이트</p>
+                                </a>
+                            </div>
+                            <!-- 리뷰4 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review2-4.jpeg" alt="review2-4" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_10.jpg" alt="review10" />
+                                            <div class="review_text">
+                                                <h3>[Lucci Air] 실링팬 조명</h3>
+                                                <h3>(전구포함)</h3>
+                                                <p>평점 4.8 리뷰 15개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            밝고 실링펜에 딱맞다 주방이 밝아진느낌이 좋다 (2023-01-31 11:33:06 에 등록된 네이버...<br />
+                                            NAME 네이...&nbsp;&nbsp;02.01
+                                        </p>
                                     </div>
-                                    <p>
-                                        조명을 넣엇더니 넘 분위기도 좋고 온화해 보여요
-                                        <br>
-                                        NAME 한...&nbsp;&nbsp;01.14
-                                    </p>
-                                </div>
-                            </a>
-                        </div>     
-                    </section>                                                                                                  
-                    <!-- 리뷰하단 페이지넘기기 -->
-                    <ul class="review_num">
-                        <li><</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>></li>
-                    </ul> 
+                                </a>
+                            </div>
+                            <!-- 리뷰5 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review2-5.jpeg" alt="review2-5" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_11.jpg" alt="review11" />
+                                            <div class="review_text">
+                                                <h3>[BLOMUS] 소노 토일렛</h3>
+                                                <h3 class="re_bin">브러쉬</h3>
+                                                <p>평점 4.9 리뷰 20개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>화이트</p>
+                                        </div>
+                                        <p>
+                                            화이트 색도 다른 도기들과 잘 어울리고 분위기 살려 줍니다.<br />
+                                            NAME 김**&nbsp;&nbsp;01.20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 리뷰6 -->
+                            <div class="review item6">
+                                <a href="#">
+                                    <img src="./images/main/review/review2-6.jpg" alt="review2-6" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_12.jpg" alt="review12" />
+                                            <div class="review_text">
+                                                <h3>[Lucci Air] 실링팬 조명</h3>
+                                                <h3>(전구포함)</h3>
+                                                <p>평점 4.8 리뷰 15개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>클리퍼 화이트</p>
+                                        </div>
+                                        <p>
+                                            조명을 넣엇더니 넘 분위기도 좋고 온화해 보여요
+                                            <br />
+                                            NAME 한...&nbsp;&nbsp;01.14
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <section id="sec_3">
+                            <!-- 리뷰1 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review3-1.jpg" alt="review3-1" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_13.jpg" alt="review13" />
+                                            <div class="review_text">
+                                                <h3>[NEOZ] 쿠이 2C</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 5.0 리뷰 4개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            탁월한 선택입니다 아주 마음에 들어요 (2023-02-11 17:05:54 에 등록된 네이버 페이 구매평)<br />
+                                            NAME 네이...&nbsp;&nbsp;02.12
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 리뷰2 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review3-2.jpg" alt="review3-2" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_14.jpg" alt="review14" />
+                                            <div class="review_text">
+                                                <h3>[NEOZ] 쿠이 2C</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 5.0 리뷰 4개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>실버</p>
+                                        </div>
+                                        <p>
+                                            아주 만족합니다 파인다이닝들이 왜 선택하는지 알겠 습니다 고급스러우면서 너무 튀지 않아 세련미...<br />
+                                            NAME 김**&nbsp;&nbsp;02.11
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 리뷰3 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review3-3.jpg" alt="review3-3" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_15.jpg" alt="review15" />
+                                            <div class="review_text">
+                                                <h3>[BLOMUS] 컬 벽행거 미디움</h3>
+                                                <h3 class="re_bin"></h3>
+                                                <p>평점 4.7 리뷰 3개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>노메드</p>
+                                        </div>
+                                        <p>
+                                            의류매장 입니다. 저희가게 인테리어에찰떡이네요. 두번째 구매구요. 선반도 만족했는데이번에도...<br />
+                                            NAME 곽**&nbsp;&nbsp;02.07
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 리뷰4 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review3-4.jpg" alt="review3-4" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_16.jpg" alt="review16" />
+                                            <div class="review_text">
+                                                <h3>[Lucci Air] 실링팬 조명</h3>
+                                                <h3>(전구포함)</h3>
+                                                <p>평점 4.8 리뷰 15개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            밝고 실링펜에 딱맞다 주방이 밝아진느낌이 좋다 (2023-01-31 11:33:06 에 등록된 네이버...<br />
+                                            NAME 네이...&nbsp;&nbsp;02.01
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 리뷰5 -->
+                            <div class="review">
+                                <a href="#">
+                                    <img src="./images/main/review/review3-5.jpg" alt="review3-5" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_17.jpg" alt="review17" />
+                                            <div class="review_text">
+                                                <h3>[BLOMUS] 소노 토일렛</h3>
+                                                <h3 class="re_bin">브러쉬</h3>
+                                                <p>평점 4.9 리뷰 20개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>화이트</p>
+                                        </div>
+                                        <p>
+                                            화이트 색도 다른 도기들과 잘 어울리고 분위기 살려 줍니다.<br />
+                                            NAME 김**&nbsp;&nbsp;01.20
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 리뷰6 -->
+                            <div class="review item6">
+                                <a href="#">
+                                    <img src="./images/main/review/review3-6.jpg" alt="review3-6" />
+                                    <div class="review_contents">
+                                        <div class="review_title">
+                                            <img src="./images/main/review40/review40_18.jpg" alt="review18" />
+                                            <div class="review_text">
+                                                <h3>[Lucci Air] 실링팬 조명</h3>
+                                                <h3>(전구포함)</h3>
+                                                <p>평점 4.8 리뷰 15개</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <p>클리퍼 화이트</p>
+                                        </div>
+                                        <p>
+                                            조명을 넣엇더니 넘 분위기도 좋고 온화해 보여요
+                                            <br />
+                                            NAME 한...&nbsp;&nbsp;01.14
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <!-- 리뷰하단 페이지넘기기 -->
+                        <ul class="review_num">
+                            <li><</li>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>></li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- /REVIEW -->
+                <!-- INSTA -->
+                <section id="insta">
+                    <h3><img src="./images/insta.gif" alt="insta" /></h3>
+                    <ul class="insta_img">
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta1.jpg" alt="insta1" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta2.jpg" alt="insta2" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta3.jpg" alt="insta3" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta4.jpg" alt="insta4" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta5.jpg" alt="insta5" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta6.jpg" alt="insta6" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta7.jpg" alt="insta7" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta8.jpg" alt="insta8" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta9.jpg" alt="insta9" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta10.jpg" alt="insta10" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta11.jpg" alt="insta11" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta12.jpg" alt="insta12" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta13.jpg" alt="insta13" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta14.jpg" alt="insta14" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/main/insta/insta15.jpg" alt="insta15" /></a>
+                        </li>
+                    </ul>
                 </section>
-            </div>
-            <!-- /REVIEW -->
-            <!-- INSTA -->
-            <section id="insta">
-                <h3><img src="./images/insta.gif" alt="insta"></h3>
-                <ul class="insta_img">
-                    <li><a href="#"><img src="./images/main/insta/insta1.jpg" alt="insta1"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta2.jpg" alt="insta2"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta3.jpg" alt="insta3"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta4.jpg" alt="insta4"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta5.jpg" alt="insta5"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta6.jpg" alt="insta6"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta7.jpg" alt="insta7"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta8.jpg" alt="insta8"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta9.jpg" alt="insta9"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta10.jpg" alt="insta10"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta11.jpg" alt="insta11"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta12.jpg" alt="insta12"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta13.jpg" alt="insta13"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta14.jpg" alt="insta14"></a></li>
-                    <li><a href="#"><img src="./images/main/insta/insta15.jpg" alt="insta15"></a></li>
-                </ul>
-            </section>
-            <!-- /INSTA -->
-        </main>
-        <!-- /main -->
-        <!-- footer -->
-        <footer>
-
-        </footer>
-        <!-- /footer -->
-    </div>
+                <!-- /INSTA -->
+            </main>
+            <!-- /main -->
+            <!-- footer -->
+            <footer></footer>
+            <!-- /footer -->
+        </div>
         <!-- aside.snb -->
-        <aside id="snb">
-
-        </aside>
+        <aside id="snb"></aside>
         <!-- /aside.snb -->
-<script src="./js/main.js"></script>
-</body>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

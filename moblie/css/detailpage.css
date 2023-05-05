@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-body, html {
+body,
+html {
     font-size: 12px;
 }
 .title i {
@@ -14,49 +15,122 @@ body, html {
     font-weight: 600;
 }
 
-/* img_part */
-.item_title .icon {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 50%;
+/* C-1. 스와이퍼 될 Slider 각각 내용들 */
+.swiper-slide {
+    width: 100%;
+    height: 100%;
 }
-.img_part{
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+.img_part {
     /* 위치기준값 */
     position: relative;
 }
-.img_part>img {
+.img_part > img {
     width: 100%;
+    height: 100%;
 }
 .dot {
     text-align: center;
-    
+
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
 }
-.dot span{
+.dot span {
     display: inline-block;
     width: 8px;
     height: 8px;
     background: #ccc;
+    border: 1px solid #777;
     border-radius: 50%;
 }
 .dot span.active {
     background: #000;
 }
+/* fa-thumbs-up */
+.fa-thumbs-up {
+    background: #979797;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 999;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+/* item_title */
+.item_title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 0 16px;
+}
+.item_title p {
+    font-weight: 700;
+}
+/* img_part */
+.item_title .icon {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+.item_title .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+
+/* price */
+.price {
+    padding: 0 16px;
+}
+.price tr:nth-child(1) tr,
+.price tr:nth-child(1) td {
+    padding-bottom: 24px;
+}
+.price tr:nth-child(1) td {
+    font-size: 14px;
+}
+.price tr:nth-child(1) td span {
+    font-weight: 700;
+}
+
+.price tr:nth-child(2) tr,
+.price tr:nth-child(2) td {
+    padding-bottom: 16px;
+}
+.price tr:nth-child(2) td {
+    font-size: 12px;
+}
+.price tr:nth-child(2) td span {
+    font-size: 14px;
+}
+
 /* select_part */
 .select_part {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    border-top: 1px solid #ccc;
+    padding: 8px 16px 0px;
 }
 .select_part label {
     width: 15%;
-    margin-bottom: 8px;
+    line-height: 40px;
 }
 .select_part select {
     width: 85%;
@@ -67,21 +141,26 @@ body, html {
 }
 
 /* total */
-.total { 
+.total {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 16px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #ccc;
     border-right: none;
     border-left: none;
 }
 
 /* btn_part */
-.btn_part .buy{
+.btn_part {
+    margin: 0px 16px;
+}
+.btn_part .buy {
     width: 100%;
     height: 50px;
-    background: #d9d9d9;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
     margin-top: 10px;
     margin-bottom: 4px;
 }
@@ -89,7 +168,7 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
-.basket button{
+.basket button {
     width: 49.5%;
     background: #d9d9d9;
     height: 50px;
@@ -98,47 +177,53 @@ body, html {
     width: 100%;
     height: 50px;
     margin-top: 4px;
-    background: #FFDF2C;
+    background: #ffdf2c;
 }
 
 /* 네이버, 카카오 */
 .na_ko .naver,
 .na_ko .kakao {
     margin: 32px auto 0;
-    width: 290px;
+    width: 300px;
     border-top: 3px solid #000;
     padding-top: 8px;
 }
-.na_ko .naver .naver_img img{
+.na_ko .naver .naver_img img {
     width: 53px;
     height: 11px;
     vertical-align: middle;
 }
+
 .naver_img p,
 .kakao_img p {
+    width: 105px;
     font-size: 11px;
     padding-right: 4px;
     line-height: 1.3;
 }
-/* 네이버페이 */
-.naverpay img,
-.kakaopay img{
-    width: 140px;
-    height: 42px;
+.kakao_img p {
+    margin-top: 8px;
 }
-.naverpay+button {
+
+.kakaopay img {
+    width: 100%;
+}
+/* 네이버페이 */
+.naverpay + button {
+    margin-top: 1px;
     margin-left: 4px;
-    width: 42px;
-    height: 42px;
-    color: #00C73C;
+    width: 36px;
+    height: 36px;
+    color: #00c73c;
     background: #fcfcfc;
     border: 1px solid #ccc;
 }
-.kakaopay+button {
+.kakaopay + button {
+    margin-top: 1px;
     margin-left: 4px;
-    width: 42px;
-    height: 42px;
-    color: #00C73C;
+    width: 36px;
+    height: 36px;
+    color: #00c73c;
     background: #fcfcfc;
     border: 1px solid #ccc;
 }
@@ -154,12 +239,30 @@ body, html {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 18px;
+    overflow: hidden;
 }
 .event i {
     color: #ccc;
 }
 .event span {
     font-weight: bold;
+}
+
+.event {
+    position: relative;
+}
+.event ul > li {
+    position: absolute;
+    top: 36px;
+    transition: top 1.5s linear;
+}
+
+.event ul > li.next {
+    top: 5px;
+}
+.event ul > li.prev {
+    top: 36px;
 }
 
 /* banner */
@@ -169,7 +272,7 @@ body, html {
 .banner img {
     width: 100%;
 }
-.banner img:last-child{
+.banner img:last-child {
     margin-top: 16px;
     margin-bottom: 47px;
 }
@@ -181,7 +284,7 @@ body, html {
 .tab input[type="radio"] {
     display: none;
 }
-.tab input[type="radio"]+label {
+.tab input[type="radio"] + label {
     font-size: 12px;
     width: 33.33%;
     display: inline-block;
@@ -192,20 +295,21 @@ body, html {
     padding: 16px 0;
     cursor: pointer;
 }
-.tab input[type="radio"]:checked+label{
+.tab input[type="radio"]:checked + label {
     background: #fff;
     border: 1px solid #000;
     border-bottom: none;
 }
-.detail_part, .review, .qna {
+.detail_part,
+.review,
+.qna {
     display: none;
 }
 input[id="detail"]:checked ~ .detail_part,
 input[id="review"]:checked ~ .review,
-input[id="qna"]:checked ~ .qna{
+input[id="qna"]:checked ~ .qna {
     display: block;
 }
-
 
 /* detail_part */
 .detail_part {
@@ -228,10 +332,9 @@ input[id="qna"]:checked ~ .qna{
     font-size: 12px;
     line-height: 30px;
 }
-.detail_part>img {
+.detail_part > img {
     width: 100%;
 }
-
 
 /* review */
 .review {
@@ -244,12 +347,12 @@ input[id="qna"]:checked ~ .qna{
 .review_text strong {
     font-weight: bold;
 }
-.review_text>img {
+.review_text > img {
     margin-top: 16px;
     width: 113px;
     padding-bottom: 10px;
 }
-.review_text>p {
+.review_text > p {
     font-size: 12px;
     line-height: 1.5;
     padding-bottom: 22px;
@@ -261,7 +364,6 @@ input[id="qna"]:checked ~ .qna{
     padding: 16px 40px;
     cursor: pointer;
 }
-
 
 .review .search {
     font-size: 12px;
@@ -275,9 +377,9 @@ input[id="qna"]:checked ~ .qna{
 .review .search span {
     font-weight: bold;
 }
-.search input[type="text"]{
+.search input[type="text"] {
     width: 180px;
-    background: #f6f7f8; 
+    background: #f6f7f8;
     height: 30px;
 }
 
@@ -293,13 +395,10 @@ input[id="qna"]:checked ~ .qna{
     border: 1px solid #f1f1f1;
     border-left: none;
     border-right: none;
-
 }
 .sort .select {
     margin: 14px 8px;
 }
-
-
 
 .arrow {
     margin-top: 88px;
@@ -317,15 +416,14 @@ input[id="qna"]:checked ~ .qna{
     font-size: 12px;
     text-align: right;
     color: #ccc;
-
 }
-.policy>a {
+.policy > a {
     font-weight: 800;
     margin-right: 14px;
 }
-.policy>button {
+.policy > button {
     padding: 12px 16px;
-    border: 1px solid #FFB161;
+    border: 1px solid #ffb161;
     border-radius: 4px;
     color: #000;
     font-weight: 800;
@@ -340,7 +438,7 @@ input[id="qna"]:checked ~ .qna{
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-.qna_btn button{
+.qna_btn button {
     font-size: 12px;
     font-weight: 600;
     border: 1px solid #ddd;
@@ -369,7 +467,7 @@ input[id="qna"]:checked ~ .qna{
 
 .question {
     width: 100%;
-    background: #F5F6F7;
+    background: #f5f6f7;
     border: 1px solid #ddd;
     padding: 16px 20px 16px 8px;
 
@@ -379,7 +477,7 @@ input[id="qna"]:checked ~ .qna{
 .question {
     font-size: 14px;
 }
-.question>i {
+.question > i {
     font-size: 10px;
 }
 .answer {

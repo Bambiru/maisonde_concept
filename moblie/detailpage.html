@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/detailpage.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/swiper-bundle.css">
         <script src="./js/jquery-1.12.4.min.js"></script>
         <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="./js/jquery.scrollTo.min.js"></script>
@@ -37,19 +38,26 @@
                 </h2>
             </div>
             <section id="detail_product">
-                <div class="img_part">
-                    <img src="./images/detailpage/p/item1-4.jpg" alt="item1_1">
-                    <!-- <img src="./images/detailpage/p/item1-2.jpg" alt="item1_2"> -->
-                    <!-- <img src="./images/detailpage/p/item1-3.jpg" alt="item1_3"> -->
-                    <!-- <img src="./images/detailpage/p/item1-4.jpg" alt="item1_4"> -->
-                    <div class="dot">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide">
+                            <img src="./images/detailpage/p/item1-1.jpg" alt="item1_1">
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="./images/detailpage/p/item1-2.jpg" alt="item1_2">
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="./images/detailpage/p/item1-3.jpg" alt="item1_3">
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="./images/detailpage/p/item1-4.jpg" alt="item1_4">
+                        </div>
                     </div>
+                    <!-- D.스와이퍼 넘버링 클래스 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- /D.스와이퍼 넘버링 클래스 -->
                 </div>
-                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-up plusnum"><span> 0</span></i>
                 </div>
                 <div class="item_title">
                     <p>Lefeu</p>
@@ -60,11 +68,11 @@
                 <table class="price">
                     <tr>
                         <td>판매가</td>
-                        <td>3,230,000원</td>
+                        <td><span>3,230,000</span>원</td>
                     </tr>
                     <tr>
                         <td>적립금</td>
-                        <td>32,300원(1.00%)</td>
+                        <td><span>32,300</span>원(1.00%)</td>
                     </tr>
                 </table>
                 <div class="select_part">
@@ -84,10 +92,10 @@
                         <option value="서울/경기">서울/경기</option>
                         <option value="기타지역">기타지역(전화문의)</option>
                     </select>
-                    <div class="total">
-                        <p>총상품금액(수량)</p>
-                        <p>0</p>
-                    </div>
+                </div>
+                <div class="total">
+                    <p>총상품금액(수량)</p>
+                    <p>0</p>
                 </div>
                 <div class="btn_part">
                     <button class="buy"><a href="#">구매하기</a></button>
@@ -113,7 +121,10 @@
                         <button>찜</button>
                     </div>
                     <div class="event">
-                        <a href="#"><span>[CU더블혜택]</span> 최대 5%적립 + 최대 5%할인</a>
+                        <ul>
+                            <li class="prev"><a href="#"><span>[CU더블혜택]</span> 최대 5%적립 + 최대 5%할인</a></li>
+                            <li class="next"><a href="#"><span>[머니결제혜택]</span> 최대 3%적립 + 소득공제</a></li>
+                        </ul>
                         <i class="fas fa-angle-right"></i>
                     </div>
                 </div>
@@ -139,7 +150,7 @@
                 <img src="./images/detailpage/p/banner1.gif" alt="">
                 <img src="./images/detailpage/p/banner2.jpg" alt="">
             </section>
-            <!-- 탭메뉴 -->
+            <!-- 탭메뉴 --> 
             <section class="tab">
                 <input type="radio" name="tab" id="detail" checked>
                 <label for="detail">상세보기</label>
@@ -331,6 +342,7 @@
     <aside id="snb">
 
     </aside>
+    <script src="./js/swiper-bundle.js"></script>
     <script src="./js/detailpage.js"></script>
 </body>
 </html>
