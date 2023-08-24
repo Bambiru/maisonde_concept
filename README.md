@@ -8,32 +8,18 @@
 - 로그인, 회원가입 단으로 구성되어 있습니다.
 
 - MAIN
-  <video>
-    <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/b5a3cc9f-d4df-47f0-b3e2-e86af6aac0fc">
-  </video>
+  <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/e99d44ac-c129-4c59-8608-1ff521aa8991"/>
 - SUB
-  <video>
-    <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/3ac9f61d-38c5-4a88-8990-b677e61e3c37">
-  </video>
+  <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/f73fe3bc-1f63-4081-8170-a559d9cfb865"/>
 
 - CONTENTS
-  <video>
-    <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/c1c5d403-a3e6-4c5b-8843-82c76a229739">
-  </video>
+  <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/bde8939e-5228-4091-833d-fa8f3f4607ae"/>
 
 ### 모바일
 
 - http://jbambi.com/ez/mobile/
 - 모바일은 팀 프로젝트가 끝난 후 개별작업하였습니다.
--  <video>
-     <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/f0d997c8-d362-4b6e-a0b1-ca1aca2b19da">
-   </video>
-- <video>
-    <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/720fbafe-2a30-41af-8a1a-e3c4a2132020">
-  </video>
-- <video>
-    <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/4d2ca690-bc60-437f-87f9-8d17b586f425">
-  </video>
--  <video>
-     <source src="https://github.com/Bambiru/maisonde_concept/assets/116716953/070077dd-edd0-4b3a-85fa-876b70c74722">
-   </video>
+- <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/31e1acac-4bdd-4b06-a465-6c1dc86361e3"/>
+- <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/bb25e5dc-8d07-4717-b757-095d689bdee1"/>
+- <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/b829dac0-663b-441c-a06f-b33d2e28bb23"/>
+- <image src="https://github.com/Bambiru/maisonde_concept/assets/116716953/32ba45b9-e9f4-4785-8ecf-ae6faa3ab566"/>
