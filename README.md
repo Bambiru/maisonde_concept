@@ -19,6 +19,7 @@
 
 - http://jbambi.com/ez/mobile/
 - 모바일은 팀 프로젝트가 끝난 후 개별작업하였습니다.
+
 - <image src="readmeGif/m_1.gif"/>
 - <image src="readmeGif/m_2.gif"/>
 - <image src="readmeGif/m_3.gif"/>
