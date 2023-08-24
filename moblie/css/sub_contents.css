@@ -25,12 +25,16 @@
     width: 100px;
     height: 40px;
     margin-left: 16px;
+    cursor: pointer;
+}
+.sort select option {
+    cursor: pointer;
 }
 .sort .img_sizing {
     /* 플렉스 */
     display: flex;
     flex-flow: row nowrap;
-
+    cursor: pointer;
 }
 .img_sizing div:nth-child(1),
 .img_sizing div:nth-child(2),

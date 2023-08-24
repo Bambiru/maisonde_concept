@@ -1,31 +1,18 @@
 /* 슬라이드 동작 구현 */
-$(document).ready(function(){
-    $('.slide_gallery').bxSlider({
-        mode: 'horizontal',
-        speed: 1500,
-        pause: 3000,
-        slideWidth: 1240,
-        auto: true,
-        autoHover: true
-    });
-});
-
-
-/* a링크 href="#" 준비중 */
-var img = "<div class='alert'><img src='./images/alert.png' alt='준비중 알림창'></div>";
-$('body').append(img);
-
-
-// 이벤트
-$('.page_number>ul>li').click(function(event){
-    event.preventDefault();
-    $('.alert').stop().fadeIn(700);
-
-    setTimeout(function(){
-        $('.alert').stop().fadeOut(700);},3000);
+$(document).ready(function () {
+  $(".slide_gallery").bxSlider({
+    mode: "horizontal",
+    speed: 1500,
+    pause: 3000,
+    slideWidth: 1240,
+    auto: true,
+    autoHover: true,
+  });
 });
 
 // select Box에서 옵션 선택시 알림띄우기
 const changeValue = (target) => {
-    alert(target.options[target.selectedIndex].text + " 준비중입니다. 죄송합니다.");
-}
+  alert(
+    target.options[target.selectedIndex].text + " 준비중입니다. 죄송합니다."
+  );
+};
